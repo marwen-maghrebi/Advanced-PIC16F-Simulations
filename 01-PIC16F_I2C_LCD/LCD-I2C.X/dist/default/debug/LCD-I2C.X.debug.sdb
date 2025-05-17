@@ -1,0 +1,185 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"78 E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+[v _main main `(v  1 e 1 0 ]
+"106
+[v _I2C_Master_Init I2C_Master_Init `(v  1 e 1 0 ]
+"116
+[v _I2C_Master_Wait I2C_Master_Wait `(v  1 e 1 0 ]
+"121
+[v _I2C_Master_Start I2C_Master_Start `(v  1 e 1 0 ]
+"133
+[v _I2C_Master_Stop I2C_Master_Stop `(v  1 e 1 0 ]
+"153
+[v _I2C_Master_Write I2C_Master_Write `(uc  1 e 1 0 ]
+"173
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+"196
+[v _IO_Expander_Write IO_Expander_Write `(v  1 e 1 0 ]
+"204
+[v _LCD_Write_4Bit LCD_Write_4Bit `(v  1 e 1 0 ]
+"213
+[v _LCD_CMD LCD_CMD `(v  1 e 1 0 ]
+"220
+[v _LCD_Print_Char LCD_Print_Char `(v  1 e 1 0 ]
+"227
+[v _LCD_Print_String LCD_Print_String `(v  1 e 1 0 ]
+"233
+[v _LCD_Set_Cursor LCD_Set_Cursor `(v  1 e 1 0 ]
+"263
+[v _LCD_SL LCD_SL `(v  1 e 1 0 ]
+"269
+[v _LCD_SR LCD_SR `(v  1 e 1 0 ]
+"808 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+"815
+[v _SSPCON SSPCON `VEuc  1 e 1 @20 ]
+"1754
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @145 ]
+"1823
+[v _SSPADD SSPADD `VEuc  1 e 1 @147 ]
+"1830
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @148 ]
+"2378
+[v _ACKDT ACKDT `VEb  1 e 0 @1165 ]
+"2381
+[v _ACKEN ACKEN `VEb  1 e 0 @1164 ]
+"2384
+[v _ACKSTAT ACKSTAT `VEb  1 e 0 @1166 ]
+"2636
+[v _PEN PEN `VEb  1 e 0 @1162 ]
+"2741
+[v _RCEN RCEN `VEb  1 e 0 @1163 ]
+"2795
+[v _RSEN RSEN `VEb  1 e 0 @1161 ]
+"2810
+[v _SEN SEN `VEb  1 e 0 @1160 ]
+"2828
+[v _SSPIF SSPIF `VEb  1 e 0 @99 ]
+"2972
+[v _TRISC3 TRISC3 `VEb  1 e 0 @1083 ]
+"2975
+[v _TRISC4 TRISC4 `VEb  1 e 0 @1084 ]
+"75 E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+[v _i2c_add i2c_add `uc  1 e 1 0 ]
+[v _BackLight_State BackLight_State `uc  1 e 1 0 ]
+"76
+[v _RS RS `uc  1 e 1 0 ]
+"78
+[v _main main `(v  1 e 1 0 ]
+{
+"104
+} 0
+"233
+[v _LCD_Set_Cursor LCD_Set_Cursor `(v  1 e 1 0 ]
+{
+[v LCD_Set_Cursor@ROW ROW `uc  1 p 1 wreg ]
+[v LCD_Set_Cursor@ROW ROW `uc  1 p 1 wreg ]
+[v LCD_Set_Cursor@COL COL `uc  1 p 1 6 ]
+[v LCD_Set_Cursor@ROW ROW `uc  1 p 1 7 ]
+"249
+} 0
+"269
+[v _LCD_SR LCD_SR `(v  1 e 1 0 ]
+{
+"273
+} 0
+"263
+[v _LCD_SL LCD_SL `(v  1 e 1 0 ]
+{
+"267
+} 0
+"227
+[v _LCD_Print_String LCD_Print_String `(v  1 e 1 0 ]
+{
+"229
+[v LCD_Print_String@i i `i  1 a 2 7 ]
+"227
+[v LCD_Print_String@Str Str `*.24uc  1 p 1 6 ]
+"231
+} 0
+"220
+[v _LCD_Print_Char LCD_Print_Char `(v  1 e 1 0 ]
+{
+[v LCD_Print_Char@Data Data `uc  1 p 1 wreg ]
+[v LCD_Print_Char@Data Data `uc  1 p 1 wreg ]
+"222
+[v LCD_Print_Char@Data Data `uc  1 p 1 5 ]
+"225
+} 0
+"173
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+{
+[v LCD_Init@I2C_Add I2C_Add `uc  1 p 1 wreg ]
+[v LCD_Init@I2C_Add I2C_Add `uc  1 p 1 wreg ]
+"175
+[v LCD_Init@I2C_Add I2C_Add `uc  1 p 1 9 ]
+"194
+} 0
+"213
+[v _LCD_CMD LCD_CMD `(v  1 e 1 0 ]
+{
+[v LCD_CMD@CMD CMD `uc  1 p 1 wreg ]
+[v LCD_CMD@CMD CMD `uc  1 p 1 wreg ]
+"215
+[v LCD_CMD@CMD CMD `uc  1 p 1 5 ]
+"218
+} 0
+"204
+[v _LCD_Write_4Bit LCD_Write_4Bit `(v  1 e 1 0 ]
+{
+[v LCD_Write_4Bit@Nibble Nibble `uc  1 p 1 wreg ]
+[v LCD_Write_4Bit@Nibble Nibble `uc  1 p 1 wreg ]
+"207
+[v LCD_Write_4Bit@Nibble Nibble `uc  1 p 1 3 ]
+"211
+} 0
+"196
+[v _IO_Expander_Write IO_Expander_Write `(v  1 e 1 0 ]
+{
+[v IO_Expander_Write@Data Data `uc  1 p 1 wreg ]
+[v IO_Expander_Write@Data Data `uc  1 p 1 wreg ]
+"198
+[v IO_Expander_Write@Data Data `uc  1 p 1 1 ]
+"202
+} 0
+"153
+[v _I2C_Master_Write I2C_Master_Write `(uc  1 e 1 0 ]
+{
+[v I2C_Master_Write@data data `uc  1 p 1 wreg ]
+[v I2C_Master_Write@data data `uc  1 p 1 wreg ]
+"155
+[v I2C_Master_Write@data data `uc  1 p 1 0 ]
+"160
+} 0
+"133
+[v _I2C_Master_Stop I2C_Master_Stop `(v  1 e 1 0 ]
+{
+"137
+} 0
+"121
+[v _I2C_Master_Start I2C_Master_Start `(v  1 e 1 0 ]
+{
+"125
+} 0
+"116
+[v _I2C_Master_Wait I2C_Master_Wait `(v  1 e 1 0 ]
+{
+"119
+} 0
+"106
+[v _I2C_Master_Init I2C_Master_Init `(v  1 e 1 0 ]
+{
+"114
+} 0

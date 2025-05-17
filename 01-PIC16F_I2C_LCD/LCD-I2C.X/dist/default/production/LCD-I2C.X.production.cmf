@@ -1,0 +1,464 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\LCD-I2C.X.production.o
+cinit CODE 0 7F5 7F5 B 2 1
+text1 CODE 0 6AD 6AD 2E 2 1
+text2 CODE 0 5E7 5E7 B 2 1
+text3 CODE 0 5DC 5DC B 2 1
+text4 CODE 0 689 689 24 2 1
+text5 CODE 0 66C 66C 1D 2 1
+text6 CODE 0 759 759 9C 2 1
+text7 CODE 0 650 650 1C 2 1
+text8 CODE 0 61C 61C 19 2 1
+text9 CODE 0 635 635 1B 2 1
+text10 CODE 0 60C 60C 10 2 1
+text11 CODE 0 5D3 5D3 9 2 1
+text12 CODE 0 5CA 5CA 9 2 1
+text13 CODE 0 5FF 5FF D 2 1
+text14 CODE 0 5F2 5F2 D 2 1
+nvBANK0 BANK0 1 20 20 1 1 1
+idataCOMMON CODE 0 5C9 5C9 1 2 1
+maintext CODE 0 6DB 6DB 7E 2 1
+cstackCOMMON COMMON 1 70 70 D 1 1
+bssBANK0 BANK0 1 21 21 1 1 1
+strings STRING 0 3 3 28 2 1
+dataCOMMON COMMON 1 7D 7D 1 1 1
+config CONFIG 4 2007 2007 1 2 1
+$C:\Users\pc1\AppData\Local\Temp\xcAsevs.\driver_tmp_12.o
+end_init CODE 0 0 0 3 2 1
+config CONFIG 4 2007 2007 1 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 22-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 22-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 2B-5C8 2
+CONST 800-1FFF 2
+ENTRY 2B-5C8 2
+ENTRY 800-1FFF 2
+IDLOC 2000-2003 2
+CODE 2B-5C8 2
+CODE 800-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+EEDATA 2100-21FF 2
+STRCODE 2B-5C8 2
+STRCODE 800-1FFF 2
+STRING 2B-5C8 2
+STRING 800-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\LCD-I2C.X.production.o
+7F5 cinit CODE >475:C:\Users\pc1\AppData\Local\Temp\xcAsevs.\driver_tmp_1.s
+7F5 cinit CODE >478:C:\Users\pc1\AppData\Local\Temp\xcAsevs.\driver_tmp_1.s
+7F5 cinit CODE >498:C:\Users\pc1\AppData\Local\Temp\xcAsevs.\driver_tmp_1.s
+7FA cinit CODE >499:C:\Users\pc1\AppData\Local\Temp\xcAsevs.\driver_tmp_1.s
+7FB cinit CODE >503:C:\Users\pc1\AppData\Local\Temp\xcAsevs.\driver_tmp_1.s
+7FC cinit CODE >509:C:\Users\pc1\AppData\Local\Temp\xcAsevs.\driver_tmp_1.s
+7FC cinit CODE >511:C:\Users\pc1\AppData\Local\Temp\xcAsevs.\driver_tmp_1.s
+7FD cinit CODE >512:C:\Users\pc1\AppData\Local\Temp\xcAsevs.\driver_tmp_1.s
+5F2 text14 CODE >106:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+5F2 text14 CODE >108:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+5F6 text14 CODE >109:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+5F9 text14 CODE >110:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+5FA text14 CODE >111:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+5FC text14 CODE >112:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+5FD text14 CODE >113:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+5FE text14 CODE >114:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+5FF text13 CODE >116:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+5FF text13 CODE >118:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+60B text13 CODE >119:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+5CA text12 CODE >121:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+5CA text12 CODE >123:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+5CF text12 CODE >124:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+5D2 text12 CODE >125:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+5D3 text11 CODE >133:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+5D3 text11 CODE >135:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+5D8 text11 CODE >136:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+5DB text11 CODE >137:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+60C text10 CODE >153:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+60D text10 CODE >155:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+612 text10 CODE >156:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+616 text10 CODE >157:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+61A text10 CODE >158:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+61B text10 CODE >160:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+635 text9 CODE >196:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+636 text9 CODE >198:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+63B text9 CODE >199:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+643 text9 CODE >200:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+64A text9 CODE >201:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+64F text9 CODE >202:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+61C text8 CODE >204:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+61D text8 CODE >207:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+621 text8 CODE >208:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+628 text8 CODE >209:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+62F text8 CODE >210:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+634 text8 CODE >211:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+650 text7 CODE >213:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+651 text7 CODE >215:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+654 text7 CODE >216:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+65B text7 CODE >217:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+65E text7 CODE >217:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+661 text7 CODE >217:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+663 text7 CODE >217:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+66B text7 CODE >218:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+759 text6 CODE >173:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+75A text6 CODE >175:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+75E text6 CODE >176:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+764 text6 CODE >177:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+76C text6 CODE >178:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+772 text6 CODE >179:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+77B text6 CODE >180:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+781 text6 CODE >181:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+78A text6 CODE >182:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+790 text6 CODE >183:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+799 text6 CODE >184:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+79F text6 CODE >185:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+7A8 text6 CODE >186:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+7AE text6 CODE >187:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+7BB text6 CODE >188:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+7C1 text6 CODE >189:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+7CE text6 CODE >190:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+7D4 text6 CODE >191:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+7E1 text6 CODE >192:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+7E7 text6 CODE >193:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+7F4 text6 CODE >194:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+66C text5 CODE >220:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+66D text5 CODE >222:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+671 text5 CODE >223:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+678 text5 CODE >224:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+67B text5 CODE >224:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+67E text5 CODE >224:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+680 text5 CODE >224:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+688 text5 CODE >225:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+689 text4 CODE >227:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+689 text4 CODE >229:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+68C text4 CODE >230:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+69B text4 CODE >230:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+6A8 text4 CODE >230:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+6AC text4 CODE >231:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+5DC text3 CODE >263:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+5DC text3 CODE >265:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+5E2 text3 CODE >266:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+5E6 text3 CODE >267:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+5E7 text2 CODE >269:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+5E7 text2 CODE >271:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+5ED text2 CODE >272:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+5F1 text2 CODE >273:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+6AD text1 CODE >233:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+6AE text1 CODE >235:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+6AF text1 CODE >238:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+6B6 text1 CODE >239:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+6B7 text1 CODE >241:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+6BE text1 CODE >242:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+6BF text1 CODE >244:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+6C6 text1 CODE >245:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+6C7 text1 CODE >247:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+6CE text1 CODE >248:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+6D1 text1 CODE >248:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+6D4 text1 CODE >248:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+6D7 text1 CODE >248:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+6DA text1 CODE >249:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+6DB maintext CODE >78:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+6DB maintext CODE >81:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+6E0 maintext CODE >82:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+6E6 maintext CODE >85:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+6EE maintext CODE >86:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+6F5 maintext CODE >87:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+6FD maintext CODE >88:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+704 maintext CODE >89:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+711 maintext CODE >94:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+716 maintext CODE >95:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+722 maintext CODE >96:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+727 maintext CODE >97:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+733 maintext CODE >98:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+738 maintext CODE >99:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+744 maintext CODE >100:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+749 maintext CODE >101:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\15-i2c lcd\LCD-I2C.X\newmain.c
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\LCD-I2C.X.production.o
+__Hspace_0 800 0 ABS 0 - -
+__Hspace_1 7E 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 400F 0 ABS 0 - -
+_LCD_Write_4Bit C38 0 CODE 0 text8 dist/default/production\LCD-I2C.X.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__end_of_LCD_SL BCE 0 CODE 0 text3 dist/default/production\LCD-I2C.X.production.o
+__end_of_LCD_SR BE4 0 CODE 0 text2 dist/default/production\LCD-I2C.X.production.o
+_RS 21 0 BANK0 1 bssBANK0 dist/default/production\LCD-I2C.X.production.o
+__L__absolute__ 0 0 ABS 0 __absolute__ -
+LCD_CMD@CMD 75 0 COMMON 1 cstackCOMMON dist/default/production\LCD-I2C.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+_RCEN 48B 0 ABS 0 - dist/default/production\LCD-I2C.X.production.o
+_RSEN 489 0 ABS 0 - dist/default/production\LCD-I2C.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\pc1\AppData\Local\Temp\xcAsevs.\driver_tmp_12.o
+_main DB6 0 CODE 0 maintext dist/default/production\LCD-I2C.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\LCD-I2C.X.production.o
+___stack_hi 0 0 STACK 2 stack C:\Users\pc1\AppData\Local\Temp\xcAsevs.\driver_tmp_12.o
+___stack_lo 0 0 STACK 2 stack C:\Users\pc1\AppData\Local\Temp\xcAsevs.\driver_tmp_12.o
+start 0 0 CODE 0 init C:\Users\pc1\AppData\Local\Temp\xcAsevs.\driver_tmp_12.o
+_LCD_Init EB2 0 CODE 0 text6 dist/default/production\LCD-I2C.X.production.o
+__Hpowerup 0 0 CODE 0 powerup -
+__HdataCOMMON 0 0 ABS 0 dataCOMMON -
+__end_of_LCD_Init FEA 0 CODE 0 text6 dist/default/production\LCD-I2C.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\pc1\AppData\Local\Temp\xcAsevs.\driver_tmp_12.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\pc1\AppData\Local\Temp\xcAsevs.\driver_tmp_12.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\pc1\AppData\Local\Temp\xcAsevs.\driver_tmp_12.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\pc1\AppData\Local\Temp\xcAsevs.\driver_tmp_12.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\pc1\AppData\Local\Temp\xcAsevs.\driver_tmp_12.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\pc1\AppData\Local\Temp\xcAsevs.\driver_tmp_12.o
+__end_of_LCD_Write_4Bit C6A 0 CODE 0 text8 dist/default/production\LCD-I2C.X.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production\LCD-I2C.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+LCD_Print_String@i 77 0 COMMON 1 cstackCOMMON dist/default/production\LCD-I2C.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+LCD_Print_Char@Data 75 0 COMMON 1 cstackCOMMON dist/default/production\LCD-I2C.X.production.o
+__pidataCOMMON B92 0 CODE 0 idataCOMMON dist/default/production\LCD-I2C.X.production.o
+__LdataCOMMON 0 0 ABS 0 dataCOMMON -
+_i2c_add 20 0 BANK0 1 nvBANK0 dist/default/production\LCD-I2C.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+_LCD_Print_Char CD8 0 CODE 0 text5 dist/default/production\LCD-I2C.X.production.o
+__LnvBANK0 0 0 ABS 0 nvBANK0 -
+___stackhi 0 0 ABS 0 - C:\Users\pc1\AppData\Local\Temp\xcAsevs.\driver_tmp_12.o
+___stacklo 0 0 ABS 0 - C:\Users\pc1\AppData\Local\Temp\xcAsevs.\driver_tmp_12.o
+__end_of_LCD_CMD CD8 0 CODE 0 text7 dist/default/production\LCD-I2C.X.production.o
+__LidataCOMMON 0 0 ABS 0 idataCOMMON -
+_LCD_SL BB8 0 CODE 0 text3 dist/default/production\LCD-I2C.X.production.o
+_LCD_SR BCE 0 CODE 0 text2 dist/default/production\LCD-I2C.X.production.o
+_LCD_Print_String D12 0 CODE 0 text4 dist/default/production\LCD-I2C.X.production.o
+start_initialization FEA 0 CODE 0 cinit dist/default/production\LCD-I2C.X.production.o
+_ACKSTAT 48E 0 ABS 0 - dist/default/production\LCD-I2C.X.production.o
+_SSPADD 93 0 ABS 0 - dist/default/production\LCD-I2C.X.production.o
+_SSPBUF 13 0 ABS 0 - dist/default/production\LCD-I2C.X.production.o
+_SSPCON 14 0 ABS 0 - dist/default/production\LCD-I2C.X.production.o
+__end_of_LCD_Print_Char D12 0 CODE 0 text5 dist/default/production\LCD-I2C.X.production.o
+_TRISC3 43B 0 ABS 0 - dist/default/production\LCD-I2C.X.production.o
+_TRISC4 43C 0 ABS 0 - dist/default/production\LCD-I2C.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\pc1\AppData\Local\Temp\xcAsevs.\driver_tmp_12.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 1000 0 CODE 0 cinit -
+__Hstack 0 0 STACK 2 stack -
+__stringbase 10 0 STRING 0 strings dist/default/production\LCD-I2C.X.production.o
+__Hmaintext 0 0 ABS 0 maintext -
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4010 0 CONFIG 4 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit FEA 0 CODE 0 cinit -
+__Lstack 0 0 STACK 2 stack -
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hheap 0 0 HEAP 7 heap -
+__Hinit 0 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsivt 0 0 CODE 0 sivt -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Lheap 0 0 HEAP 7 heap -
+__Linit 0 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsivt 0 0 CODE 0 sivt -
+__Ltext 0 0 ABS 0 text -
+__pnvBANK0 20 0 BANK0 1 nvBANK0 dist/default/production\LCD-I2C.X.production.o
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+LCD_Init@I2C_Add 79 0 COMMON 1 cstackCOMMON dist/default/production\LCD-I2C.X.production.o
+_PEN 48A 0 ABS 0 - dist/default/production\LCD-I2C.X.production.o
+_SEN 488 0 ABS 0 - dist/default/production\LCD-I2C.X.production.o
+__S0 800 0 ABS 0 - -
+__S1 7E 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__end_of_LCD_Print_String D5A 0 CODE 0 text4 dist/default/production\LCD-I2C.X.production.o
+__end_of_IO_Expander_Write CA0 0 CODE 0 text9 dist/default/production\LCD-I2C.X.production.o
+_I2C_Master_Start B94 0 CODE 0 text12 dist/default/production\LCD-I2C.X.production.o
+__HidataCOMMON 0 0 ABS 0 idataCOMMON -
+_I2C_Master_Write C18 0 CODE 0 text10 dist/default/production\LCD-I2C.X.production.o
+__HnvBANK0 0 0 ABS 0 nvBANK0 -
+__Lintentry 0 0 CODE 0 intentry -
+__stringtab 6 0 STRING 0 strings dist/default/production\LCD-I2C.X.production.o
+I2C_Master_Write@data 70 0 COMMON 1 cstackCOMMON dist/default/production\LCD-I2C.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\pc1\AppData\Local\Temp\xcAsevs.\driver_tmp_12.o
+_LCD_Set_Cursor D5A 0 CODE 0 text1 dist/default/production\LCD-I2C.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__ptext10 C18 0 CODE 0 text10 dist/default/production\LCD-I2C.X.production.o
+__ptext11 BA6 0 CODE 0 text11 dist/default/production\LCD-I2C.X.production.o
+__ptext12 B94 0 CODE 0 text12 dist/default/production\LCD-I2C.X.production.o
+__ptext13 BFE 0 CODE 0 text13 dist/default/production\LCD-I2C.X.production.o
+__ptext14 BE4 0 CODE 0 text14 dist/default/production\LCD-I2C.X.production.o
+__pmaintext DB6 0 CODE 0 maintext dist/default/production\LCD-I2C.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+_LCD_CMD CA0 0 CODE 0 text7 dist/default/production\LCD-I2C.X.production.o
+LCD_Set_Cursor@COL 76 0 COMMON 1 cstackCOMMON dist/default/production\LCD-I2C.X.production.o
+LCD_Set_Cursor@ROW 77 0 COMMON 1 cstackCOMMON dist/default/production\LCD-I2C.X.production.o
+__end_of_I2C_Master_Init BFE 0 CODE 0 text14 dist/default/production\LCD-I2C.X.production.o
+__end_of_I2C_Master_Stop BB8 0 CODE 0 text11 dist/default/production\LCD-I2C.X.production.o
+__end_of_I2C_Master_Wait C18 0 CODE 0 text13 dist/default/production\LCD-I2C.X.production.o
+__end_of__stringtab 12 0 STRING 0 strings dist/default/production\LCD-I2C.X.production.o
+__end_of_LCD_Set_Cursor DB6 0 CODE 0 text1 dist/default/production\LCD-I2C.X.production.o
+_IO_Expander_Write C6A 0 CODE 0 text9 dist/default/production\LCD-I2C.X.production.o
+__end_of_I2C_Master_Start BA6 0 CODE 0 text12 dist/default/production\LCD-I2C.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__end_of_I2C_Master_Write C38 0 CODE 0 text10 dist/default/production\LCD-I2C.X.production.o
+__Lend_init 0 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization FF8 0 CODE 0 cinit dist/default/production\LCD-I2C.X.production.o
+__Hintentry 0 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+__Hreset_vec 0 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__ptext1 D5A 0 CODE 0 text1 dist/default/production\LCD-I2C.X.production.o
+__ptext2 BCE 0 CODE 0 text2 dist/default/production\LCD-I2C.X.production.o
+__ptext3 BB8 0 CODE 0 text3 dist/default/production\LCD-I2C.X.production.o
+__ptext4 D12 0 CODE 0 text4 dist/default/production\LCD-I2C.X.production.o
+__ptext5 CD8 0 CODE 0 text5 dist/default/production\LCD-I2C.X.production.o
+__ptext6 EB2 0 CODE 0 text6 dist/default/production\LCD-I2C.X.production.o
+__ptext7 CA0 0 CODE 0 text7 dist/default/production\LCD-I2C.X.production.o
+__ptext8 C38 0 CODE 0 text8 dist/default/production\LCD-I2C.X.production.o
+__ptext9 C6A 0 CODE 0 text9 dist/default/production\LCD-I2C.X.production.o
+LCD_Write_4Bit@Nibble 73 0 COMMON 1 cstackCOMMON dist/default/production\LCD-I2C.X.production.o
+LCD_Print_String@Str 76 0 COMMON 1 cstackCOMMON dist/default/production\LCD-I2C.X.production.o
+IO_Expander_Write@Data 71 0 COMMON 1 cstackCOMMON dist/default/production\LCD-I2C.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+_I2C_Master_Init BE4 0 CODE 0 text14 dist/default/production\LCD-I2C.X.production.o
+_I2C_Master_Stop BA6 0 CODE 0 text11 dist/default/production\LCD-I2C.X.production.o
+_I2C_Master_Wait BFE 0 CODE 0 text13 dist/default/production\LCD-I2C.X.production.o
+__H__absolute__ 0 0 ABS 0 __absolute__ -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+___heap_hi 0 0 ABS 0 - C:\Users\pc1\AppData\Local\Temp\xcAsevs.\driver_tmp_12.o
+___heap_lo 0 0 ABS 0 - C:\Users\pc1\AppData\Local\Temp\xcAsevs.\driver_tmp_12.o
+_BackLight_State 7D 0 COMMON 1 dataCOMMON dist/default/production\LCD-I2C.X.production.o
+__end_of__initialization FF8 0 CODE 0 cinit dist/default/production\LCD-I2C.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__Lclrtext 0 0 ABS 0 clrtext -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\LCD-I2C.X.production.o
+_SSPCON2 91 0 ABS 0 - dist/default/production\LCD-I2C.X.production.o
+_SSPSTAT 94 0 ABS 0 - dist/default/production\LCD-I2C.X.production.o
+__Hend_init 6 0 CODE 0 end_init -
+__end_of_main EB2 0 CODE 0 maintext dist/default/production\LCD-I2C.X.production.o
+_ACKDT 48D 0 ABS 0 - dist/default/production\LCD-I2C.X.production.o
+_ACKEN 48C 0 ABS 0 - dist/default/production\LCD-I2C.X.production.o
+_SSPIF 63 0 ABS 0 - dist/default/production\LCD-I2C.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+__initialization FEA 0 CODE 0 cinit dist/default/production\LCD-I2C.X.production.o
+__pbssBANK0 21 0 BANK0 1 bssBANK0 dist/default/production\LCD-I2C.X.production.o
+__pdataCOMMON 7D 0 COMMON 1 dataCOMMON dist/default/production\LCD-I2C.X.production.o
+__pstrings 6 0 STRING 0 strings dist/default/production\LCD-I2C.X.production.o
+___int_stack_hi 0 0 STACK 2 stack C:\Users\pc1\AppData\Local\Temp\xcAsevs.\driver_tmp_12.o
+___int_stack_lo 0 0 STACK 2 stack C:\Users\pc1\AppData\Local\Temp\xcAsevs.\driver_tmp_12.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 7F5 FEA B 2
+text1 0 6AD D5A 2E 2
+text2 0 5E7 BCE B 2
+text3 0 5DC BB8 B 2
+text4 0 689 D12 24 2
+text5 0 66C CD8 1D 2
+text6 0 759 EB2 9C 2
+text7 0 650 CA0 1C 2
+text8 0 61C C38 19 2
+text9 0 635 C6A 1B 2
+text10 0 60C C18 10 2
+text11 0 5D3 BA6 9 2
+text12 0 5CA B94 9 2
+text13 0 5FF BFE D 2
+text14 0 5F2 BE4 D 2
+nvBANK0 1 20 20 2 1
+idataCOMMON 0 5C9 B92 1 2
+maintext 0 6DB DB6 7E 2
+cstackCOMMON 1 70 70 E 1
+reset_vec 0 0 0 3 2
+strings 0 3 6 28 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
