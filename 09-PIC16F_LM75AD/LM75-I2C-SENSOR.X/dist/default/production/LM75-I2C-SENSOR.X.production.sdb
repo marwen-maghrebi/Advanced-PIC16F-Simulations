@@ -1,0 +1,718 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\__fpclassifyf.c
+[v ___fpclassifyf __fpclassifyf `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\atoi.c
+[v _atoi atoi `(i  1 e 2 0 ]
+"193 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\doprnt.c
+[v _pad pad `(v  1 s 1 pad ]
+"587
+[v _efgtoa efgtoa `(v  1 s 1 efgtoa ]
+"1158
+[v _read_prec_or_width read_prec_or_width `(i  1 s 2 read_prec_or_width ]
+"1177
+[v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
+"1817
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\flneg.c
+[v ___flneg __flneg `(d  1 e 4 0 ]
+"3 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\floorf.c
+[v _floorf floorf `(f  1 e 4 0 ]
+"43 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"1 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\labs.c
+[v _labs labs `(l  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\memcpy.c
+[v _memcpy memcpy `(*.5v  1 e 1 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+"9 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"242
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"3 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\strcpy.c
+[v _strcpy strcpy `(*.5uc  1 e 1 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"5 C:\Users\pc1\Desktop\LM75-I2C-SENSOR.X\i2c.c
+[v _I2C_Master_Init I2C_Master_Init `(v  1 e 1 0 ]
+"14
+[v _I2C_Master_Wait I2C_Master_Wait `(v  1 e 1 0 ]
+"18
+[v _I2C_Master_Start I2C_Master_Start `(v  1 e 1 0 ]
+"23
+[v _I2C_Master_RepeatedStart I2C_Master_RepeatedStart `(v  1 e 1 0 ]
+"28
+[v _I2C_Master_Stop I2C_Master_Stop `(v  1 e 1 0 ]
+"33
+[v _I2C_ACK I2C_ACK `(v  1 e 1 0 ]
+"39
+[v _I2C_NACK I2C_NACK `(v  1 e 1 0 ]
+"45
+[v _I2C_Master_Write I2C_Master_Write `(uc  1 e 1 0 ]
+"53
+[v _I2C_Read_Byte I2C_Read_Byte `(uc  1 e 1 0 ]
+"6 C:\Users\pc1\Desktop\LM75-I2C-SENSOR.X\LM75.c
+[v _LM75_init LM75_init `(v  1 e 1 0 ]
+"13
+[v _LM75_read LM75_read `(f  1 e 4 0 ]
+"33
+[v _LM75_setConfig LM75_setConfig `(v  1 e 1 0 ]
+"44
+[v _LM75_readConfig LM75_readConfig `(uc  1 e 1 0 ]
+"60
+[v _LM75_set LM75_set `(v  1 e 1 0 ]
+"72
+[v _toFloat toFloat `(f  1 e 4 0 ]
+"98
+[v _LM75_setDeviceMode LM75_setDeviceMode `(v  1 e 1 0 ]
+"109
+[v _LM75_setOSPolarity LM75_setOSPolarity `(v  1 e 1 0 ]
+"120
+[v _LM75_setFaultQueue LM75_setFaultQueue `(v  1 e 1 0 ]
+"168
+[v _LM75_getHysteresisTemperature LM75_getHysteresisTemperature `(f  1 e 4 0 ]
+"178
+[v _LM75_getOSTripTemperature LM75_getOSTripTemperature `(f  1 e 4 0 ]
+"189
+[v _LM75_setHysteresisTemperature LM75_setHysteresisTemperature `(v  1 e 1 0 ]
+"196
+[v _LM75_setOSTripTemperature LM75_setOSTripTemperature `(v  1 e 1 0 ]
+"6 C:\Users\pc1\Desktop\LM75-I2C-SENSOR.X\main.c
+[v _main main `(i  1 e 2 0 ]
+"6 C:\Users\pc1\Desktop\LM75-I2C-SENSOR.X\uart.c
+[v _UART_TX_Init UART_TX_Init `(v  1 e 1 0 ]
+"17
+[v _UART_TX_Empty UART_TX_Empty `(uc  1 e 1 0 ]
+"21
+[v _UART_Write UART_Write `(v  1 e 1 0 ]
+"26
+[v _UART_Write_Text UART_Write_Text `(v  1 e 1 0 ]
+"32
+[v _UART_Read UART_Read `(uc  1 e 1 0 ]
+"37
+[v _UART_Read_Text UART_Read_Text `(v  1 e 1 0 ]
+"808 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+"815
+[v _SSPCON SSPCON `VEuc  1 e 1 @20 ]
+"1059
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"1066
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+"1754
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @145 ]
+"1823
+[v _SSPADD SSPADD `VEuc  1 e 1 @147 ]
+"1830
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @148 ]
+"2080
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"2378
+[v _ACKDT ACKDT `VEb  1 e 0 @1165 ]
+"2381
+[v _ACKEN ACKEN `VEb  1 e 0 @1164 ]
+"2384
+[v _ACKSTAT ACKSTAT `VEb  1 e 0 @1166 ]
+"2420
+[v _BRGH BRGH `VEb  1 e 0 @1218 ]
+"2519
+[v _CREN CREN `VEb  1 e 0 @196 ]
+"2636
+[v _PEN PEN `VEb  1 e 0 @1162 ]
+"2678
+[v _RB0 RB0 `VEb  1 e 0 @48 ]
+"2681
+[v _RB1 RB1 `VEb  1 e 0 @49 ]
+"2684
+[v _RB2 RB2 `VEb  1 e 0 @50 ]
+"2741
+[v _RCEN RCEN `VEb  1 e 0 @1163 ]
+"2747
+[v _RCIF RCIF `VEb  1 e 0 @101 ]
+"2795
+[v _RSEN RSEN `VEb  1 e 0 @1161 ]
+"2810
+[v _SEN SEN `VEb  1 e 0 @1160 ]
+"2816
+[v _SPEN SPEN `VEb  1 e 0 @199 ]
+"2828
+[v _SSPIF SSPIF `VEb  1 e 0 @99 ]
+"2846
+[v _SYNC SYNC `VEb  1 e 0 @1220 ]
+"2972
+[v _TRISC3 TRISC3 `VEb  1 e 0 @1083 ]
+"2975
+[v _TRISC4 TRISC4 `VEb  1 e 0 @1084 ]
+"2981
+[v _TRISC6 TRISC6 `VEb  1 e 0 @1086 ]
+"2984
+[v _TRISC7 TRISC7 `VEb  1 e 0 @1087 ]
+"3020
+[v _TRMT TRMT `VEb  1 e 0 @1217 ]
+"3035
+[v _TXEN TXEN `VEb  1 e 0 @1221 ]
+"153 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\doprnt.c
+[v _prec prec `i  1 s 2 prec ]
+[v _width width `i  1 s 2 width ]
+"154
+[v _flags flags `uc  1 s 1 flags ]
+"185
+[v _dbuf dbuf `[80]uc  1 s 80 dbuf ]
+"6 C:\Users\pc1\Desktop\LM75-I2C-SENSOR.X\main.c
+[v _main main `(i  1 e 2 0 ]
+{
+"7
+[v main@buffer buffer `[64]uc  1 a 64 0 ]
+"12
+[v main@osTripTemp osTripTemp `f  1 a 4 72 ]
+[v main@currentTemp currentTemp `f  1 a 4 68 ]
+[v main@hysteresisTemp hysteresisTemp `f  1 a 4 64 ]
+"69
+} 0
+"9 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[u S682 . 2 `*.39uc 1 buffer 2 0 `*.1DCuc 1 source 1 0 ]
+"13
+[s S685 _IO_FILE 11 `S682 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v sprintf@f f `S685  1 a 11 67 ]
+"12
+[v sprintf@ap ap `[1]*.4v  1 a 1 66 ]
+"9
+[v sprintf@s s `*.5uc  1 p 1 53 ]
+[v sprintf@fmt fmt `*.25DCuc  1 p 2 54 ]
+"23
+} 0
+"1817 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\doprnt.c
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+{
+"1820
+[v vfprintf@cfmt cfmt `*.25uc  1 a 2 63 ]
+[s S717 _IO_FILE 0 ]
+"1817
+[v vfprintf@fp fp `*.39S717  1 p 2 48 ]
+[v vfprintf@fmt fmt `*.25DCuc  1 p 2 50 ]
+[v vfprintf@ap ap `*.4*.4v  1 p 1 52 ]
+"1840
+} 0
+"1177
+[v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
+{
+[u S767 . 4 `d 1 f 4 0 ]
+"1188
+[v vfpfcnvrt@convarg convarg `S767  1 a 4 56 ]
+"1179
+[v vfpfcnvrt@cp cp `*.25uc  1 a 2 61 ]
+[v vfpfcnvrt@c c `uc  1 a 1 60 ]
+[s S717 _IO_FILE 0 ]
+"1177
+[v vfpfcnvrt@fp fp `*.39S717  1 p 2 44 ]
+[v vfpfcnvrt@fmt fmt `*.4*.25uc  1 p 1 46 ]
+[v vfpfcnvrt@ap ap `*.4*.4v  1 p 1 47 ]
+"1814
+} 0
+"1158
+[v _read_prec_or_width read_prec_or_width `(i  1 s 2 read_prec_or_width ]
+{
+"1164
+[v read_prec_or_width@c c `uc  1 a 1 10 ]
+"1159
+[v read_prec_or_width@n n `i  1 a 2 11 ]
+"1158
+[v read_prec_or_width@fmt fmt `*.4*.25DCuc  1 p 1 6 ]
+[v read_prec_or_width@ap ap `*.4[1]*.4v  1 p 1 7 ]
+"1171
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"587 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\doprnt.c
+[v _efgtoa efgtoa `(v  1 s 1 efgtoa ]
+{
+[u S730 flui 4 `d 1 f 4 0 `l 1 u 4 0 ]
+"592
+[v efgtoa@u u `S730  1 a 4 40 ]
+[v efgtoa@g g `S730  1 a 4 36 ]
+"591
+[v efgtoa@l l `d  1 a 4 29 ]
+[v efgtoa@h h `d  1 a 4 25 ]
+"592
+[v efgtoa@ou ou `S730  1 a 4 19 ]
+"590
+[v efgtoa@n n `i  1 a 2 34 ]
+[v efgtoa@i i `i  1 a 2 23 ]
+[v efgtoa@w w `i  1 a 2 17 ]
+[v efgtoa@e e `i  1 a 2 15 ]
+[v efgtoa@m m `i  1 a 2 13 ]
+[v efgtoa@d d `i  1 a 2 11 ]
+[v efgtoa@t t `i  1 a 2 4 ]
+[v efgtoa@p p `i  1 a 2 2 ]
+[v efgtoa@ne ne `i  1 a 2 0 ]
+"589
+[v efgtoa@sign sign `uc  1 a 1 33 ]
+[v efgtoa@nmode nmode `uc  1 a 1 10 ]
+[v efgtoa@mode mode `uc  1 a 1 9 ]
+[v efgtoa@pp pp `uc  1 a 1 8 ]
+[s S717 _IO_FILE 0 ]
+"587
+[v efgtoa@fp fp `*.39S717  1 p 2 41 ]
+[v efgtoa@f f `d  1 p 4 43 ]
+[v efgtoa@c c `uc  1 p 1 47 ]
+"868
+} 0
+"3 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\strcpy.c
+[v _strcpy strcpy `(*.5uc  1 e 1 0 ]
+{
+"5
+[v strcpy@d d `*.5uc  1 a 1 5 ]
+"3
+[v strcpy@dest dest `*.5uc  1 p 1 0 ]
+[v strcpy@src src `*.25DCuc  1 p 2 1 ]
+"8
+} 0
+"193 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\doprnt.c
+[v _pad pad `(v  1 s 1 pad ]
+{
+"195
+[v pad@i i `i  1 a 2 13 ]
+[s S717 _IO_FILE 0 ]
+"193
+[v pad@fp fp `*.39S717  1 p 2 8 ]
+[v pad@buf buf `*.5uc  1 p 1 10 ]
+[v pad@p p `i  1 p 2 11 ]
+"226
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+{
+"11
+[v fputs@i i `i  1 a 2 6 ]
+"10
+[v fputs@c c `uc  1 a 1 5 ]
+"8
+[v fputs@s s `*.5DCuc  1 p 1 0 ]
+[u S682 . 2 `*.39uc 1 buffer 2 0 `*.1DCuc 1 source 1 0 ]
+[s S685 _IO_FILE 11 `S682 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputs@fp fp `*.39S685  1 p 2 1 ]
+"19
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+{
+[v fputc@c c `i  1 p 2 0 ]
+[u S682 . 2 `*.39uc 1 buffer 2 0 `*.1DCuc 1 source 1 0 ]
+[s S685 _IO_FILE 11 `S682 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputc@fp fp `*.39S685  1 p 2 2 ]
+"24
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+"9
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\memcpy.c
+[v _memcpy memcpy `(*.5v  1 e 1 0 ]
+{
+"8
+[v memcpy@s s `*.5DCuc  1 a 1 6 ]
+"7
+[v memcpy@d d `*.5uc  1 a 1 5 ]
+"9
+[v memcpy@tmp tmp `uc  1 a 1 4 ]
+"4
+[v memcpy@d1 d1 `*.5v  1 p 1 0 ]
+[v memcpy@s1 s1 `*.5DCv  1 p 1 1 ]
+[v memcpy@n n `ui  1 p 2 2 ]
+"18
+} 0
+"1 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\labs.c
+[v _labs labs `(l  1 e 4 0 ]
+{
+[v labs@a a `l  1 p 4 0 ]
+"4
+} 0
+"3 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\floorf.c
+[v _floorf floorf `(f  1 e 4 0 ]
+{
+[u S839 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+"5
+[v floorf@u u `S839  1 a 4 29 ]
+"7
+[v floorf@m m `ul  1 a 4 23 ]
+"6
+[v floorf@e e `i  1 a 2 27 ]
+"3
+[v floorf@x x `f  1 p 4 13 ]
+"4
+[v floorf@F521 F521 `S839  1 s 4 F521 ]
+"27
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\__fpclassifyf.c
+[v ___fpclassifyf __fpclassifyf `(i  1 e 2 0 ]
+{
+[u S839 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+"6
+[v ___fpclassifyf@u u `S839  1 a 4 2 ]
+"7
+[v ___fpclassifyf@e e `i  1 a 2 0 ]
+"4
+[v ___fpclassifyf@x x `f  1 p 4 0 ]
+"5
+[v ___fpclassifyf@F465 F465 `S839  1 s 4 F465 ]
+"11
+} 0
+"242 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcadd.c
+[v ___flsub __flsub `(d  1 e 4 0 ]
+{
+[v ___flsub@a a `d  1 p 4 21 ]
+[v ___flsub@b b `d  1 p 4 25 ]
+"250
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\flneg.c
+[v ___flneg __flneg `(d  1 e 4 0 ]
+{
+[v ___flneg@f1 f1 `d  1 p 4 0 ]
+"20
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+{
+[v ___flge@ff1 ff1 `d  1 p 4 21 ]
+[v ___flge@ff2 ff2 `d  1 p 4 25 ]
+"19
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+{
+[v ___fleq@ff1 ff1 `d  1 p 4 0 ]
+[v ___fleq@ff2 ff2 `d  1 p 4 4 ]
+"12
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 7 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 0 ]
+"20
+[v ___fldiv@new_exp new_exp `s  1 a 2 5 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 12 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 11 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 4 ]
+"8
+[v ___fldiv@a a `d  1 p 4 0 ]
+[v ___fldiv@b b `d  1 p 4 4 ]
+"185
+} 0
+"26 C:\Users\pc1\Desktop\LM75-I2C-SENSOR.X\uart.c
+[v _UART_Write_Text UART_Write_Text `(v  1 e 1 0 ]
+{
+[v UART_Write_Text@text text `*.26DCuc  1 p 2 1 ]
+"30
+} 0
+"21
+[v _UART_Write UART_Write `(v  1 e 1 0 ]
+{
+[v UART_Write@data data `uc  1 p 1 wreg ]
+[v UART_Write@data data `uc  1 p 1 wreg ]
+[v UART_Write@data data `uc  1 p 1 0 ]
+"24
+} 0
+"17
+[v _UART_TX_Empty UART_TX_Empty `(uc  1 e 1 0 ]
+{
+"19
+} 0
+"6
+[v _UART_TX_Init UART_TX_Init `(v  1 e 1 0 ]
+{
+"15
+} 0
+"196 C:\Users\pc1\Desktop\LM75-I2C-SENSOR.X\LM75.c
+[v _LM75_setOSTripTemperature LM75_setOSTripTemperature `(v  1 e 1 0 ]
+{
+"198
+[v LM75_setOSTripTemperature@data data `i  1 a 2 45 ]
+"196
+[v LM75_setOSTripTemperature@temperature temperature `f  1 p 4 41 ]
+"200
+} 0
+"109
+[v _LM75_setOSPolarity LM75_setOSPolarity `(v  1 e 1 0 ]
+{
+[v LM75_setOSPolarity@activeHigh activeHigh `uc  1 p 1 wreg ]
+"111
+[v LM75_setOSPolarity@config config `uc  1 a 1 3 ]
+"109
+[v LM75_setOSPolarity@activeHigh activeHigh `uc  1 p 1 wreg ]
+"111
+[v LM75_setOSPolarity@activeHigh activeHigh `uc  1 p 1 2 ]
+"117
+} 0
+"189
+[v _LM75_setHysteresisTemperature LM75_setHysteresisTemperature `(v  1 e 1 0 ]
+{
+"191
+[v LM75_setHysteresisTemperature@data data `i  1 a 2 45 ]
+"189
+[v LM75_setHysteresisTemperature@temperature temperature `f  1 p 4 41 ]
+"193
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S531 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S536 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S539 . 4 `l 1 i 4 0 `d 1 f 4 0 `S531 1 fAsBytes 4 0 `S536 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S539  1 a 4 15 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 9 ]
+[s S608 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S611 . 2 `s 1 i 2 0 `us 1 n 2 0 `S608 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S611  1 a 2 19 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 14 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 13 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 8 ]
+"8
+[v ___flmul@b b `d  1 p 4 0 ]
+[v ___flmul@a a `d  1 p 4 4 ]
+"205
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+{
+[v __Umul8_16@multiplier multiplier `uc  1 p 1 wreg ]
+"6
+[v __Umul8_16@word_mpld word_mpld `us  1 a 2 6 ]
+"5
+[v __Umul8_16@product product `us  1 a 2 4 ]
+"4
+[v __Umul8_16@multiplier multiplier `uc  1 p 1 wreg ]
+[v __Umul8_16@multiplicand multiplicand `uc  1 p 1 0 ]
+[v __Umul8_16@multiplier multiplier `uc  1 p 1 8 ]
+"60
+} 0
+"60 C:\Users\pc1\Desktop\LM75-I2C-SENSOR.X\LM75.c
+[v _LM75_set LM75_set `(v  1 e 1 0 ]
+{
+[v LM75_set@regAddress regAddress `uc  1 p 1 wreg ]
+[v LM75_set@regAddress regAddress `uc  1 p 1 wreg ]
+[v LM75_set@data data `i  1 p 2 1 ]
+"62
+[v LM75_set@regAddress regAddress `uc  1 p 1 3 ]
+"68
+} 0
+"120
+[v _LM75_setFaultQueue LM75_setFaultQueue `(v  1 e 1 0 ]
+{
+[v LM75_setFaultQueue@faultCount faultCount `uc  1 p 1 wreg ]
+"122
+[v LM75_setFaultQueue@config config `uc  1 a 1 3 ]
+"120
+[v LM75_setFaultQueue@faultCount faultCount `uc  1 p 1 wreg ]
+"122
+[v LM75_setFaultQueue@faultCount faultCount `uc  1 p 1 2 ]
+"142
+} 0
+"98
+[v _LM75_setDeviceMode LM75_setDeviceMode `(v  1 e 1 0 ]
+{
+[v LM75_setDeviceMode@interruptMode interruptMode `uc  1 p 1 wreg ]
+"100
+[v LM75_setDeviceMode@config config `uc  1 a 1 3 ]
+"98
+[v LM75_setDeviceMode@interruptMode interruptMode `uc  1 p 1 wreg ]
+"100
+[v LM75_setDeviceMode@interruptMode interruptMode `uc  1 p 1 2 ]
+"106
+} 0
+"33
+[v _LM75_setConfig LM75_setConfig `(v  1 e 1 0 ]
+{
+[v LM75_setConfig@data data `uc  1 p 1 wreg ]
+[v LM75_setConfig@data data `uc  1 p 1 wreg ]
+"35
+[v LM75_setConfig@data data `uc  1 p 1 1 ]
+"40
+} 0
+"44
+[v _LM75_readConfig LM75_readConfig `(uc  1 e 1 0 ]
+{
+"51
+[v LM75_readConfig@config config `uc  1 a 1 1 ]
+"56
+} 0
+"6
+[v _LM75_init LM75_init `(v  1 e 1 0 ]
+{
+"9
+} 0
+"5 C:\Users\pc1\Desktop\LM75-I2C-SENSOR.X\i2c.c
+[v _I2C_Master_Init I2C_Master_Init `(v  1 e 1 0 ]
+{
+"12
+} 0
+"178 C:\Users\pc1\Desktop\LM75-I2C-SENSOR.X\LM75.c
+[v _LM75_getOSTripTemperature LM75_getOSTripTemperature `(f  1 e 4 0 ]
+{
+"180
+[v LM75_getOSTripTemperature@rawTemp rawTemp `uc  1 a 1 49 ]
+"185
+} 0
+"168
+[v _LM75_getHysteresisTemperature LM75_getHysteresisTemperature `(f  1 e 4 0 ]
+{
+"170
+[v LM75_getHysteresisTemperature@rawTemp rawTemp `uc  1 a 1 49 ]
+"175
+} 0
+"43 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 40 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 39 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 31 ]
+"70
+} 0
+"13 C:\Users\pc1\Desktop\LM75-I2C-SENSOR.X\LM75.c
+[v _LM75_read LM75_read `(f  1 e 4 0 ]
+{
+[v LM75_read@regAddress regAddress `uc  1 p 1 wreg ]
+"15
+[v LM75_read@LSB LSB `i  1 a 2 28 ]
+[v LM75_read@MSB MSB `i  1 a 2 26 ]
+"13
+[v LM75_read@regAddress regAddress `uc  1 p 1 wreg ]
+"17
+[v LM75_read@regAddress regAddress `uc  1 p 1 30 ]
+"29
+} 0
+"72
+[v _toFloat toFloat `(f  1 e 4 0 ]
+{
+"74
+[v toFloat@result result `f  1 a 4 16 ]
+"75
+[v toFloat@isfraction isfraction `uc  1 a 1 15 ]
+"72
+[v toFloat@tempr tempr `i  1 p 2 8 ]
+"83
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 p 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 10 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 9 ]
+"10
+[v ___xxtofl@sign sign `uc  1 p 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 0 ]
+"15
+[v ___xxtofl@sign sign `uc  1 p 1 8 ]
+"44
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+{
+"17
+[v ___fladd@grs grs `uc  1 a 1 11 ]
+"15
+[v ___fladd@bexp bexp `uc  1 a 1 10 ]
+"16
+[v ___fladd@aexp aexp `uc  1 a 1 9 ]
+"13
+[v ___fladd@signs signs `uc  1 a 1 8 ]
+"10
+[v ___fladd@b b `d  1 p 4 0 ]
+[v ___fladd@a a `d  1 p 4 4 ]
+"237
+} 0
+"53 C:\Users\pc1\Desktop\LM75-I2C-SENSOR.X\i2c.c
+[v _I2C_Read_Byte I2C_Read_Byte `(uc  1 e 1 0 ]
+{
+"60
+} 0
+"39
+[v _I2C_NACK I2C_NACK `(v  1 e 1 0 ]
+{
+"43
+} 0
+"45
+[v _I2C_Master_Write I2C_Master_Write `(uc  1 e 1 0 ]
+{
+[v I2C_Master_Write@data data `uc  1 p 1 wreg ]
+[v I2C_Master_Write@data data `uc  1 p 1 wreg ]
+[v I2C_Master_Write@data data `uc  1 p 1 0 ]
+"51
+} 0
+"28
+[v _I2C_Master_Stop I2C_Master_Stop `(v  1 e 1 0 ]
+{
+"31
+} 0
+"18
+[v _I2C_Master_Start I2C_Master_Start `(v  1 e 1 0 ]
+{
+"21
+} 0
+"23
+[v _I2C_Master_RepeatedStart I2C_Master_RepeatedStart `(v  1 e 1 0 ]
+{
+"26
+} 0
+"33
+[v _I2C_ACK I2C_ACK `(v  1 e 1 0 ]
+{
+"37
+} 0
+"14
+[v _I2C_Master_Wait I2C_Master_Wait `(v  1 e 1 0 ]
+{
+"16
+} 0
