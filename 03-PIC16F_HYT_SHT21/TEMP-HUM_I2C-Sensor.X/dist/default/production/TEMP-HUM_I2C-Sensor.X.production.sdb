@@ -1,0 +1,654 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\__fpclassifyf.c
+[v ___fpclassifyf __fpclassifyf `(i  1 e 2 0 ]
+"193 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\doprnt.c
+[v _pad pad `(v  1 s 1 pad ]
+"587
+[v _efgtoa efgtoa `(v  1 s 1 efgtoa ]
+"1158
+[v _read_prec_or_width read_prec_or_width `(i  1 s 2 read_prec_or_width ]
+"1177
+[v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
+"1817
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\flneg.c
+[v ___flneg __flneg `(d  1 e 4 0 ]
+"3 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\floorf.c
+[v _floorf floorf `(f  1 e 4 0 ]
+"43 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"1 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\labs.c
+[v _labs labs `(l  1 e 4 0 ]
+"29 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\logf.c
+[v _logf logf `(f  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\memcpy.c
+[v _memcpy memcpy `(*.5v  1 e 1 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+"9 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"242
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"3 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\strcpy.c
+[v _strcpy strcpy `(*.5uc  1 e 1 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"10 C:\Users\pc1\Desktop\TEMP-HUM_I2C-Sensor.X\HYT-271.c
+[v _HYT271_Init HYT271_Init `(v  1 e 1 0 ]
+"15
+[v _HYT271_StartMeasurement HYT271_StartMeasurement `(v  1 e 1 0 ]
+"62
+[v _HYT271_GetTemperature HYT271_GetTemperature `(f  1 e 4 0 ]
+"66
+[v _HYT271_GetHumidity HYT271_GetHumidity `(f  1 e 4 0 ]
+"5 C:\Users\pc1\Desktop\TEMP-HUM_I2C-Sensor.X\i2c.c
+[v _I2C_Master_Init I2C_Master_Init `(v  1 e 1 0 ]
+"14
+[v _I2C_Master_Wait I2C_Master_Wait `(v  1 e 1 0 ]
+"18
+[v _I2C_Master_Start I2C_Master_Start `(v  1 e 1 0 ]
+"28
+[v _I2C_Master_Stop I2C_Master_Stop `(v  1 e 1 0 ]
+"33
+[v _I2C_ACK I2C_ACK `(v  1 e 1 0 ]
+"39
+[v _I2C_NACK I2C_NACK `(v  1 e 1 0 ]
+"45
+[v _I2C_Master_Write I2C_Master_Write `(uc  1 e 1 0 ]
+"53
+[v _I2C_Read_Byte I2C_Read_Byte `(uc  1 e 1 0 ]
+"13 C:\Users\pc1\Desktop\TEMP-HUM_I2C-Sensor.X\jhd_lcd.c
+[v _LCD_Send LCD_Send `(v  1 s 1 LCD_Send ]
+"22
+[v _LCD_Command LCD_Command `(v  1 e 1 0 ]
+"26
+[v _LCD_Print_Char LCD_Print_Char `(v  1 e 1 0 ]
+"30
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+"62
+[v _LCD_Clear LCD_Clear `(v  1 e 1 0 ]
+"139
+[v _LCD_SetCursor LCD_SetCursor `(v  1 e 1 0 ]
+"149
+[v _LCD_Print_String LCD_Print_String `(v  1 e 1 0 ]
+"15 C:\Users\pc1\Desktop\TEMP-HUM_I2C-Sensor.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"4 C:\Users\pc1\Desktop\TEMP-HUM_I2C-Sensor.X\SHT2x.c
+[v _SHT2x_ReadSensor SHT2x_ReadSensor `(us  1 s 2 SHT2x_ReadSensor ]
+"31
+[v _SHT2x_GetHumidity SHT2x_GetHumidity `(f  1 e 4 0 ]
+"40
+[v _SHT2x_GetTemperature SHT2x_GetTemperature `(f  1 e 4 0 ]
+"808 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+"815
+[v _SSPCON SSPCON `VEuc  1 e 1 @20 ]
+"1754
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @145 ]
+"1823
+[v _SSPADD SSPADD `VEuc  1 e 1 @147 ]
+"1830
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @148 ]
+"2378
+[v _ACKDT ACKDT `VEb  1 e 0 @1165 ]
+"2381
+[v _ACKEN ACKEN `VEb  1 e 0 @1164 ]
+"2384
+[v _ACKSTAT ACKSTAT `VEb  1 e 0 @1166 ]
+"2636
+[v _PEN PEN `VEb  1 e 0 @1162 ]
+"2741
+[v _RCEN RCEN `VEb  1 e 0 @1163 ]
+"2795
+[v _RSEN RSEN `VEb  1 e 0 @1161 ]
+"2810
+[v _SEN SEN `VEb  1 e 0 @1160 ]
+"2828
+[v _SSPIF SSPIF `VEb  1 e 0 @99 ]
+"2972
+[v _TRISC3 TRISC3 `VEb  1 e 0 @1083 ]
+"2975
+[v _TRISC4 TRISC4 `VEb  1 e 0 @1084 ]
+"153 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\doprnt.c
+[v _prec prec `i  1 s 2 prec ]
+[v _width width `i  1 s 2 width ]
+"154
+[v _flags flags `uc  1 s 1 flags ]
+"185
+[v _dbuf dbuf `[80]uc  1 s 80 dbuf ]
+"3 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\errno.c
+[v _errno errno `i  1 e 2 0 ]
+"7 C:\Users\pc1\Desktop\TEMP-HUM_I2C-Sensor.X\HYT-271.c
+[v _endValueTemp endValueTemp `f  1 s 4 endValueTemp ]
+"8
+[v _endValueCap endValueCap `f  1 s 4 endValueCap ]
+"6 C:\Users\pc1\Desktop\TEMP-HUM_I2C-Sensor.X\jhd_lcd.c
+[v __lcd_addr _lcd_addr `uc  1 s 1 _lcd_addr ]
+"7
+[v __displaycontrol _displaycontrol `uc  1 s 1 _displaycontrol ]
+"8
+[v __displaymode _displaymode `uc  1 s 1 _displaymode ]
+"9
+[v __initialized _initialized `uc  1 s 1 _initialized ]
+"13 C:\Users\pc1\Desktop\TEMP-HUM_I2C-Sensor.X\main.c
+[v _displayText displayText `[17]uc  1 e 17 0 ]
+"15
+[v _main main `(v  1 e 1 0 ]
+{
+"33
+[v main@SHT21_humidity SHT21_humidity `f  1 a 4 41 ]
+"32
+[v main@SHT21_temperature SHT21_temperature `f  1 a 4 37 ]
+"29
+[v main@humidityHYT humidityHYT `f  1 a 4 33 ]
+"28
+[v main@temperatureHYT temperatureHYT `f  1 a 4 29 ]
+"50
+} 0
+"9 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[u S687 . 2 `*.39uc 1 buffer 2 0 `*.1DCuc 1 source 1 0 ]
+"13
+[s S690 _IO_FILE 11 `S687 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v sprintf@f f `S690  1 a 11 15 ]
+"12
+[v sprintf@ap ap `[1]*.5v  1 a 1 14 ]
+"9
+[v sprintf@s s `*.5uc  1 p 1 4 ]
+[v sprintf@fmt fmt `*.24DCuc  1 p 1 5 ]
+"23
+} 0
+"1817 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\doprnt.c
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+{
+"1820
+[v vfprintf@cfmt cfmt `*.24uc  1 a 1 77 ]
+[s S722 _IO_FILE 0 ]
+"1817
+[v vfprintf@fp fp `*.39S722  1 p 2 0 ]
+[v vfprintf@fmt fmt `*.24DCuc  1 p 1 2 ]
+[v vfprintf@ap ap `*.5*.5v  1 p 1 3 ]
+"1840
+} 0
+"1177
+[v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
+{
+[u S772 . 4 `d 1 f 4 0 ]
+"1188
+[v vfpfcnvrt@convarg convarg `S772  1 a 4 71 ]
+"1179
+[v vfpfcnvrt@cp cp `*.24uc  1 a 1 76 ]
+[v vfpfcnvrt@c c `uc  1 a 1 75 ]
+[s S722 _IO_FILE 0 ]
+"1177
+[v vfpfcnvrt@fp fp `*.39S722  1 p 2 67 ]
+[v vfpfcnvrt@fmt fmt `*.4*.24uc  1 p 1 69 ]
+[v vfpfcnvrt@ap ap `*.5*.5v  1 p 1 70 ]
+"1814
+} 0
+"1158
+[v _read_prec_or_width read_prec_or_width `(i  1 s 2 read_prec_or_width ]
+{
+"1164
+[v read_prec_or_width@c c `uc  1 a 1 8 ]
+"1159
+[v read_prec_or_width@n n `i  1 a 2 9 ]
+"1158
+[v read_prec_or_width@fmt fmt `*.4*.24DCuc  1 p 1 6 ]
+[v read_prec_or_width@ap ap `*.5[1]*.5v  1 p 1 7 ]
+"1171
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"587 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\doprnt.c
+[v _efgtoa efgtoa `(v  1 s 1 efgtoa ]
+{
+[u S735 flui 4 `d 1 f 4 0 `l 1 u 4 0 ]
+"592
+[v efgtoa@u u `S735  1 a 4 63 ]
+[v efgtoa@g g `S735  1 a 4 59 ]
+"591
+[v efgtoa@l l `d  1 a 4 52 ]
+[v efgtoa@h h `d  1 a 4 48 ]
+"592
+[v efgtoa@ou ou `S735  1 a 4 42 ]
+"590
+[v efgtoa@n n `i  1 a 2 57 ]
+[v efgtoa@i i `i  1 a 2 46 ]
+[v efgtoa@w w `i  1 a 2 40 ]
+[v efgtoa@e e `i  1 a 2 38 ]
+[v efgtoa@m m `i  1 a 2 36 ]
+[v efgtoa@d d `i  1 a 2 34 ]
+[v efgtoa@t t `i  1 a 2 27 ]
+[v efgtoa@p p `i  1 a 2 25 ]
+[v efgtoa@ne ne `i  1 a 2 23 ]
+"589
+[v efgtoa@sign sign `uc  1 a 1 56 ]
+[v efgtoa@nmode nmode `uc  1 a 1 33 ]
+[v efgtoa@mode mode `uc  1 a 1 32 ]
+[v efgtoa@pp pp `uc  1 a 1 31 ]
+[s S722 _IO_FILE 0 ]
+"587
+[v efgtoa@fp fp `*.39S722  1 p 2 12 ]
+[v efgtoa@f f `d  1 p 4 14 ]
+[v efgtoa@c c `uc  1 p 1 18 ]
+"868
+} 0
+"3 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\strcpy.c
+[v _strcpy strcpy `(*.5uc  1 e 1 0 ]
+{
+"5
+[v strcpy@d d `*.5uc  1 a 1 2 ]
+"3
+[v strcpy@dest dest `*.5uc  1 p 1 0 ]
+[v strcpy@src src `*.24DCuc  1 p 1 1 ]
+"8
+} 0
+"193 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\doprnt.c
+[v _pad pad `(v  1 s 1 pad ]
+{
+"195
+[v pad@i i `i  1 a 2 13 ]
+[s S722 _IO_FILE 0 ]
+"193
+[v pad@fp fp `*.39S722  1 p 2 8 ]
+[v pad@buf buf `*.5uc  1 p 1 10 ]
+[v pad@p p `i  1 p 2 11 ]
+"226
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+{
+"11
+[v fputs@i i `i  1 a 2 6 ]
+"10
+[v fputs@c c `uc  1 a 1 5 ]
+"8
+[v fputs@s s `*.5DCuc  1 p 1 0 ]
+[u S687 . 2 `*.39uc 1 buffer 2 0 `*.1DCuc 1 source 1 0 ]
+[s S690 _IO_FILE 11 `S687 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputs@fp fp `*.39S690  1 p 2 1 ]
+"19
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+{
+[v fputc@c c `i  1 p 2 0 ]
+[u S687 . 2 `*.39uc 1 buffer 2 0 `*.1DCuc 1 source 1 0 ]
+[s S690 _IO_FILE 11 `S687 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputc@fp fp `*.39S690  1 p 2 2 ]
+"24
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+"9
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\memcpy.c
+[v _memcpy memcpy `(*.5v  1 e 1 0 ]
+{
+"8
+[v memcpy@s s `*.5DCuc  1 a 1 6 ]
+"7
+[v memcpy@d d `*.5uc  1 a 1 5 ]
+"9
+[v memcpy@tmp tmp `uc  1 a 1 4 ]
+"4
+[v memcpy@d1 d1 `*.5v  1 p 1 0 ]
+[v memcpy@s1 s1 `*.5DCv  1 p 1 1 ]
+[v memcpy@n n `ui  1 p 2 2 ]
+"18
+} 0
+"1 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\labs.c
+[v _labs labs `(l  1 e 4 0 ]
+{
+[v labs@a a `l  1 p 4 0 ]
+"4
+} 0
+"3 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\floorf.c
+[v _floorf floorf `(f  1 e 4 0 ]
+{
+[u S659 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+"5
+[v floorf@u u `S659  1 a 4 6 ]
+"7
+[v floorf@m m `ul  1 a 4 0 ]
+"6
+[v floorf@e e `i  1 a 2 4 ]
+"3
+[v floorf@x x `f  1 p 4 62 ]
+"4
+[v floorf@F521 F521 `S659  1 s 4 F521 ]
+"27
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\__fpclassifyf.c
+[v ___fpclassifyf __fpclassifyf `(i  1 e 2 0 ]
+{
+[u S659 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+"6
+[v ___fpclassifyf@u u `S659  1 a 4 2 ]
+"7
+[v ___fpclassifyf@e e `i  1 a 2 0 ]
+"4
+[v ___fpclassifyf@x x `f  1 p 4 0 ]
+"5
+[v ___fpclassifyf@F465 F465 `S659  1 s 4 F465 ]
+"11
+} 0
+"43 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 9 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 8 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 0 ]
+"70
+} 0
+"242 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcadd.c
+[v ___flsub __flsub `(d  1 e 4 0 ]
+{
+[v ___flsub@a a `d  1 p 4 4 ]
+[v ___flsub@b b `d  1 p 4 8 ]
+"250
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\flneg.c
+[v ___flneg __flneg `(d  1 e 4 0 ]
+{
+[v ___flneg@f1 f1 `d  1 p 4 0 ]
+"20
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+{
+[v ___flge@ff1 ff1 `d  1 p 4 36 ]
+[v ___flge@ff2 ff2 `d  1 p 4 40 ]
+"19
+} 0
+"40 C:\Users\pc1\Desktop\TEMP-HUM_I2C-Sensor.X\SHT2x.c
+[v _SHT2x_GetTemperature SHT2x_GetTemperature `(f  1 e 4 0 ]
+{
+"41
+[v SHT2x_GetTemperature@value value `f  1 a 4 12 ]
+"46
+} 0
+"31
+[v _SHT2x_GetHumidity SHT2x_GetHumidity `(f  1 e 4 0 ]
+{
+"32
+[v SHT2x_GetHumidity@value value `f  1 a 4 12 ]
+"37
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+{
+[v ___fleq@ff1 ff1 `d  1 p 4 0 ]
+[v ___fleq@ff2 ff2 `d  1 p 4 4 ]
+"12
+} 0
+"4 C:\Users\pc1\Desktop\TEMP-HUM_I2C-Sensor.X\SHT2x.c
+[v _SHT2x_ReadSensor SHT2x_ReadSensor `(us  1 s 2 SHT2x_ReadSensor ]
+{
+[v SHT2x_ReadSensor@command command `uc  1 p 1 wreg ]
+"5
+[v SHT2x_ReadSensor@result result `us  1 a 2 7 ]
+"4
+[v SHT2x_ReadSensor@command command `uc  1 p 1 wreg ]
+[v SHT2x_ReadSensor@command command `uc  1 p 1 6 ]
+"28
+} 0
+"139 C:\Users\pc1\Desktop\TEMP-HUM_I2C-Sensor.X\jhd_lcd.c
+[v _LCD_SetCursor LCD_SetCursor `(v  1 e 1 0 ]
+{
+[v LCD_SetCursor@col col `uc  1 p 1 wreg ]
+"140
+[v LCD_SetCursor@row_offsets row_offsets `[4]uc  1 a 4 6 ]
+"139
+[v LCD_SetCursor@col col `uc  1 p 1 wreg ]
+[v LCD_SetCursor@row row `uc  1 p 1 5 ]
+[v LCD_SetCursor@F1080 F1080 `[4]uc  1 s 4 F1080 ]
+[v LCD_SetCursor@col col `uc  1 p 1 10 ]
+"147
+} 0
+"149
+[v _LCD_Print_String LCD_Print_String `(v  1 e 1 0 ]
+{
+[v LCD_Print_String@str str `*.5DCuc  1 p 1 5 ]
+"153
+} 0
+"26
+[v _LCD_Print_Char LCD_Print_Char `(v  1 e 1 0 ]
+{
+[v LCD_Print_Char@c c `uc  1 p 1 wreg ]
+[v LCD_Print_Char@c c `uc  1 p 1 wreg ]
+[v LCD_Print_Char@c c `uc  1 p 1 4 ]
+"28
+} 0
+"30
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+{
+[v LCD_Init@lcd_addr lcd_addr `uc  1 p 1 wreg ]
+[v LCD_Init@lcd_addr lcd_addr `uc  1 p 1 wreg ]
+[v LCD_Init@lcd_addr lcd_addr `uc  1 p 1 10 ]
+"60
+} 0
+"62
+[v _LCD_Clear LCD_Clear `(v  1 e 1 0 ]
+{
+"65
+} 0
+"22
+[v _LCD_Command LCD_Command `(v  1 e 1 0 ]
+{
+[v LCD_Command@cmd cmd `uc  1 p 1 wreg ]
+[v LCD_Command@cmd cmd `uc  1 p 1 wreg ]
+[v LCD_Command@cmd cmd `uc  1 p 1 4 ]
+"24
+} 0
+"13
+[v _LCD_Send LCD_Send `(v  1 s 1 LCD_Send ]
+{
+[v LCD_Send@data data `uc  1 p 1 wreg ]
+[v LCD_Send@data data `uc  1 p 1 wreg ]
+[v LCD_Send@mode mode `uc  1 p 1 1 ]
+[v LCD_Send@data data `uc  1 p 1 3 ]
+"20
+} 0
+"15 C:\Users\pc1\Desktop\TEMP-HUM_I2C-Sensor.X\HYT-271.c
+[v _HYT271_StartMeasurement HYT271_StartMeasurement `(v  1 e 1 0 ]
+{
+"16
+[v HYT271_StartMeasurement@data data `[4]uc  1 a 4 20 ]
+"18
+[v HYT271_StartMeasurement@valueCap valueCap `ui  1 a 2 18 ]
+[v HYT271_StartMeasurement@valueCapL valueCapL `ui  1 a 2 16 ]
+[v HYT271_StartMeasurement@valueCapH valueCapH `ui  1 a 2 14 ]
+"17
+[v HYT271_StartMeasurement@valueTemp valueTemp `ui  1 a 2 12 ]
+[v HYT271_StartMeasurement@valueTempL valueTempL `ui  1 a 2 10 ]
+[v HYT271_StartMeasurement@valueTempH valueTempH `ui  1 a 2 8 ]
+"60
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 p 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 6 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 5 ]
+"10
+[v ___xxtofl@sign sign `uc  1 p 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 9 ]
+"15
+[v ___xxtofl@sign sign `uc  1 p 1 4 ]
+"44
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S512 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S517 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S520 . 4 `l 1 i 4 0 `d 1 f 4 0 `S512 1 fAsBytes 4 0 `S517 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S520  1 a 4 30 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 24 ]
+[s S589 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S592 . 2 `s 1 i 2 0 `us 1 n 2 0 `S589 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S592  1 a 2 34 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 29 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 28 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 23 ]
+"8
+[v ___flmul@b b `d  1 p 4 10 ]
+[v ___flmul@a a `d  1 p 4 14 ]
+"205
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+{
+[v __Umul8_16@multiplier multiplier `uc  1 p 1 wreg ]
+"6
+[v __Umul8_16@word_mpld word_mpld `us  1 a 2 6 ]
+"5
+[v __Umul8_16@product product `us  1 a 2 4 ]
+"4
+[v __Umul8_16@multiplier multiplier `uc  1 p 1 wreg ]
+[v __Umul8_16@multiplicand multiplicand `uc  1 p 1 0 ]
+[v __Umul8_16@multiplier multiplier `uc  1 p 1 8 ]
+"60
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 56 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 49 ]
+"20
+[v ___fldiv@new_exp new_exp `s  1 a 2 54 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 61 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 60 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 53 ]
+"8
+[v ___fldiv@a a `d  1 p 4 36 ]
+[v ___fldiv@b b `d  1 p 4 40 ]
+"185
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+{
+"17
+[v ___fladd@grs grs `uc  1 a 1 3 ]
+"15
+[v ___fladd@bexp bexp `uc  1 a 1 2 ]
+"16
+[v ___fladd@aexp aexp `uc  1 a 1 1 ]
+"13
+[v ___fladd@signs signs `uc  1 a 1 0 ]
+"10
+[v ___fladd@b b `d  1 p 4 62 ]
+[v ___fladd@a a `d  1 p 4 66 ]
+"237
+} 0
+"53 C:\Users\pc1\Desktop\TEMP-HUM_I2C-Sensor.X\i2c.c
+[v _I2C_Read_Byte I2C_Read_Byte `(uc  1 e 1 0 ]
+{
+"60
+} 0
+"39
+[v _I2C_NACK I2C_NACK `(v  1 e 1 0 ]
+{
+"43
+} 0
+"45
+[v _I2C_Master_Write I2C_Master_Write `(uc  1 e 1 0 ]
+{
+[v I2C_Master_Write@data data `uc  1 p 1 wreg ]
+[v I2C_Master_Write@data data `uc  1 p 1 wreg ]
+[v I2C_Master_Write@data data `uc  1 p 1 0 ]
+"51
+} 0
+"28
+[v _I2C_Master_Stop I2C_Master_Stop `(v  1 e 1 0 ]
+{
+"31
+} 0
+"18
+[v _I2C_Master_Start I2C_Master_Start `(v  1 e 1 0 ]
+{
+"21
+} 0
+"33
+[v _I2C_ACK I2C_ACK `(v  1 e 1 0 ]
+{
+"37
+} 0
+"14
+[v _I2C_Master_Wait I2C_Master_Wait `(v  1 e 1 0 ]
+{
+"16
+} 0
+"10 C:\Users\pc1\Desktop\TEMP-HUM_I2C-Sensor.X\HYT-271.c
+[v _HYT271_Init HYT271_Init `(v  1 e 1 0 ]
+{
+"13
+} 0
+"5 C:\Users\pc1\Desktop\TEMP-HUM_I2C-Sensor.X\i2c.c
+[v _I2C_Master_Init I2C_Master_Init `(v  1 e 1 0 ]
+{
+"12
+} 0
+"62 C:\Users\pc1\Desktop\TEMP-HUM_I2C-Sensor.X\HYT-271.c
+[v _HYT271_GetTemperature HYT271_GetTemperature `(f  1 e 4 0 ]
+{
+"64
+} 0
+"66
+[v _HYT271_GetHumidity HYT271_GetHumidity `(f  1 e 4 0 ]
+{
+"68
+} 0
