@@ -1,0 +1,859 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"15 ./i2c.h
+[; ;./i2c.h: 15: void I2C_Master_Init(void);
+[v _I2C_Master_Init `(v ~T0 @X0 0 ef ]
+"49 ./MCP980x.h
+[; ;./MCP980x.h: 49: void MCP9800_WriteConfig(uint8_t value);
+[v _MCP9800_WriteConfig `(v ~T0 @X0 0 ef1`uc ]
+"17 ./i2c.h
+[; ;./i2c.h: 17: void I2C_Master_Start(void);
+[v _I2C_Master_Start `(v ~T0 @X0 0 ef ]
+"22
+[; ;./i2c.h: 22: unsigned char I2C_Master_Write(unsigned char data);
+[v _I2C_Master_Write `(uc ~T0 @X0 0 ef1`uc ]
+"19
+[; ;./i2c.h: 19: void I2C_Master_Stop(void);
+[v _I2C_Master_Stop `(v ~T0 @X0 0 ef ]
+"18
+[; ;./i2c.h: 18: void I2C_Master_RepeatedStart(void);
+[v _I2C_Master_RepeatedStart `(v ~T0 @X0 0 ef ]
+"23
+[; ;./i2c.h: 23: unsigned char I2C_Read_Byte(void);
+[v _I2C_Read_Byte `(uc ~T0 @X0 0 ef ]
+"21
+[; ;./i2c.h: 21: void I2C_NACK(void);
+[v _I2C_NACK `(v ~T0 @X0 0 ef ]
+"33 MCP980x.c
+[; ;MCP980x.c: 33:     return (config >> CONFIG_ONE_SHOT) & 0x01;
+[c E1016 0 1 2 3 5 7 .. ]
+[n E1016 configuration CONFIG_SHUTDOWN CONFIG_COMP_INT CONFIG_ALERT_POL CONFIG_FAULT_QUEUE CONFIG_ADC_RES CONFIG_ONE_SHOT  ]
+"20 ./i2c.h
+[; ;./i2c.h: 20: void I2C_ACK(void);
+[v _I2C_ACK `(v ~T0 @X0 0 ef ]
+"54 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 54: __asm("INDF equ 00h");
+[; <" INDF equ 00h ;# ">
+"61
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 61: __asm("TMR0 equ 01h");
+[; <" TMR0 equ 01h ;# ">
+"68
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 68: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"75
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 75: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"161
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 161: __asm("FSR equ 04h");
+[; <" FSR equ 04h ;# ">
+"168
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 168: __asm("PORTA equ 05h");
+[; <" PORTA equ 05h ;# ">
+"218
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 218: __asm("PORTB equ 06h");
+[; <" PORTB equ 06h ;# ">
+"280
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 280: __asm("PORTC equ 07h");
+[; <" PORTC equ 07h ;# ">
+"342
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 342: __asm("PORTD equ 08h");
+[; <" PORTD equ 08h ;# ">
+"404
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 404: __asm("PORTE equ 09h");
+[; <" PORTE equ 09h ;# ">
+"436
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 436: __asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+"456
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 456: __asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+"534
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 534: __asm("PIR1 equ 0Ch");
+[; <" PIR1 equ 0Ch ;# ">
+"596
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 596: __asm("PIR2 equ 0Dh");
+[; <" PIR2 equ 0Dh ;# ">
+"636
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 636: __asm("TMR1 equ 0Eh");
+[; <" TMR1 equ 0Eh ;# ">
+"643
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 643: __asm("TMR1L equ 0Eh");
+[; <" TMR1L equ 0Eh ;# ">
+"650
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 650: __asm("TMR1H equ 0Fh");
+[; <" TMR1H equ 0Fh ;# ">
+"657
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 657: __asm("T1CON equ 010h");
+[; <" T1CON equ 010h ;# ">
+"732
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 732: __asm("TMR2 equ 011h");
+[; <" TMR2 equ 011h ;# ">
+"739
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 739: __asm("T2CON equ 012h");
+[; <" T2CON equ 012h ;# ">
+"810
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 810: __asm("SSPBUF equ 013h");
+[; <" SSPBUF equ 013h ;# ">
+"817
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 817: __asm("SSPCON equ 014h");
+[; <" SSPCON equ 014h ;# ">
+"887
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 887: __asm("CCPR1 equ 015h");
+[; <" CCPR1 equ 015h ;# ">
+"894
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 894: __asm("CCPR1L equ 015h");
+[; <" CCPR1L equ 015h ;# ">
+"901
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 901: __asm("CCPR1H equ 016h");
+[; <" CCPR1H equ 016h ;# ">
+"908
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 908: __asm("CCP1CON equ 017h");
+[; <" CCP1CON equ 017h ;# ">
+"966
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 966: __asm("RCSTA equ 018h");
+[; <" RCSTA equ 018h ;# ">
+"1061
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1061: __asm("TXREG equ 019h");
+[; <" TXREG equ 019h ;# ">
+"1068
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1068: __asm("RCREG equ 01Ah");
+[; <" RCREG equ 01Ah ;# ">
+"1075
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1075: __asm("CCPR2 equ 01Bh");
+[; <" CCPR2 equ 01Bh ;# ">
+"1082
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1082: __asm("CCPR2L equ 01Bh");
+[; <" CCPR2L equ 01Bh ;# ">
+"1089
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1089: __asm("CCPR2H equ 01Ch");
+[; <" CCPR2H equ 01Ch ;# ">
+"1096
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1096: __asm("CCP2CON equ 01Dh");
+[; <" CCP2CON equ 01Dh ;# ">
+"1154
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1154: __asm("ADRESH equ 01Eh");
+[; <" ADRESH equ 01Eh ;# ">
+"1161
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1161: __asm("ADCON0 equ 01Fh");
+[; <" ADCON0 equ 01Fh ;# ">
+"1257
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1257: __asm("OPTION_REG equ 081h");
+[; <" OPTION_REG equ 081h ;# ">
+"1327
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1327: __asm("TRISA equ 085h");
+[; <" TRISA equ 085h ;# ">
+"1377
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1377: __asm("TRISB equ 086h");
+[; <" TRISB equ 086h ;# ">
+"1439
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1439: __asm("TRISC equ 087h");
+[; <" TRISC equ 087h ;# ">
+"1501
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1501: __asm("TRISD equ 088h");
+[; <" TRISD equ 088h ;# ">
+"1563
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1563: __asm("TRISE equ 089h");
+[; <" TRISE equ 089h ;# ">
+"1620
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1620: __asm("PIE1 equ 08Ch");
+[; <" PIE1 equ 08Ch ;# ">
+"1682
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1682: __asm("PIE2 equ 08Dh");
+[; <" PIE2 equ 08Dh ;# ">
+"1722
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1722: __asm("PCON equ 08Eh");
+[; <" PCON equ 08Eh ;# ">
+"1756
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1756: __asm("SSPCON2 equ 091h");
+[; <" SSPCON2 equ 091h ;# ">
+"1818
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1818: __asm("PR2 equ 092h");
+[; <" PR2 equ 092h ;# ">
+"1825
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1825: __asm("SSPADD equ 093h");
+[; <" SSPADD equ 093h ;# ">
+"1832
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1832: __asm("SSPSTAT equ 094h");
+[; <" SSPSTAT equ 094h ;# ">
+"2001
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 2001: __asm("TXSTA equ 098h");
+[; <" TXSTA equ 098h ;# ">
+"2082
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 2082: __asm("SPBRG equ 099h");
+[; <" SPBRG equ 099h ;# ">
+"2089
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 2089: __asm("CMCON equ 09Ch");
+[; <" CMCON equ 09Ch ;# ">
+"2159
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 2159: __asm("CVRCON equ 09Dh");
+[; <" CVRCON equ 09Dh ;# ">
+"2224
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 2224: __asm("ADRESL equ 09Eh");
+[; <" ADRESL equ 09Eh ;# ">
+"2231
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 2231: __asm("ADCON1 equ 09Fh");
+[; <" ADCON1 equ 09Fh ;# ">
+"2290
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 2290: __asm("EEDATA equ 010Ch");
+[; <" EEDATA equ 010Ch ;# ">
+"2297
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 2297: __asm("EEADR equ 010Dh");
+[; <" EEADR equ 010Dh ;# ">
+"2304
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 2304: __asm("EEDATH equ 010Eh");
+[; <" EEDATH equ 010Eh ;# ">
+"2311
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 2311: __asm("EEADRH equ 010Fh");
+[; <" EEADRH equ 010Fh ;# ">
+"2318
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 2318: __asm("EECON1 equ 018Ch");
+[; <" EECON1 equ 018Ch ;# ">
+"2363
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 2363: __asm("EECON2 equ 018Dh");
+[; <" EECON2 equ 018Dh ;# ">
+"3 MCP980x.c
+[; ;MCP980x.c: 3: void MCP9800_Init(void) {
+[v _MCP9800_Init `(v ~T0 @X0 1 ef ]
+{
+[e :U _MCP9800_Init ]
+[f ]
+"4
+[; ;MCP980x.c: 4:     I2C_Master_Init();
+[e ( _I2C_Master_Init ..  ]
+"5
+[; ;MCP980x.c: 5:     MCP9800_WriteConfig(0x00);
+[e ( _MCP9800_WriteConfig (1 -> -> 0 `i `uc ]
+"6
+[; ;MCP980x.c: 6:     }
+[e :UE 99 ]
+}
+"8
+[; ;MCP980x.c: 8: void MCP9800_WriteConfig(uint8_t value) {
+[v _MCP9800_WriteConfig `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _MCP9800_WriteConfig ]
+[v _value `uc ~T0 @X0 1 r1 ]
+[f ]
+"9
+[; ;MCP980x.c: 9:     I2C_Master_Start();
+[e ( _I2C_Master_Start ..  ]
+"10
+[; ;MCP980x.c: 10:     I2C_Master_Write(0x48 << 1);
+[e ( _I2C_Master_Write (1 -> << -> 72 `i -> 1 `i `uc ]
+"11
+[; ;MCP980x.c: 11:     I2C_Master_Write(0x01);
+[e ( _I2C_Master_Write (1 -> -> 1 `i `uc ]
+"12
+[; ;MCP980x.c: 12:     I2C_Master_Write(value);
+[e ( _I2C_Master_Write (1 _value ]
+"13
+[; ;MCP980x.c: 13:     I2C_Master_Stop();
+[e ( _I2C_Master_Stop ..  ]
+"14
+[; ;MCP980x.c: 14:     }
+[e :UE 100 ]
+}
+"16
+[; ;MCP980x.c: 16: uint8_t MCP9800_ReadConfig(void) {
+[v _MCP9800_ReadConfig `(uc ~T0 @X0 1 ef ]
+{
+[e :U _MCP9800_ReadConfig ]
+[f ]
+"17
+[; ;MCP980x.c: 17:     uint8_t config_value;
+[v _config_value `uc ~T0 @X0 1 a ]
+"19
+[; ;MCP980x.c: 19:     I2C_Master_Start();
+[e ( _I2C_Master_Start ..  ]
+"20
+[; ;MCP980x.c: 20:     I2C_Master_Write(0x48 << 1);
+[e ( _I2C_Master_Write (1 -> << -> 72 `i -> 1 `i `uc ]
+"21
+[; ;MCP980x.c: 21:     I2C_Master_Write(0x01);
+[e ( _I2C_Master_Write (1 -> -> 1 `i `uc ]
+"22
+[; ;MCP980x.c: 22:     I2C_Master_RepeatedStart();
+[e ( _I2C_Master_RepeatedStart ..  ]
+"23
+[; ;MCP980x.c: 23:     I2C_Master_Write((0x48 << 1) | 0x01);
+[e ( _I2C_Master_Write (1 -> | << -> 72 `i -> 1 `i -> 1 `i `uc ]
+"24
+[; ;MCP980x.c: 24:     config_value = I2C_Read_Byte();
+[e = _config_value ( _I2C_Read_Byte ..  ]
+"25
+[; ;MCP980x.c: 25:     I2C_NACK();
+[e ( _I2C_NACK ..  ]
+"26
+[; ;MCP980x.c: 26:     I2C_Master_Stop();
+[e ( _I2C_Master_Stop ..  ]
+"28
+[; ;MCP980x.c: 28:     return config_value;
+[e ) _config_value ]
+[e $UE 101  ]
+"29
+[; ;MCP980x.c: 29:     }
+[e :UE 101 ]
+}
+"31
+[; ;MCP980x.c: 31: uint8_t MCP9800_GetConfigOneShot(void) {
+[v _MCP9800_GetConfigOneShot `(uc ~T0 @X0 1 ef ]
+{
+[e :U _MCP9800_GetConfigOneShot ]
+[f ]
+"32
+[; ;MCP980x.c: 32:     uint8_t config = MCP9800_ReadConfig();
+[v _config `uc ~T0 @X0 1 a ]
+[e = _config ( _MCP9800_ReadConfig ..  ]
+"33
+[; ;MCP980x.c: 33:     return (config >> CONFIG_ONE_SHOT) & 0x01;
+[e ) -> & >> -> _config `i -> . `E1016 5 `i -> 1 `i `uc ]
+[e $UE 102  ]
+"34
+[; ;MCP980x.c: 34:     }
+[e :UE 102 ]
+}
+"36
+[; ;MCP980x.c: 36: uint8_t MCP9800_GetConfigResolution(void) {
+[v _MCP9800_GetConfigResolution `(uc ~T0 @X0 1 ef ]
+{
+[e :U _MCP9800_GetConfigResolution ]
+[f ]
+"37
+[; ;MCP980x.c: 37:     uint8_t config = MCP9800_ReadConfig();
+[v _config `uc ~T0 @X0 1 a ]
+[e = _config ( _MCP9800_ReadConfig ..  ]
+"38
+[; ;MCP980x.c: 38:     return (config >> CONFIG_ADC_RES) & 0x03;
+[e ) -> & >> -> _config `i -> . `E1016 4 `i -> 3 `i `uc ]
+[e $UE 103  ]
+"39
+[; ;MCP980x.c: 39:     }
+[e :UE 103 ]
+}
+"41
+[; ;MCP980x.c: 41: uint8_t MCP9800_GetConfigFaultQueue(void) {
+[v _MCP9800_GetConfigFaultQueue `(uc ~T0 @X0 1 ef ]
+{
+[e :U _MCP9800_GetConfigFaultQueue ]
+[f ]
+"42
+[; ;MCP980x.c: 42:     uint8_t config = MCP9800_ReadConfig();
+[v _config `uc ~T0 @X0 1 a ]
+[e = _config ( _MCP9800_ReadConfig ..  ]
+"43
+[; ;MCP980x.c: 43:     return (config >> CONFIG_FAULT_QUEUE) & 0x03;
+[e ) -> & >> -> _config `i -> . `E1016 3 `i -> 3 `i `uc ]
+[e $UE 104  ]
+"44
+[; ;MCP980x.c: 44:     }
+[e :UE 104 ]
+}
+"46
+[; ;MCP980x.c: 46: uint8_t MCP9800_GetConfigAlertPolarity(void) {
+[v _MCP9800_GetConfigAlertPolarity `(uc ~T0 @X0 1 ef ]
+{
+[e :U _MCP9800_GetConfigAlertPolarity ]
+[f ]
+"47
+[; ;MCP980x.c: 47:     uint8_t config = MCP9800_ReadConfig();
+[v _config `uc ~T0 @X0 1 a ]
+[e = _config ( _MCP9800_ReadConfig ..  ]
+"48
+[; ;MCP980x.c: 48:     return (config >> CONFIG_ALERT_POL) & 0x01;
+[e ) -> & >> -> _config `i -> . `E1016 2 `i -> 1 `i `uc ]
+[e $UE 105  ]
+"49
+[; ;MCP980x.c: 49:     }
+[e :UE 105 ]
+}
+"51
+[; ;MCP980x.c: 51: uint8_t MCP9800_GetConfigCompIntMode(void) {
+[v _MCP9800_GetConfigCompIntMode `(uc ~T0 @X0 1 ef ]
+{
+[e :U _MCP9800_GetConfigCompIntMode ]
+[f ]
+"52
+[; ;MCP980x.c: 52:     uint8_t config = MCP9800_ReadConfig();
+[v _config `uc ~T0 @X0 1 a ]
+[e = _config ( _MCP9800_ReadConfig ..  ]
+"53
+[; ;MCP980x.c: 53:     return (config >> CONFIG_COMP_INT) & 0x01;
+[e ) -> & >> -> _config `i -> . `E1016 1 `i -> 1 `i `uc ]
+[e $UE 106  ]
+"54
+[; ;MCP980x.c: 54:     }
+[e :UE 106 ]
+}
+"56
+[; ;MCP980x.c: 56: uint8_t MCP9800_GetConfigShutdown(void) {
+[v _MCP9800_GetConfigShutdown `(uc ~T0 @X0 1 ef ]
+{
+[e :U _MCP9800_GetConfigShutdown ]
+[f ]
+"57
+[; ;MCP980x.c: 57:     uint8_t config = MCP9800_ReadConfig();
+[v _config `uc ~T0 @X0 1 a ]
+[e = _config ( _MCP9800_ReadConfig ..  ]
+"58
+[; ;MCP980x.c: 58:     return (config >> CONFIG_SHUTDOWN) & 0x01;
+[e ) -> & >> -> _config `i -> . `E1016 0 `i -> 1 `i `uc ]
+[e $UE 107  ]
+"59
+[; ;MCP980x.c: 59:     }
+[e :UE 107 ]
+}
+"61
+[; ;MCP980x.c: 61: void MCP9800_SetConfigOneShot(uint8_t enable) {
+[v _MCP9800_SetConfigOneShot `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _MCP9800_SetConfigOneShot ]
+[v _enable `uc ~T0 @X0 1 r1 ]
+[f ]
+"62
+[; ;MCP980x.c: 62:     uint8_t config = MCP9800_ReadConfig();
+[v _config `uc ~T0 @X0 1 a ]
+[e = _config ( _MCP9800_ReadConfig ..  ]
+"63
+[; ;MCP980x.c: 63:     if (enable) {
+[e $ ! != -> _enable `i -> 0 `i 109  ]
+{
+"64
+[; ;MCP980x.c: 64:         config |= (1 << CONFIG_ONE_SHOT);
+[e =| _config -> << -> 1 `i -> . `E1016 5 `i `uc ]
+"65
+[; ;MCP980x.c: 65:         } else {
+}
+[e $U 110  ]
+[e :U 109 ]
+{
+"66
+[; ;MCP980x.c: 66:         config &= ~(1 << CONFIG_ONE_SHOT);
+[e =& _config -> ~ << -> 1 `i -> . `E1016 5 `i `uc ]
+"67
+[; ;MCP980x.c: 67:         }
+}
+[e :U 110 ]
+"68
+[; ;MCP980x.c: 68:     MCP9800_WriteConfig(config);
+[e ( _MCP9800_WriteConfig (1 _config ]
+"69
+[; ;MCP980x.c: 69:     }
+[e :UE 108 ]
+}
+"71
+[; ;MCP980x.c: 71: void MCP9800_SetConfigResolution(uint8_t resolution) {
+[v _MCP9800_SetConfigResolution `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _MCP9800_SetConfigResolution ]
+[v _resolution `uc ~T0 @X0 1 r1 ]
+[f ]
+"72
+[; ;MCP980x.c: 72:     uint8_t config = MCP9800_ReadConfig();
+[v _config `uc ~T0 @X0 1 a ]
+[e = _config ( _MCP9800_ReadConfig ..  ]
+"73
+[; ;MCP980x.c: 73:     config &= ~(0x03 << CONFIG_ADC_RES);
+[e =& _config -> ~ << -> 3 `i -> . `E1016 4 `i `uc ]
+"74
+[; ;MCP980x.c: 74:     config |= (resolution & 0x03) << CONFIG_ADC_RES;
+[e =| _config -> << & -> _resolution `i -> 3 `i -> . `E1016 4 `i `uc ]
+"75
+[; ;MCP980x.c: 75:     MCP9800_WriteConfig(config);
+[e ( _MCP9800_WriteConfig (1 _config ]
+"76
+[; ;MCP980x.c: 76:     }
+[e :UE 111 ]
+}
+"78
+[; ;MCP980x.c: 78: void MCP9800_SetConfigFaultQueue(uint8_t fault_queue) {
+[v _MCP9800_SetConfigFaultQueue `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _MCP9800_SetConfigFaultQueue ]
+[v _fault_queue `uc ~T0 @X0 1 r1 ]
+[f ]
+"79
+[; ;MCP980x.c: 79:     uint8_t config = MCP9800_ReadConfig();
+[v _config `uc ~T0 @X0 1 a ]
+[e = _config ( _MCP9800_ReadConfig ..  ]
+"80
+[; ;MCP980x.c: 80:     config &= ~(0x03 << CONFIG_FAULT_QUEUE);
+[e =& _config -> ~ << -> 3 `i -> . `E1016 3 `i `uc ]
+"81
+[; ;MCP980x.c: 81:     config |= (fault_queue & 0x03) << CONFIG_FAULT_QUEUE;
+[e =| _config -> << & -> _fault_queue `i -> 3 `i -> . `E1016 3 `i `uc ]
+"82
+[; ;MCP980x.c: 82:     MCP9800_WriteConfig(config);
+[e ( _MCP9800_WriteConfig (1 _config ]
+"83
+[; ;MCP980x.c: 83:     }
+[e :UE 112 ]
+}
+"85
+[; ;MCP980x.c: 85: void MCP9800_SetConfigAlertPolarity(uint8_t polarity) {
+[v _MCP9800_SetConfigAlertPolarity `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _MCP9800_SetConfigAlertPolarity ]
+[v _polarity `uc ~T0 @X0 1 r1 ]
+[f ]
+"86
+[; ;MCP980x.c: 86:     uint8_t config = MCP9800_ReadConfig();
+[v _config `uc ~T0 @X0 1 a ]
+[e = _config ( _MCP9800_ReadConfig ..  ]
+"87
+[; ;MCP980x.c: 87:     if (polarity) {
+[e $ ! != -> _polarity `i -> 0 `i 114  ]
+{
+"88
+[; ;MCP980x.c: 88:         config |= (1 << CONFIG_ALERT_POL);
+[e =| _config -> << -> 1 `i -> . `E1016 2 `i `uc ]
+"89
+[; ;MCP980x.c: 89:         } else {
+}
+[e $U 115  ]
+[e :U 114 ]
+{
+"90
+[; ;MCP980x.c: 90:         config &= ~(1 << CONFIG_ALERT_POL);
+[e =& _config -> ~ << -> 1 `i -> . `E1016 2 `i `uc ]
+"91
+[; ;MCP980x.c: 91:         }
+}
+[e :U 115 ]
+"92
+[; ;MCP980x.c: 92:     MCP9800_WriteConfig(config);
+[e ( _MCP9800_WriteConfig (1 _config ]
+"93
+[; ;MCP980x.c: 93:     }
+[e :UE 113 ]
+}
+"95
+[; ;MCP980x.c: 95: void MCP9800_SetConfigCompIntMode(uint8_t mode) {
+[v _MCP9800_SetConfigCompIntMode `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _MCP9800_SetConfigCompIntMode ]
+[v _mode `uc ~T0 @X0 1 r1 ]
+[f ]
+"96
+[; ;MCP980x.c: 96:     uint8_t config = MCP9800_ReadConfig();
+[v _config `uc ~T0 @X0 1 a ]
+[e = _config ( _MCP9800_ReadConfig ..  ]
+"97
+[; ;MCP980x.c: 97:     if (mode) {
+[e $ ! != -> _mode `i -> 0 `i 117  ]
+{
+"98
+[; ;MCP980x.c: 98:         config |= (1 << CONFIG_COMP_INT);
+[e =| _config -> << -> 1 `i -> . `E1016 1 `i `uc ]
+"99
+[; ;MCP980x.c: 99:         } else {
+}
+[e $U 118  ]
+[e :U 117 ]
+{
+"100
+[; ;MCP980x.c: 100:         config &= ~(1 << CONFIG_COMP_INT);
+[e =& _config -> ~ << -> 1 `i -> . `E1016 1 `i `uc ]
+"101
+[; ;MCP980x.c: 101:         }
+}
+[e :U 118 ]
+"102
+[; ;MCP980x.c: 102:     MCP9800_WriteConfig(config);
+[e ( _MCP9800_WriteConfig (1 _config ]
+"103
+[; ;MCP980x.c: 103:     }
+[e :UE 116 ]
+}
+"105
+[; ;MCP980x.c: 105: void MCP9800_SetConfigShutdown(uint8_t enable) {
+[v _MCP9800_SetConfigShutdown `(v ~T0 @X0 1 ef1`uc ]
+{
+[e :U _MCP9800_SetConfigShutdown ]
+[v _enable `uc ~T0 @X0 1 r1 ]
+[f ]
+"106
+[; ;MCP980x.c: 106:     uint8_t config = MCP9800_ReadConfig();
+[v _config `uc ~T0 @X0 1 a ]
+[e = _config ( _MCP9800_ReadConfig ..  ]
+"107
+[; ;MCP980x.c: 107:     if (enable) {
+[e $ ! != -> _enable `i -> 0 `i 120  ]
+{
+"108
+[; ;MCP980x.c: 108:         config |= (1 << CONFIG_SHUTDOWN);
+[e =| _config -> << -> 1 `i -> . `E1016 0 `i `uc ]
+"109
+[; ;MCP980x.c: 109:         } else {
+}
+[e $U 121  ]
+[e :U 120 ]
+{
+"110
+[; ;MCP980x.c: 110:         config &= ~(1 << CONFIG_SHUTDOWN);
+[e =& _config -> ~ << -> 1 `i -> . `E1016 0 `i `uc ]
+"111
+[; ;MCP980x.c: 111:         }
+}
+[e :U 121 ]
+"112
+[; ;MCP980x.c: 112:     MCP9800_WriteConfig(config);
+[e ( _MCP9800_WriteConfig (1 _config ]
+"113
+[; ;MCP980x.c: 113:     }
+[e :UE 119 ]
+}
+"115
+[; ;MCP980x.c: 115: void MCP9800_SetLIMIT_Temp(int16_t temp_value) {
+[v _MCP9800_SetLIMIT_Temp `(v ~T0 @X0 1 ef1`s ]
+{
+[e :U _MCP9800_SetLIMIT_Temp ]
+[v _temp_value `s ~T0 @X0 1 r1 ]
+[f ]
+"116
+[; ;MCP980x.c: 116:     uint8_t msb, lsb;
+[v _msb `uc ~T0 @X0 1 a ]
+[v _lsb `uc ~T0 @X0 1 a ]
+"117
+[; ;MCP980x.c: 117:     int16_t temp_raw_value = temp_value * 2;
+[v _temp_raw_value `s ~T0 @X0 1 a ]
+[e = _temp_raw_value -> * -> _temp_value `i -> 2 `i `s ]
+"118
+[; ;MCP980x.c: 118:     msb = (uint8_t)((temp_raw_value >> 1) & 0xFF);
+[e = _msb -> & >> -> _temp_raw_value `i -> 1 `i -> 255 `i `uc ]
+"119
+[; ;MCP980x.c: 119:     lsb = (uint8_t)((temp_raw_value & 0x01) << 7);
+[e = _lsb -> << & -> _temp_raw_value `i -> 1 `i -> 7 `i `uc ]
+"121
+[; ;MCP980x.c: 121:     I2C_Master_Start();
+[e ( _I2C_Master_Start ..  ]
+"122
+[; ;MCP980x.c: 122:     I2C_Master_Write(0x48 << 1);
+[e ( _I2C_Master_Write (1 -> << -> 72 `i -> 1 `i `uc ]
+"123
+[; ;MCP980x.c: 123:     I2C_Master_Write(0x03);
+[e ( _I2C_Master_Write (1 -> -> 3 `i `uc ]
+"124
+[; ;MCP980x.c: 124:     I2C_Master_Write(msb);
+[e ( _I2C_Master_Write (1 _msb ]
+"125
+[; ;MCP980x.c: 125:     I2C_Master_Write(lsb);
+[e ( _I2C_Master_Write (1 _lsb ]
+"126
+[; ;MCP980x.c: 126:     I2C_Master_Stop();
+[e ( _I2C_Master_Stop ..  ]
+"127
+[; ;MCP980x.c: 127:     }
+[e :UE 122 ]
+}
+"129
+[; ;MCP980x.c: 129: int16_t MCP9800_GetLIMIT_Temp(void) {
+[v _MCP9800_GetLIMIT_Temp `(s ~T0 @X0 1 ef ]
+{
+[e :U _MCP9800_GetLIMIT_Temp ]
+[f ]
+"130
+[; ;MCP980x.c: 130:     uint8_t temp_msb, temp_lsb;
+[v _temp_msb `uc ~T0 @X0 1 a ]
+[v _temp_lsb `uc ~T0 @X0 1 a ]
+"131
+[; ;MCP980x.c: 131:     int16_t temperature, temp_raw_value;
+[v _temperature `s ~T0 @X0 1 a ]
+[v _temp_raw_value `s ~T0 @X0 1 a ]
+"133
+[; ;MCP980x.c: 133:     I2C_Master_Start();
+[e ( _I2C_Master_Start ..  ]
+"134
+[; ;MCP980x.c: 134:     I2C_Master_Write(0x48 << 1);
+[e ( _I2C_Master_Write (1 -> << -> 72 `i -> 1 `i `uc ]
+"135
+[; ;MCP980x.c: 135:     I2C_Master_Write(0x03);
+[e ( _I2C_Master_Write (1 -> -> 3 `i `uc ]
+"136
+[; ;MCP980x.c: 136:     I2C_Master_RepeatedStart();
+[e ( _I2C_Master_RepeatedStart ..  ]
+"138
+[; ;MCP980x.c: 138:     I2C_Master_Write((0x48 << 1) | 0x01);
+[e ( _I2C_Master_Write (1 -> | << -> 72 `i -> 1 `i -> 1 `i `uc ]
+"139
+[; ;MCP980x.c: 139:     temp_msb = I2C_Read_Byte();
+[e = _temp_msb ( _I2C_Read_Byte ..  ]
+"140
+[; ;MCP980x.c: 140:     I2C_ACK();
+[e ( _I2C_ACK ..  ]
+"141
+[; ;MCP980x.c: 141:     temp_lsb = I2C_Read_Byte();
+[e = _temp_lsb ( _I2C_Read_Byte ..  ]
+"142
+[; ;MCP980x.c: 142:     I2C_NACK();
+[e ( _I2C_NACK ..  ]
+"143
+[; ;MCP980x.c: 143:     I2C_Master_Stop();
+[e ( _I2C_Master_Stop ..  ]
+"144
+[; ;MCP980x.c: 144:     temp_raw_value = ((int16_t)temp_msb << 1) | ((int16_t)(temp_lsb >> 7) & 0x01);
+[e = _temp_raw_value -> | << -> -> _temp_msb `s `i -> 1 `i & -> -> >> -> _temp_lsb `i -> 7 `i `s `i -> 1 `i `s ]
+"145
+[; ;MCP980x.c: 145:     temperature = temp_raw_value * 0.5;
+[e = _temperature -> * -> -> _temp_raw_value `i `d .0.5 `s ]
+"146
+[; ;MCP980x.c: 146:     return (temperature);
+[e ) _temperature ]
+[e $UE 123  ]
+"147
+[; ;MCP980x.c: 147:     }
+[e :UE 123 ]
+}
+"149
+[; ;MCP980x.c: 149: void MCP9800_SetHYST_Temp(int16_t temp_value) {
+[v _MCP9800_SetHYST_Temp `(v ~T0 @X0 1 ef1`s ]
+{
+[e :U _MCP9800_SetHYST_Temp ]
+[v _temp_value `s ~T0 @X0 1 r1 ]
+[f ]
+"150
+[; ;MCP980x.c: 150:     uint8_t msb, lsb;
+[v _msb `uc ~T0 @X0 1 a ]
+[v _lsb `uc ~T0 @X0 1 a ]
+"151
+[; ;MCP980x.c: 151:     int16_t temp_raw_value = temp_value * 2;
+[v _temp_raw_value `s ~T0 @X0 1 a ]
+[e = _temp_raw_value -> * -> _temp_value `i -> 2 `i `s ]
+"152
+[; ;MCP980x.c: 152:     msb = (uint8_t)((temp_raw_value >> 1) & 0xFF);
+[e = _msb -> & >> -> _temp_raw_value `i -> 1 `i -> 255 `i `uc ]
+"153
+[; ;MCP980x.c: 153:     lsb = (uint8_t)((temp_raw_value & 0x01) << 7);
+[e = _lsb -> << & -> _temp_raw_value `i -> 1 `i -> 7 `i `uc ]
+"155
+[; ;MCP980x.c: 155:     I2C_Master_Start();
+[e ( _I2C_Master_Start ..  ]
+"156
+[; ;MCP980x.c: 156:     I2C_Master_Write(0x48 << 1);
+[e ( _I2C_Master_Write (1 -> << -> 72 `i -> 1 `i `uc ]
+"157
+[; ;MCP980x.c: 157:     I2C_Master_Write(0x02);
+[e ( _I2C_Master_Write (1 -> -> 2 `i `uc ]
+"158
+[; ;MCP980x.c: 158:     I2C_Master_Write(msb);
+[e ( _I2C_Master_Write (1 _msb ]
+"159
+[; ;MCP980x.c: 159:     I2C_Master_Write(lsb);
+[e ( _I2C_Master_Write (1 _lsb ]
+"160
+[; ;MCP980x.c: 160:     I2C_Master_Stop();
+[e ( _I2C_Master_Stop ..  ]
+"161
+[; ;MCP980x.c: 161:     }
+[e :UE 124 ]
+}
+"163
+[; ;MCP980x.c: 163: int16_t MCP9800_GetHYST_Temp(void) {
+[v _MCP9800_GetHYST_Temp `(s ~T0 @X0 1 ef ]
+{
+[e :U _MCP9800_GetHYST_Temp ]
+[f ]
+"164
+[; ;MCP980x.c: 164:     uint8_t temp_msb, temp_lsb;
+[v _temp_msb `uc ~T0 @X0 1 a ]
+[v _temp_lsb `uc ~T0 @X0 1 a ]
+"165
+[; ;MCP980x.c: 165:     int16_t temperature, temp_raw_value;
+[v _temperature `s ~T0 @X0 1 a ]
+[v _temp_raw_value `s ~T0 @X0 1 a ]
+"167
+[; ;MCP980x.c: 167:     I2C_Master_Start();
+[e ( _I2C_Master_Start ..  ]
+"168
+[; ;MCP980x.c: 168:     I2C_Master_Write(0x48 << 1);
+[e ( _I2C_Master_Write (1 -> << -> 72 `i -> 1 `i `uc ]
+"169
+[; ;MCP980x.c: 169:     I2C_Master_Write(0x02);
+[e ( _I2C_Master_Write (1 -> -> 2 `i `uc ]
+"170
+[; ;MCP980x.c: 170:     I2C_Master_RepeatedStart();
+[e ( _I2C_Master_RepeatedStart ..  ]
+"172
+[; ;MCP980x.c: 172:     I2C_Master_Write((0x48 << 1) | 0x01);
+[e ( _I2C_Master_Write (1 -> | << -> 72 `i -> 1 `i -> 1 `i `uc ]
+"173
+[; ;MCP980x.c: 173:     temp_msb = I2C_Read_Byte();
+[e = _temp_msb ( _I2C_Read_Byte ..  ]
+"174
+[; ;MCP980x.c: 174:     I2C_ACK();
+[e ( _I2C_ACK ..  ]
+"175
+[; ;MCP980x.c: 175:     temp_lsb = I2C_Read_Byte();
+[e = _temp_lsb ( _I2C_Read_Byte ..  ]
+"176
+[; ;MCP980x.c: 176:     I2C_NACK();
+[e ( _I2C_NACK ..  ]
+"177
+[; ;MCP980x.c: 177:     I2C_Master_Stop();
+[e ( _I2C_Master_Stop ..  ]
+"178
+[; ;MCP980x.c: 178:     temp_raw_value = ((int16_t)temp_msb << 1) | ((int16_t)(temp_lsb >> 7) & 0x01);
+[e = _temp_raw_value -> | << -> -> _temp_msb `s `i -> 1 `i & -> -> >> -> _temp_lsb `i -> 7 `i `s `i -> 1 `i `s ]
+"179
+[; ;MCP980x.c: 179:     temperature = temp_raw_value * 0.5;
+[e = _temperature -> * -> -> _temp_raw_value `i `d .0.5 `s ]
+"180
+[; ;MCP980x.c: 180:     return (temperature);
+[e ) _temperature ]
+[e $UE 125  ]
+"181
+[; ;MCP980x.c: 181:     }
+[e :UE 125 ]
+}
+"183
+[; ;MCP980x.c: 183: int16_t MCP9800_ReadTemperature(void) {
+[v _MCP9800_ReadTemperature `(s ~T0 @X0 1 ef ]
+{
+[e :U _MCP9800_ReadTemperature ]
+[f ]
+"184
+[; ;MCP980x.c: 184:     uint8_t temp_msb, temp_lsb;
+[v _temp_msb `uc ~T0 @X0 1 a ]
+[v _temp_lsb `uc ~T0 @X0 1 a ]
+"185
+[; ;MCP980x.c: 185:     int16_t temperature;
+[v _temperature `s ~T0 @X0 1 a ]
+"187
+[; ;MCP980x.c: 187:     I2C_Master_Start();
+[e ( _I2C_Master_Start ..  ]
+"188
+[; ;MCP980x.c: 188:     I2C_Master_Write(0x48 << 1);
+[e ( _I2C_Master_Write (1 -> << -> 72 `i -> 1 `i `uc ]
+"189
+[; ;MCP980x.c: 189:     I2C_Master_Write(0x00);
+[e ( _I2C_Master_Write (1 -> -> 0 `i `uc ]
+"190
+[; ;MCP980x.c: 190:     I2C_Master_RepeatedStart();
+[e ( _I2C_Master_RepeatedStart ..  ]
+"191
+[; ;MCP980x.c: 191:     I2C_Master_Write((0x48 << 1) | 0x01);
+[e ( _I2C_Master_Write (1 -> | << -> 72 `i -> 1 `i -> 1 `i `uc ]
+"192
+[; ;MCP980x.c: 192:     temp_msb = I2C_Read_Byte();
+[e = _temp_msb ( _I2C_Read_Byte ..  ]
+"193
+[; ;MCP980x.c: 193:     I2C_ACK();
+[e ( _I2C_ACK ..  ]
+"194
+[; ;MCP980x.c: 194:     temp_lsb = I2C_Read_Byte();
+[e = _temp_lsb ( _I2C_Read_Byte ..  ]
+"195
+[; ;MCP980x.c: 195:     I2C_NACK();
+[e ( _I2C_NACK ..  ]
+"196
+[; ;MCP980x.c: 196:     I2C_Master_Stop();
+[e ( _I2C_Master_Stop ..  ]
+"197
+[; ;MCP980x.c: 197:     temperature = (((temp_msb << 8) | temp_lsb) >> 4);
+[e = _temperature -> >> | << -> _temp_msb `i -> 8 `i -> _temp_lsb `i -> 4 `i `s ]
+"198
+[; ;MCP980x.c: 198:     return (temperature * 0.0625);
+[e ) -> * -> -> _temperature `i `d .0.0625 `s ]
+[e $UE 126  ]
+"199
+[; ;MCP980x.c: 199:     }
+[e :UE 126 ]
+}

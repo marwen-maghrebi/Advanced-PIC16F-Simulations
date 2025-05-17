@@ -1,0 +1,811 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"33 C:\Users\pc1\Desktop\MCP980X.X\MCP980x.c
+[e E1016 configuration `uc
+CONFIG_SHUTDOWN 0
+CONFIG_COMP_INT 1
+CONFIG_ALERT_POL 2
+CONFIG_FAULT_QUEUE 3
+CONFIG_ADC_RES 5
+CONFIG_ONE_SHOT 7
+]
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\__fpclassifyf.c
+[v ___fpclassifyf __fpclassifyf `(i  1 e 2 0 ]
+"193 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\doprnt.c
+[v _pad pad `(i  1 s 2 pad ]
+"587
+[v _efgtoa efgtoa `(i  1 s 2 efgtoa ]
+"1158
+[v _read_prec_or_width read_prec_or_width `(i  1 s 2 read_prec_or_width ]
+"1177
+[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
+"1817
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\flneg.c
+[v ___flneg __flneg `(d  1 e 4 0 ]
+"3 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\floorf.c
+[v _floorf floorf `(f  1 e 4 0 ]
+"43 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"1 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\labs.c
+[v _labs labs `(l  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\memcpy.c
+[v _memcpy memcpy `(*.5v  1 e 1 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+"13 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\nf_snprintf.c
+[v _snprintf snprintf `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"242
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"3 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\strcpy.c
+[v _strcpy strcpy `(*.5uc  1 e 1 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"4 C:\Users\pc1\Desktop\MCP980X.X\i2c.c
+[v _I2C_Master_Init I2C_Master_Init `(v  1 e 1 0 ]
+"14
+[v _I2C_Master_Wait I2C_Master_Wait `(v  1 e 1 0 ]
+"19
+[v _I2C_Master_Start I2C_Master_Start `(v  1 e 1 0 ]
+"25
+[v _I2C_Master_RepeatedStart I2C_Master_RepeatedStart `(v  1 e 1 0 ]
+"31
+[v _I2C_Master_Stop I2C_Master_Stop `(v  1 e 1 0 ]
+"37
+[v _I2C_ACK I2C_ACK `(v  1 e 1 0 ]
+"44
+[v _I2C_NACK I2C_NACK `(v  1 e 1 0 ]
+"51
+[v _I2C_Master_Write I2C_Master_Write `(uc  1 e 1 0 ]
+"60
+[v _I2C_Read_Byte I2C_Read_Byte `(uc  1 e 1 0 ]
+"16 C:\Users\pc1\Desktop\MCP980X.X\lcd.c
+[v _initializeLCD initializeLCD `(v  1 e 1 0 ]
+"31
+[v _clearLCD clearLCD `(v  1 e 1 0 ]
+"36
+[v _sendCommandToLCD sendCommandToLCD `(v  1 e 1 0 ]
+"45
+[v _sendDataToLCD sendDataToLCD `(v  1 e 1 0 ]
+"54
+[v _printToLCD printToLCD `(v  1 e 1 0 ]
+"60
+[v _moveCursorToPosition moveCursorToPosition `(uc  1 e 1 0 ]
+"16 C:\Users\pc1\Desktop\MCP980X.X\main.c
+[v _main main `(i  1 e 2 0 ]
+"36
+[v _initializeHardware initializeHardware `(v  1 e 1 0 ]
+"47
+[v _handleButtonPress handleButtonPress `(v  1 e 1 0 ]
+"66
+[v _configureOneShotMode configureOneShotMode `(v  1 e 1 0 ]
+"73
+[v _configureContinuousConversionMode configureContinuousConversionMode `(v  1 e 1 0 ]
+"80
+[v _configureComparatorMode configureComparatorMode `(v  1 e 1 0 ]
+"92
+[v _configureInterruptMode configureInterruptMode `(v  1 e 1 0 ]
+"3 C:\Users\pc1\Desktop\MCP980X.X\MCP980x.c
+[v _MCP9800_Init MCP9800_Init `(v  1 e 1 0 ]
+"8
+[v _MCP9800_WriteConfig MCP9800_WriteConfig `(v  1 e 1 0 ]
+"16
+[v _MCP9800_ReadConfig MCP9800_ReadConfig `(uc  1 e 1 0 ]
+"61
+[v _MCP9800_SetConfigOneShot MCP9800_SetConfigOneShot `(v  1 e 1 0 ]
+"71
+[v _MCP9800_SetConfigResolution MCP9800_SetConfigResolution `(v  1 e 1 0 ]
+"78
+[v _MCP9800_SetConfigFaultQueue MCP9800_SetConfigFaultQueue `(v  1 e 1 0 ]
+"85
+[v _MCP9800_SetConfigAlertPolarity MCP9800_SetConfigAlertPolarity `(v  1 e 1 0 ]
+"95
+[v _MCP9800_SetConfigCompIntMode MCP9800_SetConfigCompIntMode `(v  1 e 1 0 ]
+"105
+[v _MCP9800_SetConfigShutdown MCP9800_SetConfigShutdown `(v  1 e 1 0 ]
+"115
+[v _MCP9800_SetLIMIT_Temp MCP9800_SetLIMIT_Temp `(v  1 e 1 0 ]
+"149
+[v _MCP9800_SetHYST_Temp MCP9800_SetHYST_Temp `(v  1 e 1 0 ]
+"183
+[v _MCP9800_ReadTemperature MCP9800_ReadTemperature `(s  1 e 2 0 ]
+"216 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+[s S70 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"295
+[u S79 . 1 `S70 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES79  1 e 1 @7 ]
+"808
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+"815
+[v _SSPCON SSPCON `VEuc  1 e 1 @20 ]
+[s S243 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+]
+"1340
+[u S250 . 1 `S243 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES250  1 e 1 @133 ]
+"1375
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+[s S48 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1454
+[u S57 . 1 `S48 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES57  1 e 1 @135 ]
+"1754
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @145 ]
+"1823
+[v _SSPADD SSPADD `VEuc  1 e 1 @147 ]
+"1830
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @148 ]
+"2229
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @159 ]
+"2378
+[v _ACKDT ACKDT `VEb  1 e 0 @1165 ]
+"2381
+[v _ACKEN ACKEN `VEb  1 e 0 @1164 ]
+"2384
+[v _ACKSTAT ACKSTAT `VEb  1 e 0 @1166 ]
+"2636
+[v _PEN PEN `VEb  1 e 0 @1162 ]
+"2660
+[v _RA0 RA0 `VEb  1 e 0 @40 ]
+"2663
+[v _RA1 RA1 `VEb  1 e 0 @41 ]
+"2666
+[v _RA2 RA2 `VEb  1 e 0 @42 ]
+"2741
+[v _RCEN RCEN `VEb  1 e 0 @1163 ]
+"2795
+[v _RSEN RSEN `VEb  1 e 0 @1161 ]
+"2810
+[v _SEN SEN `VEb  1 e 0 @1160 ]
+"2828
+[v _SSPIF SSPIF `VEb  1 e 0 @99 ]
+"2972
+[v _TRISC3 TRISC3 `VEb  1 e 0 @1083 ]
+"2975
+[v _TRISC4 TRISC4 `VEb  1 e 0 @1084 ]
+"153 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\doprnt.c
+[v _prec prec `i  1 s 2 prec ]
+[v _width width `i  1 s 2 width ]
+"154
+[v _flags flags `uc  1 s 1 flags ]
+"185
+[v _dbuf dbuf `[80]uc  1 s 80 dbuf ]
+"189
+[v _nout nout `i  1 s 2 nout ]
+"3 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\errno.c
+[v _errno errno `i  1 e 2 0 ]
+"7 C:\Users\pc1\Desktop\MCP980X.X\main.c
+[v _displayString displayString `[16]uc  1 e 16 0 ]
+"16
+[v _main main `(i  1 e 2 0 ]
+{
+"26
+[v main@temp temp `f  1 a 4 60 ]
+"34
+} 0
+"13 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\nf_snprintf.c
+[v _snprintf snprintf `(i  1 e 2 0 ]
+{
+[u S765 . 2 `*.39uc 1 buffer 2 0 `*.1DCuc 1 source 1 0 ]
+"17
+[s S768 _IO_FILE 11 `S765 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v snprintf@f f `S768  1 a 11 66 ]
+"15
+[v snprintf@cnt cnt `i  1 a 2 64 ]
+"16
+[v snprintf@ap ap `[1]*.4v  1 a 1 63 ]
+"13
+[v snprintf@s s `*.5uc  1 p 1 52 ]
+[v snprintf@n n `ui  1 p 2 53 ]
+[v snprintf@fmt fmt `*.24DCuc  1 p 1 55 ]
+"39
+} 0
+"1817 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\doprnt.c
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+{
+"1820
+[v vfprintf@cfmt cfmt `*.24uc  1 a 1 57 ]
+[s S803 _IO_FILE 0 ]
+"1817
+[v vfprintf@fp fp `*.39S803  1 p 2 48 ]
+[v vfprintf@fmt fmt `*.24DCuc  1 p 1 50 ]
+[v vfprintf@ap ap `*.4*.4v  1 p 1 51 ]
+"1840
+} 0
+"1177
+[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
+{
+[u S858 . 4 `d 1 f 4 0 ]
+"1188
+[v vfpfcnvrt@convarg convarg `S858  1 a 4 51 ]
+"1179
+[v vfpfcnvrt@cp cp `*.24uc  1 a 1 56 ]
+[v vfpfcnvrt@c c `uc  1 a 1 55 ]
+[s S803 _IO_FILE 0 ]
+"1177
+[v vfpfcnvrt@fp fp `*.39S803  1 p 2 44 ]
+[v vfpfcnvrt@fmt fmt `*.4*.24uc  1 p 1 46 ]
+[v vfpfcnvrt@ap ap `*.4*.4v  1 p 1 47 ]
+"1814
+} 0
+"1158
+[v _read_prec_or_width read_prec_or_width `(i  1 s 2 read_prec_or_width ]
+{
+"1164
+[v read_prec_or_width@c c `uc  1 a 1 8 ]
+"1159
+[v read_prec_or_width@n n `i  1 a 2 9 ]
+"1158
+[v read_prec_or_width@fmt fmt `*.4*.24DCuc  1 p 1 6 ]
+[v read_prec_or_width@ap ap `*.4[1]*.4v  1 p 1 7 ]
+"1171
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"587 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\doprnt.c
+[v _efgtoa efgtoa `(i  1 s 2 efgtoa ]
+{
+[u S821 flui 4 `d 1 f 4 0 `l 1 u 4 0 ]
+"592
+[v efgtoa@u u `S821  1 a 4 40 ]
+[v efgtoa@g g `S821  1 a 4 36 ]
+"591
+[v efgtoa@l l `d  1 a 4 29 ]
+[v efgtoa@h h `d  1 a 4 25 ]
+"592
+[v efgtoa@ou ou `S821  1 a 4 19 ]
+"590
+[v efgtoa@n n `i  1 a 2 34 ]
+[v efgtoa@i i `i  1 a 2 23 ]
+[v efgtoa@w w `i  1 a 2 17 ]
+[v efgtoa@e e `i  1 a 2 15 ]
+[v efgtoa@m m `i  1 a 2 13 ]
+[v efgtoa@d d `i  1 a 2 11 ]
+[v efgtoa@t t `i  1 a 2 4 ]
+[v efgtoa@p p `i  1 a 2 2 ]
+[v efgtoa@ne ne `i  1 a 2 0 ]
+"589
+[v efgtoa@sign sign `uc  1 a 1 33 ]
+[v efgtoa@nmode nmode `uc  1 a 1 10 ]
+[v efgtoa@mode mode `uc  1 a 1 9 ]
+[v efgtoa@pp pp `uc  1 a 1 8 ]
+[s S803 _IO_FILE 0 ]
+"587
+[v efgtoa@fp fp `*.39S803  1 p 2 38 ]
+[v efgtoa@f f `d  1 p 4 40 ]
+[v efgtoa@c c `uc  1 p 1 44 ]
+"868
+} 0
+"3 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\strcpy.c
+[v _strcpy strcpy `(*.5uc  1 e 1 0 ]
+{
+"5
+[v strcpy@d d `*.5uc  1 a 1 2 ]
+"3
+[v strcpy@dest dest `*.5uc  1 p 1 0 ]
+[v strcpy@src src `*.24DCuc  1 p 1 1 ]
+"8
+} 0
+"193 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\doprnt.c
+[v _pad pad `(i  1 s 2 pad ]
+{
+"195
+[v pad@i i `i  1 a 2 13 ]
+[s S803 _IO_FILE 0 ]
+"193
+[v pad@fp fp `*.39S803  1 p 2 8 ]
+[v pad@buf buf `*.5uc  1 p 1 10 ]
+[v pad@p p `i  1 p 2 11 ]
+"226
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+{
+"7
+[v strlen@a a `*.5DCuc  1 a 1 2 ]
+"5
+[v strlen@s s `*.5DCuc  1 p 1 0 ]
+"12
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+{
+"11
+[v fputs@i i `i  1 a 2 6 ]
+"10
+[v fputs@c c `uc  1 a 1 5 ]
+"8
+[v fputs@s s `*.5DCuc  1 p 1 0 ]
+[u S765 . 2 `*.39uc 1 buffer 2 0 `*.1DCuc 1 source 1 0 ]
+[s S768 _IO_FILE 11 `S765 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputs@fp fp `*.39S768  1 p 2 1 ]
+"19
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+{
+[v fputc@c c `i  1 p 2 0 ]
+[u S765 . 2 `*.39uc 1 buffer 2 0 `*.1DCuc 1 source 1 0 ]
+[s S768 _IO_FILE 11 `S765 1 . 2 0 `i 1 count 2 2 `[3]uc 1 ungetbuf 3 4 `i 1 ungetcnt 2 7 `i 1 limit 2 9 ]
+[v fputc@fp fp `*.39S768  1 p 2 2 ]
+"24
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+"9
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\memcpy.c
+[v _memcpy memcpy `(*.5v  1 e 1 0 ]
+{
+"8
+[v memcpy@s s `*.5DCuc  1 a 1 6 ]
+"7
+[v memcpy@d d `*.5uc  1 a 1 5 ]
+"9
+[v memcpy@tmp tmp `uc  1 a 1 4 ]
+"4
+[v memcpy@d1 d1 `*.5v  1 p 1 0 ]
+[v memcpy@s1 s1 `*.5DCv  1 p 1 1 ]
+[v memcpy@n n `ui  1 p 2 2 ]
+"18
+} 0
+"1 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\labs.c
+[v _labs labs `(l  1 e 4 0 ]
+{
+[v labs@a a `l  1 p 4 0 ]
+"4
+} 0
+"3 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\floorf.c
+[v _floorf floorf `(f  1 e 4 0 ]
+{
+[u S931 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+"5
+[v floorf@u u `S931  1 a 4 29 ]
+"7
+[v floorf@m m `ul  1 a 4 23 ]
+"6
+[v floorf@e e `i  1 a 2 27 ]
+"3
+[v floorf@x x `f  1 p 4 13 ]
+"4
+[v floorf@F521 F521 `S931  1 s 4 F521 ]
+"27
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\__fpclassifyf.c
+[v ___fpclassifyf __fpclassifyf `(i  1 e 2 0 ]
+{
+[u S931 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+"6
+[v ___fpclassifyf@u u `S931  1 a 4 2 ]
+"7
+[v ___fpclassifyf@e e `i  1 a 2 0 ]
+"4
+[v ___fpclassifyf@x x `f  1 p 4 0 ]
+"5
+[v ___fpclassifyf@F465 F465 `S931  1 s 4 F465 ]
+"11
+} 0
+"242 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcadd.c
+[v ___flsub __flsub `(d  1 e 4 0 ]
+{
+[v ___flsub@a a `d  1 p 4 26 ]
+[v ___flsub@b b `d  1 p 4 30 ]
+"250
+} 0
+"10
+[v ___fladd __fladd `(d  1 e 4 0 ]
+{
+"17
+[v ___fladd@grs grs `uc  1 a 1 11 ]
+"15
+[v ___fladd@bexp bexp `uc  1 a 1 10 ]
+"16
+[v ___fladd@aexp aexp `uc  1 a 1 9 ]
+"13
+[v ___fladd@signs signs `uc  1 a 1 8 ]
+"10
+[v ___fladd@b b `d  1 p 4 0 ]
+[v ___fladd@a a `d  1 p 4 4 ]
+"237
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\flneg.c
+[v ___flneg __flneg `(d  1 e 4 0 ]
+{
+[v ___flneg@f1 f1 `d  1 p 4 0 ]
+"20
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\flge.c
+[v ___flge __flge `(b  1 e 0 0 ]
+{
+[v ___flge@ff1 ff1 `d  1 p 4 26 ]
+[v ___flge@ff2 ff2 `d  1 p 4 30 ]
+"19
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+{
+[v ___fleq@ff1 ff1 `d  1 p 4 0 ]
+[v ___fleq@ff2 ff2 `d  1 p 4 4 ]
+"12
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 7 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 0 ]
+"20
+[v ___fldiv@new_exp new_exp `s  1 a 2 5 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 12 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 11 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 4 ]
+"8
+[v ___fldiv@a a `d  1 p 4 0 ]
+[v ___fldiv@b b `d  1 p 4 4 ]
+"185
+} 0
+"36 C:\Users\pc1\Desktop\MCP980X.X\main.c
+[v _initializeHardware initializeHardware `(v  1 e 1 0 ]
+{
+"45
+} 0
+"16 C:\Users\pc1\Desktop\MCP980X.X\lcd.c
+[v _initializeLCD initializeLCD `(v  1 e 1 0 ]
+{
+"29
+} 0
+"3 C:\Users\pc1\Desktop\MCP980X.X\MCP980x.c
+[v _MCP9800_Init MCP9800_Init `(v  1 e 1 0 ]
+{
+"6
+} 0
+"4 C:\Users\pc1\Desktop\MCP980X.X\i2c.c
+[v _I2C_Master_Init I2C_Master_Init `(v  1 e 1 0 ]
+{
+"12
+} 0
+"47 C:\Users\pc1\Desktop\MCP980X.X\main.c
+[v _handleButtonPress handleButtonPress `(v  1 e 1 0 ]
+{
+"64
+} 0
+"54 C:\Users\pc1\Desktop\MCP980X.X\lcd.c
+[v _printToLCD printToLCD `(v  1 e 1 0 ]
+{
+[v printToLCD@string string `*.26DCuc  1 p 2 2 ]
+"58
+} 0
+"45
+[v _sendDataToLCD sendDataToLCD `(v  1 e 1 0 ]
+{
+[v sendDataToLCD@data data `uc  1 p 1 wreg ]
+[v sendDataToLCD@data data `uc  1 p 1 wreg ]
+[v sendDataToLCD@data data `uc  1 p 1 1 ]
+"52
+} 0
+"60
+[v _moveCursorToPosition moveCursorToPosition `(uc  1 e 1 0 ]
+{
+[v moveCursorToPosition@address address `uc  1 p 1 wreg ]
+[v moveCursorToPosition@address address `uc  1 p 1 wreg ]
+[v moveCursorToPosition@address address `uc  1 p 1 2 ]
+"67
+} 0
+"66 C:\Users\pc1\Desktop\MCP980X.X\main.c
+[v _configureOneShotMode configureOneShotMode `(v  1 e 1 0 ]
+{
+"71
+} 0
+"92
+[v _configureInterruptMode configureInterruptMode `(v  1 e 1 0 ]
+{
+"102
+} 0
+"80
+[v _configureComparatorMode configureComparatorMode `(v  1 e 1 0 ]
+{
+"90
+} 0
+"73
+[v _configureContinuousConversionMode configureContinuousConversionMode `(v  1 e 1 0 ]
+{
+"78
+} 0
+"105 C:\Users\pc1\Desktop\MCP980X.X\MCP980x.c
+[v _MCP9800_SetConfigShutdown MCP9800_SetConfigShutdown `(v  1 e 1 0 ]
+{
+[v MCP9800_SetConfigShutdown@enable enable `uc  1 p 1 wreg ]
+"106
+[v MCP9800_SetConfigShutdown@config config `uc  1 a 1 3 ]
+"105
+[v MCP9800_SetConfigShutdown@enable enable `uc  1 p 1 wreg ]
+[v MCP9800_SetConfigShutdown@enable enable `uc  1 p 1 2 ]
+"113
+} 0
+"71
+[v _MCP9800_SetConfigResolution MCP9800_SetConfigResolution `(v  1 e 1 0 ]
+{
+[v MCP9800_SetConfigResolution@resolution resolution `uc  1 p 1 wreg ]
+"72
+[v MCP9800_SetConfigResolution@config config `uc  1 a 1 4 ]
+"71
+[v MCP9800_SetConfigResolution@resolution resolution `uc  1 p 1 wreg ]
+[v MCP9800_SetConfigResolution@resolution resolution `uc  1 p 1 3 ]
+"76
+} 0
+"61
+[v _MCP9800_SetConfigOneShot MCP9800_SetConfigOneShot `(v  1 e 1 0 ]
+{
+[v MCP9800_SetConfigOneShot@enable enable `uc  1 p 1 wreg ]
+"62
+[v MCP9800_SetConfigOneShot@config config `uc  1 a 1 3 ]
+"61
+[v MCP9800_SetConfigOneShot@enable enable `uc  1 p 1 wreg ]
+[v MCP9800_SetConfigOneShot@enable enable `uc  1 p 1 2 ]
+"69
+} 0
+"115
+[v _MCP9800_SetLIMIT_Temp MCP9800_SetLIMIT_Temp `(v  1 e 1 0 ]
+{
+"117
+[v MCP9800_SetLIMIT_Temp@temp_raw_value temp_raw_value `s  1 a 2 7 ]
+"116
+[v MCP9800_SetLIMIT_Temp@lsb lsb `uc  1 a 1 6 ]
+[v MCP9800_SetLIMIT_Temp@msb msb `uc  1 a 1 5 ]
+"115
+[v MCP9800_SetLIMIT_Temp@temp_value temp_value `s  1 p 2 1 ]
+"127
+} 0
+"149
+[v _MCP9800_SetHYST_Temp MCP9800_SetHYST_Temp `(v  1 e 1 0 ]
+{
+"151
+[v MCP9800_SetHYST_Temp@temp_raw_value temp_raw_value `s  1 a 2 7 ]
+"150
+[v MCP9800_SetHYST_Temp@lsb lsb `uc  1 a 1 6 ]
+[v MCP9800_SetHYST_Temp@msb msb `uc  1 a 1 5 ]
+"149
+[v MCP9800_SetHYST_Temp@temp_value temp_value `s  1 p 2 1 ]
+"161
+} 0
+"78
+[v _MCP9800_SetConfigFaultQueue MCP9800_SetConfigFaultQueue `(v  1 e 1 0 ]
+{
+[v MCP9800_SetConfigFaultQueue@fault_queue fault_queue `uc  1 p 1 wreg ]
+"79
+[v MCP9800_SetConfigFaultQueue@config config `uc  1 a 1 4 ]
+"78
+[v MCP9800_SetConfigFaultQueue@fault_queue fault_queue `uc  1 p 1 wreg ]
+[v MCP9800_SetConfigFaultQueue@fault_queue fault_queue `uc  1 p 1 3 ]
+"83
+} 0
+"95
+[v _MCP9800_SetConfigCompIntMode MCP9800_SetConfigCompIntMode `(v  1 e 1 0 ]
+{
+[v MCP9800_SetConfigCompIntMode@mode mode `uc  1 p 1 wreg ]
+"96
+[v MCP9800_SetConfigCompIntMode@config config `uc  1 a 1 3 ]
+"95
+[v MCP9800_SetConfigCompIntMode@mode mode `uc  1 p 1 wreg ]
+[v MCP9800_SetConfigCompIntMode@mode mode `uc  1 p 1 2 ]
+"103
+} 0
+"85
+[v _MCP9800_SetConfigAlertPolarity MCP9800_SetConfigAlertPolarity `(v  1 e 1 0 ]
+{
+[v MCP9800_SetConfigAlertPolarity@polarity polarity `uc  1 p 1 wreg ]
+"86
+[v MCP9800_SetConfigAlertPolarity@config config `uc  1 a 1 3 ]
+"85
+[v MCP9800_SetConfigAlertPolarity@polarity polarity `uc  1 p 1 wreg ]
+[v MCP9800_SetConfigAlertPolarity@polarity polarity `uc  1 p 1 2 ]
+"93
+} 0
+"8
+[v _MCP9800_WriteConfig MCP9800_WriteConfig `(v  1 e 1 0 ]
+{
+[v MCP9800_WriteConfig@value value `uc  1 p 1 wreg ]
+[v MCP9800_WriteConfig@value value `uc  1 p 1 wreg ]
+[v MCP9800_WriteConfig@value value `uc  1 p 1 1 ]
+"14
+} 0
+"16
+[v _MCP9800_ReadConfig MCP9800_ReadConfig `(uc  1 e 1 0 ]
+{
+"17
+[v MCP9800_ReadConfig@config_value config_value `uc  1 a 1 1 ]
+"29
+} 0
+"31 C:\Users\pc1\Desktop\MCP980X.X\lcd.c
+[v _clearLCD clearLCD `(v  1 e 1 0 ]
+{
+"34
+} 0
+"36
+[v _sendCommandToLCD sendCommandToLCD `(v  1 e 1 0 ]
+{
+[v sendCommandToLCD@command command `uc  1 p 1 wreg ]
+[v sendCommandToLCD@command command `uc  1 p 1 wreg ]
+[v sendCommandToLCD@command command `uc  1 p 1 1 ]
+"43
+} 0
+"183 C:\Users\pc1\Desktop\MCP980X.X\MCP980x.c
+[v _MCP9800_ReadTemperature MCP9800_ReadTemperature `(s  1 e 2 0 ]
+{
+"185
+[v MCP9800_ReadTemperature@temperature temperature `s  1 a 2 38 ]
+"184
+[v MCP9800_ReadTemperature@temp_lsb temp_lsb `uc  1 a 1 41 ]
+[v MCP9800_ReadTemperature@temp_msb temp_msb `uc  1 a 1 40 ]
+"199
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 p 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 10 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 9 ]
+"10
+[v ___xxtofl@sign sign `uc  1 p 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 0 ]
+"15
+[v ___xxtofl@sign sign `uc  1 p 1 8 ]
+"44
+} 0
+"43 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 35 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 34 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 26 ]
+"70
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S618 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S623 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S626 . 4 `l 1 i 4 0 `d 1 f 4 0 `S618 1 fAsBytes 4 0 `S623 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S626  1 a 4 20 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 14 ]
+[s S695 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S698 . 2 `s 1 i 2 0 `us 1 n 2 0 `S695 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S698  1 a 2 24 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 19 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 18 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 13 ]
+"8
+[v ___flmul@b b `d  1 p 4 0 ]
+[v ___flmul@a a `d  1 p 4 4 ]
+"205
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+{
+[v __Umul8_16@multiplier multiplier `uc  1 p 1 wreg ]
+"6
+[v __Umul8_16@word_mpld word_mpld `us  1 a 2 6 ]
+"5
+[v __Umul8_16@product product `us  1 a 2 4 ]
+"4
+[v __Umul8_16@multiplier multiplier `uc  1 p 1 wreg ]
+[v __Umul8_16@multiplicand multiplicand `uc  1 p 1 0 ]
+[v __Umul8_16@multiplier multiplier `uc  1 p 1 8 ]
+"60
+} 0
+"60 C:\Users\pc1\Desktop\MCP980X.X\i2c.c
+[v _I2C_Read_Byte I2C_Read_Byte `(uc  1 e 1 0 ]
+{
+"68
+} 0
+"44
+[v _I2C_NACK I2C_NACK `(v  1 e 1 0 ]
+{
+"49
+} 0
+"51
+[v _I2C_Master_Write I2C_Master_Write `(uc  1 e 1 0 ]
+{
+[v I2C_Master_Write@data data `uc  1 p 1 wreg ]
+[v I2C_Master_Write@data data `uc  1 p 1 wreg ]
+"53
+[v I2C_Master_Write@data data `uc  1 p 1 0 ]
+"58
+} 0
+"31
+[v _I2C_Master_Stop I2C_Master_Stop `(v  1 e 1 0 ]
+{
+"35
+} 0
+"19
+[v _I2C_Master_Start I2C_Master_Start `(v  1 e 1 0 ]
+{
+"23
+} 0
+"25
+[v _I2C_Master_RepeatedStart I2C_Master_RepeatedStart `(v  1 e 1 0 ]
+{
+"29
+} 0
+"37
+[v _I2C_ACK I2C_ACK `(v  1 e 1 0 ]
+{
+"42
+} 0
+"14
+[v _I2C_Master_Wait I2C_Master_Wait `(v  1 e 1 0 ]
+{
+"17
+} 0
