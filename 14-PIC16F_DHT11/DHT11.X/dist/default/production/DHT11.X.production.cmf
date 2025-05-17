@@ -1,0 +1,555 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_12.o
+end_init CODE 0 0 0 3 2 1
+config CONFIG 4 2007 2007 1 2 1
+$dist/default/production\DHT11.X.production.o
+cinit CODE 0 7E9 7E9 17 2 1
+text1 CODE 0 5D2 5D2 57 2 1
+text2 CODE 0 629 629 63 2 1
+text3 CODE 0 53E 53E 26 2 1
+text4 CODE 0 4D2 4D2 10 2 1
+text5 CODE 0 4CC 4CC 6 2 1
+text6 CODE 0 4E2 4E2 12 2 1
+text7 CODE 0 507 507 1B 2 1
+text8 CODE 0 590 590 42 2 1
+text9 CODE 0 564 564 2C 2 1
+maintext CODE 0 68C 68C 15D 2 1
+cstackCOMMON COMMON 1 70 70 8 1 1
+cstackBANK0 BANK0 1 3C 3C A 1 1
+inittext CODE 0 4F4 4F4 13 2 1
+idataBANK0 CODE 0 522 522 1C 2 1
+strings STRING 0 3 3 53 2 1
+dataBANK0 BANK0 1 20 20 1C 1 1
+bssCOMMON COMMON 1 78 78 5 1 1
+config CONFIG 4 2007 2007 1 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 46-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 46-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 56-4CB 2
+CONST 800-1FFF 2
+ENTRY 56-4CB 2
+ENTRY 800-1FFF 2
+IDLOC 2000-2003 2
+CODE 56-4CB 2
+CODE 800-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 7D-7D 1
+EEDATA 2100-21FF 2
+STRCODE 56-4CB 2
+STRCODE 800-1FFF 2
+STRING 56-4CB 2
+STRING 800-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\DHT11.X.production.o
+7E9 cinit CODE >671:C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_1.s
+7E9 cinit CODE >674:C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_1.s
+7E9 cinit CODE >739:C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_1.s
+7EA cinit CODE >740:C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_1.s
+7EB cinit CODE >741:C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_1.s
+7EC cinit CODE >742:C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_1.s
+7ED cinit CODE >743:C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_1.s
+7EE cinit CODE >744:C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_1.s
+7EF cinit CODE >745:C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_1.s
+7F0 cinit CODE >746:C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_1.s
+7F1 cinit CODE >747:C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_1.s
+7F2 cinit CODE >748:C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_1.s
+7F7 cinit CODE >752:C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_1.s
+7F8 cinit CODE >753:C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_1.s
+7F9 cinit CODE >754:C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_1.s
+7FA cinit CODE >755:C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_1.s
+7FB cinit CODE >756:C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_1.s
+7FC cinit CODE >762:C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_1.s
+7FC cinit CODE >764:C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_1.s
+7FD cinit CODE >765:C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_1.s
+564 text9 CODE >38:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+564 text9 CODE >39:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+567 text9 CODE >40:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+568 text9 CODE >41:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+569 text9 CODE >43:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+56F text9 CODE >43:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+573 text9 CODE >45:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+575 text9 CODE >45:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+579 text9 CODE >46:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+57B text9 CODE >48:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+57C text9 CODE >49:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+57D text9 CODE >51:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+583 text9 CODE >51:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+587 text9 CODE >53:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+589 text9 CODE >53:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+58E text9 CODE >56:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+58F text9 CODE >57:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+590 text8 CODE >60:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+590 text8 CODE >61:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+593 text8 CODE >63:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+594 text8 CODE >64:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+597 text8 CODE >65:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+598 text8 CODE >67:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+599 text8 CODE >68:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+59B text8 CODE >68:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+59F text8 CODE >69:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+5A1 text8 CODE >67:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+5A5 text8 CODE >71:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+5A6 text8 CODE >72:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+5A7 text8 CODE >74:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+5A8 text8 CODE >75:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+5AA text8 CODE >75:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+5AF text8 CODE >74:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+5AF text8 CODE >76:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+5B3 text8 CODE >78:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+5B5 text8 CODE >78:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+5B9 text8 CODE >79:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+5C1 text8 CODE >79:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+5C4 text8 CODE >79:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+5C8 text8 CODE >80:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+5CC text8 CODE >80:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+5D0 text8 CODE >82:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+5D1 text8 CODE >83:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+507 text7 CODE >28:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+507 text7 CODE >29:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+50A text7 CODE >30:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+50D text7 CODE >31:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+516 text7 CODE >32:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+519 text7 CODE >33:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+51E text7 CODE >34:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+521 text7 CODE >35:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+4E2 text6 CODE >6:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\uart.c
+4E2 text6 CODE >7:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\uart.c
+4E5 text6 CODE >8:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\uart.c
+4E7 text6 CODE >9:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\uart.c
+4E8 text6 CODE >10:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\uart.c
+4EB text6 CODE >11:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\uart.c
+4EE text6 CODE >12:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\uart.c
+4EF text6 CODE >13:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\uart.c
+4F0 text6 CODE >14:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\uart.c
+4F3 text6 CODE >15:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\uart.c
+4CC text5 CODE >17:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\uart.c
+4CC text5 CODE >18:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\uart.c
+4D1 text5 CODE >19:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\uart.c
+4D2 text4 CODE >21:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\uart.c
+4D3 text4 CODE >22:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\uart.c
+4D9 text4 CODE >22:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\uart.c
+4DD text4 CODE >23:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\uart.c
+4E1 text4 CODE >24:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\uart.c
+53E text3 CODE >26:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\uart.c
+53E text3 CODE >27:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\uart.c
+53F text3 CODE >28:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\uart.c
+54F text3 CODE >28:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\uart.c
+553 text3 CODE >27:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\uart.c
+55F text3 CODE >27:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\uart.c
+563 text3 CODE >30:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\uart.c
+629 text2 CODE >5:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+629 text2 CODE >13:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+62A text2 CODE >14:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+62E text2 CODE >15:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+631 text2 CODE >15:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+633 text2 CODE >16:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+635 text2 CODE >18:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+639 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+63C text2 CODE >19:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+63E text2 CODE >20:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+640 text2 CODE >22:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+642 text2 CODE >23:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+648 text2 CODE >24:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+64A text2 CODE >25:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+64B text2 CODE >26:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+64C text2 CODE >26:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+650 text2 CODE >26:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+652 text2 CODE >27:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+654 text2 CODE >25:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+658 text2 CODE >30:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+659 text2 CODE >30:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+65D text2 CODE >30:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+65F text2 CODE >31:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+661 text2 CODE >31:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+665 text2 CODE >31:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+669 text2 CODE >32:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+66C text2 CODE >32:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+66F text2 CODE >33:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+670 text2 CODE >35:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+671 text2 CODE >35:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+675 text2 CODE >35:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+677 text2 CODE >36:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+67D text2 CODE >38:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+682 text2 CODE >39:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+685 text2 CODE >39:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+687 text2 CODE >40:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+68B text2 CODE >41:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+5D2 text1 CODE >5:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+5D2 text1 CODE >12:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+5D3 text1 CODE >13:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+5D7 text1 CODE >14:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+5DA text1 CODE >14:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+5DC text1 CODE >15:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+5DE text1 CODE >17:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+5E2 text1 CODE >18:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+5E5 text1 CODE >18:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+5E7 text1 CODE >19:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+5ED text1 CODE >20:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+5EF text1 CODE >21:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+5F0 text1 CODE >22:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+5F1 text1 CODE >22:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+5F5 text1 CODE >22:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+5F7 text1 CODE >23:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+5F9 text1 CODE >21:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+5FD text1 CODE >26:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+5FF text1 CODE >26:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+603 text1 CODE >26:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+607 text1 CODE >27:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+60A text1 CODE >27:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+60D text1 CODE >28:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+60E text1 CODE >28:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+612 text1 CODE >28:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+614 text1 CODE >29:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+61A text1 CODE >31:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+61F text1 CODE >32:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+622 text1 CODE >32:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+624 text1 CODE >33:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+628 text1 CODE >34:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+68C maintext CODE >85:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+68C maintext CODE >87:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+690 maintext CODE >88:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+692 maintext CODE >89:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+694 maintext CODE >92:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+698 maintext CODE >93:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+699 maintext CODE >94:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+69A maintext CODE >97:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+69F maintext CODE >98:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+6AD maintext CODE >101:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+6B2 maintext CODE >103:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+6B8 maintext CODE >103:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+6BC maintext CODE >105:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+6C4 maintext CODE >105:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+6D0 maintext CODE >105:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+6DC maintext CODE >105:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+6E8 maintext CODE >105:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+6F4 maintext CODE >105:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+6F8 maintext CODE >108:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+701 maintext CODE >109:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+702 maintext CODE >111:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+70D maintext CODE >111:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+715 maintext CODE >111:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+724 maintext CODE >111:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+728 maintext CODE >111:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+72C maintext CODE >113:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+741 maintext CODE >114:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+756 maintext CODE >115:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+76B maintext CODE >116:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+780 maintext CODE >117:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+795 maintext CODE >118:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+7AA maintext CODE >121:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+7B3 maintext CODE >122:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+7BC maintext CODE >123:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+7C5 maintext CODE >124:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+7CE maintext CODE >125:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+7CF maintext CODE >127:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+7D9 maintext CODE >132:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+7E2 maintext CODE >135:E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\17-DHT11\DHT11.X\main.c
+4F4 inittext CODE >713:C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_1.s
+4F4 inittext CODE >714:C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_1.s
+4F5 inittext CODE >715:C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_1.s
+4F6 inittext CODE >716:C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_1.s
+4F7 inittext CODE >717:C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_1.s
+4F8 inittext CODE >724:C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_1.s
+4F8 inittext CODE >725:C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_1.s
+4FD inittext CODE >726:C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_1.s
+4FE inittext CODE >727:C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_1.s
+4FF inittext CODE >728:C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_1.s
+500 inittext CODE >729:C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_1.s
+501 inittext CODE >730:C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_1.s
+502 inittext CODE >731:C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_1.s
+503 inittext CODE >732:C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_1.s
+504 inittext CODE >733:C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_1.s
+505 inittext CODE >734:C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_1.s
+506 inittext CODE >735:C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_1.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\DHT11.X.production.o
+___awdiv@counter 74 0 COMMON 1 cstackCOMMON dist/default/production\DHT11.X.production.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__Hspace_0 800 0 ABS 0 - -
+__Hspace_1 7D 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 400F 0 ABS 0 - -
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__L__absolute__ 0 0 ABS 0 __absolute__ -
+__Hstrings 0 0 ABS 0 strings -
+_BRGH 4C2 0 ABS 0 - dist/default/production\DHT11.X.production.o
+_CREN C4 0 ABS 0 - dist/default/production\DHT11.X.production.o
+_RCIF 65 0 ABS 0 - dist/default/production\DHT11.X.production.o
+_SPEN C7 0 ABS 0 - dist/default/production\DHT11.X.production.o
+_SYNC 4C4 0 ABS 0 - dist/default/production\DHT11.X.production.o
+_TRMT 4C1 0 ABS 0 - dist/default/production\DHT11.X.production.o
+_TXEN 4C5 0 ABS 0 - dist/default/production\DHT11.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_12.o
+_main D18 0 CODE 0 maintext dist/default/production\DHT11.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\DHT11.X.production.o
+___stack_hi 0 0 STACK 2 stack C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_12.o
+___stack_lo 0 0 STACK 2 stack C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_12.o
+start 0 0 CODE 0 init C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_12.o
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__Hpowerup 0 0 CODE 0 powerup -
+___awmod@sign 75 0 COMMON 1 cstackCOMMON dist/default/production\DHT11.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_12.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_12.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_12.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_12.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_12.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_12.o
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+wtemp0 7E 0 ABS 0 - dist/default/production\DHT11.X.production.o
+__end_of_Start_Signal A44 0 CODE 0 text7 dist/default/production\DHT11.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+_UART_Write 9A4 0 CODE 0 text4 dist/default/production\DHT11.X.production.o
+___awdiv@sign 75 0 COMMON 1 cstackCOMMON dist/default/production\DHT11.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+_ADCON1 9F 0 ABS 0 - dist/default/production\DHT11.X.production.o
+___awdiv@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\DHT11.X.production.o
+_CheckSum 78 0 COMMON 1 bssCOMMON dist/default/production\DHT11.X.production.o
+__end_of_UART_TX_Empty 9A4 0 CODE 0 text5 dist/default/production\DHT11.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+___awdiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\DHT11.X.production.o
+__end_of___awdiv D18 0 CODE 0 text2 dist/default/production\DHT11.X.production.o
+__end_of___awmod C52 0 CODE 0 text1 dist/default/production\DHT11.X.production.o
+_Temperature 2E 0 BANK0 1 dataBANK0 dist/default/production\DHT11.X.production.o
+_UART_TX_Init 9C4 0 CODE 0 text6 dist/default/production\DHT11.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_12.o
+___stacklo 0 0 ABS 0 - C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_12.o
+__end_of_Read_Data BA4 0 CODE 0 text8 dist/default/production\DHT11.X.production.o
+__end_of_UART_Write 9C4 0 CODE 0 text4 dist/default/production\DHT11.X.production.o
+_T_Byte1 7C 0 COMMON 1 bssCOMMON dist/default/production\DHT11.X.production.o
+_T_Byte2 7B 0 COMMON 1 bssCOMMON dist/default/production\DHT11.X.production.o
+start_initialization FD2 0 CODE 0 cinit dist/default/production\DHT11.X.production.o
+Read_Data@dht_data 70 0 COMMON 1 cstackCOMMON dist/default/production\DHT11.X.production.o
+_Read_Data B20 0 CODE 0 text8 dist/default/production\DHT11.X.production.o
+__pcstackBANK0 3C 0 BANK0 1 cstackBANK0 dist/default/production\DHT11.X.production.o
+__end_of_UART_Write_Text AC8 0 CODE 0 text3 dist/default/production\DHT11.X.production.o
+_TMR1ON 80 0 ABS 0 - dist/default/production\DHT11.X.production.o
+_TRISB0 430 0 ABS 0 - dist/default/production\DHT11.X.production.o
+_TRISC6 43E 0 ABS 0 - dist/default/production\DHT11.X.production.o
+_TRISC7 43F 0 ABS 0 - dist/default/production\DHT11.X.production.o
+_RH_Byte1 7A 0 COMMON 1 bssCOMMON dist/default/production\DHT11.X.production.o
+_RH_Byte2 79 0 COMMON 1 bssCOMMON dist/default/production\DHT11.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_12.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 1000 0 CODE 0 cinit -
+__Hstack 0 0 STACK 2 stack -
+__stringbase 24 0 STRING 0 strings dist/default/production\DHT11.X.production.o
+__Hmaintext 0 0 ABS 0 maintext -
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4010 0 CONFIG 4 config -
+__end_of_UART_TX_Init 9E8 0 CODE 0 text6 dist/default/production\DHT11.X.production.o
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit FD2 0 CODE 0 cinit -
+__Lstack 0 0 STACK 2 stack -
+__Linittext 0 0 ABS 0 inittext -
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hheap 0 0 HEAP 7 heap -
+__Hinit 0 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsivt 0 0 CODE 0 sivt -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Lheap 0 0 HEAP 7 heap -
+__Linit 0 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsivt 0 0 CODE 0 sivt -
+__Ltext 0 0 ABS 0 text -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_UART_Write_Text A7C 0 CODE 0 text3 dist/default/production\DHT11.X.production.o
+_RB0 30 0 ABS 0 - dist/default/production\DHT11.X.production.o
+__S0 800 0 ABS 0 - -
+__S1 7D 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Lintentry 0 0 CODE 0 intentry -
+__stringtab 6 0 STRING 0 strings dist/default/production\DHT11.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_12.o
+__pdataBANK0 20 0 BANK0 1 dataBANK0 dist/default/production\DHT11.X.production.o
+___awmod@counter 74 0 COMMON 1 cstackCOMMON dist/default/production\DHT11.X.production.o
+___awdiv C52 0 CODE 0 text2 dist/default/production\DHT11.X.production.o
+___awmod BA4 0 CODE 0 text1 dist/default/production\DHT11.X.production.o
+__pmaintext D18 0 CODE 0 maintext dist/default/production\DHT11.X.production.o
+UART_Write_Text@text 71 0 COMMON 1 cstackCOMMON dist/default/production\DHT11.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+__Hinittext 0 0 ABS 0 inittext -
+__end_of__stringtab 26 0 STRING 0 strings dist/default/production\DHT11.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__pbssCOMMON 78 0 COMMON 1 bssCOMMON dist/default/production\DHT11.X.production.o
+init_fetch0 9E8 0 CODE 0 inittext dist/default/production\DHT11.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__Lend_init 0 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization FF8 0 CODE 0 cinit dist/default/production\DHT11.X.production.o
+__Hintentry 0 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+___awdiv@quotient 76 0 COMMON 1 cstackCOMMON dist/default/production\DHT11.X.production.o
+?___awdiv 70 0 COMMON 1 cstackCOMMON dist/default/production\DHT11.X.production.o
+?___awmod 70 0 COMMON 1 cstackCOMMON dist/default/production\DHT11.X.production.o
+__Hreset_vec 0 0 CODE 0 reset_vec -
+___awmod@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\DHT11.X.production.o
+__ptext1 BA4 0 CODE 0 text1 dist/default/production\DHT11.X.production.o
+__ptext2 C52 0 CODE 0 text2 dist/default/production\DHT11.X.production.o
+__ptext3 A7C 0 CODE 0 text3 dist/default/production\DHT11.X.production.o
+__ptext4 9A4 0 CODE 0 text4 dist/default/production\DHT11.X.production.o
+__ptext5 998 0 CODE 0 text5 dist/default/production\DHT11.X.production.o
+__ptext6 9C4 0 CODE 0 text6 dist/default/production\DHT11.X.production.o
+__ptext7 A0E 0 CODE 0 text7 dist/default/production\DHT11.X.production.o
+__ptext8 B20 0 CODE 0 text8 dist/default/production\DHT11.X.production.o
+__ptext9 AC8 0 CODE 0 text9 dist/default/production\DHT11.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+UART_Write@data 70 0 COMMON 1 cstackCOMMON dist/default/production\DHT11.X.production.o
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__H__absolute__ 0 0 ABS 0 __absolute__ -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+_Humidity 20 0 BANK0 1 dataBANK0 dist/default/production\DHT11.X.production.o
+___heap_hi 0 0 ABS 0 - C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_12.o
+___heap_lo 0 0 ABS 0 - C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_12.o
+__end_of__initialization FF8 0 CODE 0 cinit dist/default/production\DHT11.X.production.o
+___awmod@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\DHT11.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__pidataBANK0 A44 0 CODE 0 idataBANK0 dist/default/production\DHT11.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+Read_Data@i 72 0 COMMON 1 cstackCOMMON dist/default/production\DHT11.X.production.o
+_Check_Response AC8 0 CODE 0 text9 dist/default/production\DHT11.X.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\DHT11.X.production.o
+__Hend_init 6 0 CODE 0 end_init -
+init_ram0 9F0 0 CODE 0 inittext dist/default/production\DHT11.X.production.o
+__end_of_main FD2 0 CODE 0 maintext dist/default/production\DHT11.X.production.o
+_RCREG 1A 0 ABS 0 - dist/default/production\DHT11.X.production.o
+_SPBRG 99 0 ABS 0 - dist/default/production\DHT11.X.production.o
+_T1CON 10 0 ABS 0 - dist/default/production\DHT11.X.production.o
+_TMR1H F 0 ABS 0 - dist/default/production\DHT11.X.production.o
+_TMR1L E 0 ABS 0 - dist/default/production\DHT11.X.production.o
+_TRISB 86 0 ABS 0 - dist/default/production\DHT11.X.production.o
+_TRISC 87 0 ABS 0 - dist/default/production\DHT11.X.production.o
+_TXREG 19 0 ABS 0 - dist/default/production\DHT11.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__initialization FD2 0 CODE 0 cinit dist/default/production\DHT11.X.production.o
+_UART_TX_Empty 998 0 CODE 0 text5 dist/default/production\DHT11.X.production.o
+__pstrings 6 0 STRING 0 strings dist/default/production\DHT11.X.production.o
+__end_of_Check_Response B20 0 CODE 0 text9 dist/default/production\DHT11.X.production.o
+_Start_Signal A0E 0 CODE 0 text7 dist/default/production\DHT11.X.production.o
+___int_stack_hi 0 0 STACK 2 stack C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_12.o
+___int_stack_lo 0 0 STACK 2 stack C:\Users\pc1\AppData\Local\Temp\xcAs3v4.\driver_tmp_12.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 7E9 FD2 17 2
+text1 0 5D2 BA4 57 2
+text2 0 629 C52 63 2
+text3 0 53E A7C 26 2
+text4 0 4D2 9A4 10 2
+text5 0 4CC 998 6 2
+text6 0 4E2 9C4 12 2
+text7 0 507 A0E 1B 2
+text8 0 590 B20 42 2
+text9 0 564 AC8 2C 2
+maintext 0 68C D18 15D 2
+cstackCOMMON 1 70 70 D 1
+inittext 0 4F4 9E8 13 2
+reset_vec 0 0 0 3 2
+idataBANK0 0 522 A44 1C 2
+strings 0 3 6 53 2
+dataBANK0 1 20 20 26 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
