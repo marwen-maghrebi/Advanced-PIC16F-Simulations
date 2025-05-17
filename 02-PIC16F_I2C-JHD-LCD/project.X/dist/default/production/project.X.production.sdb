@@ -1,0 +1,338 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"5 E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\26-I2C-LCD\project.X\i2c.c
+[v _I2C_Master_Init I2C_Master_Init `(v  1 e 1 0 ]
+"14
+[v _I2C_Master_Wait I2C_Master_Wait `(v  1 e 1 0 ]
+"18
+[v _I2C_Master_Start I2C_Master_Start `(v  1 e 1 0 ]
+"28
+[v _I2C_Master_Stop I2C_Master_Stop `(v  1 e 1 0 ]
+"45
+[v _I2C_Master_Write I2C_Master_Write `(uc  1 e 1 0 ]
+"13 E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\26-I2C-LCD\project.X\jhd_lcd.c
+[v _LCD_Send LCD_Send `(v  1 s 1 LCD_Send ]
+"22
+[v _LCD_Command LCD_Command `(v  1 e 1 0 ]
+"26
+[v _LCD_Print_Char LCD_Print_Char `(v  1 e 1 0 ]
+"30
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+"62
+[v _LCD_Clear LCD_Clear `(v  1 e 1 0 ]
+"67
+[v _LCD_Home LCD_Home `(v  1 e 1 0 ]
+"72
+[v _LCD_Display_ON LCD_Display_ON `(v  1 e 1 0 ]
+"77
+[v _LCD_Display_OFF LCD_Display_OFF `(v  1 e 1 0 ]
+"82
+[v _LCD_Cursor_ON LCD_Cursor_ON `(v  1 e 1 0 ]
+"87
+[v _LCD_Cursor_OFF LCD_Cursor_OFF `(v  1 e 1 0 ]
+"92
+[v _LCD_Blink_ON LCD_Blink_ON `(v  1 e 1 0 ]
+"97
+[v _LCD_Blink_OFF LCD_Blink_OFF `(v  1 e 1 0 ]
+"102
+[v _LCD_ScrollDisplayLeft LCD_ScrollDisplayLeft `(v  1 e 1 0 ]
+"106
+[v _LCD_ScrollDisplayRight LCD_ScrollDisplayRight `(v  1 e 1 0 ]
+"110
+[v _LCD_LeftToRight LCD_LeftToRight `(v  1 e 1 0 ]
+"115
+[v _LCD_RightToLeft LCD_RightToLeft `(v  1 e 1 0 ]
+"120
+[v _LCD_AutoScroll_ON LCD_AutoScroll_ON `(v  1 e 1 0 ]
+"125
+[v _LCD_AutoScroll_OFF LCD_AutoScroll_OFF `(v  1 e 1 0 ]
+"130
+[v _LCD_CreateCustomChar LCD_CreateCustomChar `(v  1 e 1 0 ]
+"139
+[v _LCD_SetCursor LCD_SetCursor `(v  1 e 1 0 ]
+"149
+[v _LCD_Print_String LCD_Print_String `(v  1 e 1 0 ]
+"45 E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\26-I2C-LCD\project.X\newmain.c
+[v _main main `(v  1 e 1 0 ]
+"62
+[v _systemInit systemInit `(v  1 e 1 0 ]
+"75
+[v _demoBasicPrinting demoBasicPrinting `(v  1 e 1 0 ]
+"93
+[v _demoAutoScroll demoAutoScroll `(v  1 e 1 0 ]
+"111
+[v _demoCursorControl demoCursorControl `(v  1 e 1 0 ]
+"134
+[v _demoDisplayControl demoDisplayControl `(v  1 e 1 0 ]
+"151
+[v _demoTextDirection demoTextDirection `(v  1 e 1 0 ]
+"168
+[v _demoScrolling demoScrolling `(v  1 e 1 0 ]
+"191
+[v _demoHomeCommand demoHomeCommand `(v  1 e 1 0 ]
+"808 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @19 ]
+"815
+[v _SSPCON SSPCON `VEuc  1 e 1 @20 ]
+"1754
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @145 ]
+"1823
+[v _SSPADD SSPADD `VEuc  1 e 1 @147 ]
+"1830
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @148 ]
+"2378
+[v _ACKDT ACKDT `VEb  1 e 0 @1165 ]
+"2381
+[v _ACKEN ACKEN `VEb  1 e 0 @1164 ]
+"2384
+[v _ACKSTAT ACKSTAT `VEb  1 e 0 @1166 ]
+"2636
+[v _PEN PEN `VEb  1 e 0 @1162 ]
+"2741
+[v _RCEN RCEN `VEb  1 e 0 @1163 ]
+"2795
+[v _RSEN RSEN `VEb  1 e 0 @1161 ]
+"2810
+[v _SEN SEN `VEb  1 e 0 @1160 ]
+"2828
+[v _SSPIF SSPIF `VEb  1 e 0 @99 ]
+"2972
+[v _TRISC3 TRISC3 `VEb  1 e 0 @1083 ]
+"2975
+[v _TRISC4 TRISC4 `VEb  1 e 0 @1084 ]
+"6 E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\26-I2C-LCD\project.X\jhd_lcd.c
+[v __lcd_addr _lcd_addr `uc  1 s 1 _lcd_addr ]
+"7
+[v __displaycontrol _displaycontrol `uc  1 s 1 _displaycontrol ]
+"8
+[v __displaymode _displaymode `uc  1 s 1 _displaymode ]
+"9
+[v __initialized _initialized `uc  1 s 1 _initialized ]
+"22 E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\26-I2C-LCD\project.X\newmain.c
+[v _SMILEY SMILEY `DC[8]uc  1 e 8 0 ]
+"27
+[v _LAUGHING_SMILEY LAUGHING_SMILEY `DC[8]uc  1 e 8 0 ]
+"45
+[v _main main `(v  1 e 1 0 ]
+{
+"57
+} 0
+"62
+[v _systemInit systemInit `(v  1 e 1 0 ]
+{
+"70
+} 0
+"30 E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\26-I2C-LCD\project.X\jhd_lcd.c
+[v _LCD_Init LCD_Init `(v  1 e 1 0 ]
+{
+[v LCD_Init@lcd_addr lcd_addr `uc  1 p 1 wreg ]
+[v LCD_Init@lcd_addr lcd_addr `uc  1 p 1 wreg ]
+[v LCD_Init@lcd_addr lcd_addr `uc  1 p 1 10 ]
+"60
+} 0
+"130
+[v _LCD_CreateCustomChar LCD_CreateCustomChar `(v  1 e 1 0 ]
+{
+[v LCD_CreateCustomChar@location location `uc  1 p 1 wreg ]
+"134
+[v LCD_CreateCustomChar@i i `uc  1 a 1 8 ]
+"130
+[v LCD_CreateCustomChar@location location `uc  1 p 1 wreg ]
+[v LCD_CreateCustomChar@charmap charmap `*.24uc  1 p 1 5 ]
+[v LCD_CreateCustomChar@location location `uc  1 p 1 7 ]
+"137
+} 0
+"5 E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\26-I2C-LCD\project.X\i2c.c
+[v _I2C_Master_Init I2C_Master_Init `(v  1 e 1 0 ]
+{
+"12
+} 0
+"151 E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\26-I2C-LCD\project.X\newmain.c
+[v _demoTextDirection demoTextDirection `(v  1 e 1 0 ]
+{
+"163
+} 0
+"115 E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\26-I2C-LCD\project.X\jhd_lcd.c
+[v _LCD_RightToLeft LCD_RightToLeft `(v  1 e 1 0 ]
+{
+"118
+} 0
+"110
+[v _LCD_LeftToRight LCD_LeftToRight `(v  1 e 1 0 ]
+{
+"113
+} 0
+"168 E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\26-I2C-LCD\project.X\newmain.c
+[v _demoScrolling demoScrolling `(v  1 e 1 0 ]
+{
+"182
+[v demoScrolling@i_212 i `i  1 a 2 2 ]
+"173
+[v demoScrolling@i i `i  1 a 2 0 ]
+"186
+} 0
+"106 E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\26-I2C-LCD\project.X\jhd_lcd.c
+[v _LCD_ScrollDisplayRight LCD_ScrollDisplayRight `(v  1 e 1 0 ]
+{
+"108
+} 0
+"102
+[v _LCD_ScrollDisplayLeft LCD_ScrollDisplayLeft `(v  1 e 1 0 ]
+{
+"104
+} 0
+"191 E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\26-I2C-LCD\project.X\newmain.c
+[v _demoHomeCommand demoHomeCommand `(v  1 e 1 0 ]
+{
+"200
+} 0
+"67 E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\26-I2C-LCD\project.X\jhd_lcd.c
+[v _LCD_Home LCD_Home `(v  1 e 1 0 ]
+{
+"70
+} 0
+"134 E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\26-I2C-LCD\project.X\newmain.c
+[v _demoDisplayControl demoDisplayControl `(v  1 e 1 0 ]
+{
+"146
+} 0
+"72 E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\26-I2C-LCD\project.X\jhd_lcd.c
+[v _LCD_Display_ON LCD_Display_ON `(v  1 e 1 0 ]
+{
+"75
+} 0
+"77
+[v _LCD_Display_OFF LCD_Display_OFF `(v  1 e 1 0 ]
+{
+"80
+} 0
+"111 E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\26-I2C-LCD\project.X\newmain.c
+[v _demoCursorControl demoCursorControl `(v  1 e 1 0 ]
+{
+"129
+} 0
+"82 E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\26-I2C-LCD\project.X\jhd_lcd.c
+[v _LCD_Cursor_ON LCD_Cursor_ON `(v  1 e 1 0 ]
+{
+"85
+} 0
+"87
+[v _LCD_Cursor_OFF LCD_Cursor_OFF `(v  1 e 1 0 ]
+{
+"90
+} 0
+"92
+[v _LCD_Blink_ON LCD_Blink_ON `(v  1 e 1 0 ]
+{
+"95
+} 0
+"97
+[v _LCD_Blink_OFF LCD_Blink_OFF `(v  1 e 1 0 ]
+{
+"100
+} 0
+"75 E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\26-I2C-LCD\project.X\newmain.c
+[v _demoBasicPrinting demoBasicPrinting `(v  1 e 1 0 ]
+{
+"88
+} 0
+"93
+[v _demoAutoScroll demoAutoScroll `(v  1 e 1 0 ]
+{
+"99
+[v demoAutoScroll@i i `i  1 a 2 0 ]
+"106
+} 0
+"139 E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\26-I2C-LCD\project.X\jhd_lcd.c
+[v _LCD_SetCursor LCD_SetCursor `(v  1 e 1 0 ]
+{
+[v LCD_SetCursor@col col `uc  1 p 1 wreg ]
+"140
+[v LCD_SetCursor@row_offsets row_offsets `[4]uc  1 a 4 6 ]
+"139
+[v LCD_SetCursor@col col `uc  1 p 1 wreg ]
+[v LCD_SetCursor@row row `uc  1 p 1 5 ]
+[v LCD_SetCursor@F1080 F1080 `[4]uc  1 s 4 F1080 ]
+[v LCD_SetCursor@col col `uc  1 p 1 10 ]
+"147
+} 0
+"149
+[v _LCD_Print_String LCD_Print_String `(v  1 e 1 0 ]
+{
+[v LCD_Print_String@str str `*.24DCuc  1 p 1 5 ]
+"153
+} 0
+"26
+[v _LCD_Print_Char LCD_Print_Char `(v  1 e 1 0 ]
+{
+[v LCD_Print_Char@c c `uc  1 p 1 wreg ]
+[v LCD_Print_Char@c c `uc  1 p 1 wreg ]
+[v LCD_Print_Char@c c `uc  1 p 1 4 ]
+"28
+} 0
+"62
+[v _LCD_Clear LCD_Clear `(v  1 e 1 0 ]
+{
+"65
+} 0
+"120
+[v _LCD_AutoScroll_ON LCD_AutoScroll_ON `(v  1 e 1 0 ]
+{
+"123
+} 0
+"125
+[v _LCD_AutoScroll_OFF LCD_AutoScroll_OFF `(v  1 e 1 0 ]
+{
+"128
+} 0
+"22
+[v _LCD_Command LCD_Command `(v  1 e 1 0 ]
+{
+[v LCD_Command@cmd cmd `uc  1 p 1 wreg ]
+[v LCD_Command@cmd cmd `uc  1 p 1 wreg ]
+[v LCD_Command@cmd cmd `uc  1 p 1 4 ]
+"24
+} 0
+"13
+[v _LCD_Send LCD_Send `(v  1 s 1 LCD_Send ]
+{
+[v LCD_Send@data data `uc  1 p 1 wreg ]
+[v LCD_Send@data data `uc  1 p 1 wreg ]
+[v LCD_Send@mode mode `uc  1 p 1 1 ]
+[v LCD_Send@data data `uc  1 p 1 3 ]
+"20
+} 0
+"45 E:\00-YOUTUBE&BLOGUE\0-Project\0-PIC_Mirocontroller\26-I2C-LCD\project.X\i2c.c
+[v _I2C_Master_Write I2C_Master_Write `(uc  1 e 1 0 ]
+{
+[v I2C_Master_Write@data data `uc  1 p 1 wreg ]
+[v I2C_Master_Write@data data `uc  1 p 1 wreg ]
+[v I2C_Master_Write@data data `uc  1 p 1 0 ]
+"51
+} 0
+"28
+[v _I2C_Master_Stop I2C_Master_Stop `(v  1 e 1 0 ]
+{
+"31
+} 0
+"18
+[v _I2C_Master_Start I2C_Master_Start `(v  1 e 1 0 ]
+{
+"21
+} 0
+"14
+[v _I2C_Master_Wait I2C_Master_Wait `(v  1 e 1 0 ]
+{
+"16
+} 0
