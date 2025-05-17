@@ -1,0 +1,653 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"35 ./FDC1004.h
+[; ;./FDC1004.h: 35:     typedef struct {
+[s S102 `uc 1 `uc 1 `uc -> 4 `i ]
+[n S102 . address rate last_capdac ]
+"19 ./i2c.h
+[; ;./i2c.h: 19: void I2C_Master_Start(void);
+[v _I2C_Master_Start `(v ~T0 @X0 0 ef ]
+"24
+[; ;./i2c.h: 24: unsigned char I2C_Master_Write(unsigned char data);
+[v _I2C_Master_Write `(uc ~T0 @X0 0 ef1`uc ]
+"21
+[; ;./i2c.h: 21: void I2C_Master_Stop(void);
+[v _I2C_Master_Stop `(v ~T0 @X0 0 ef ]
+"25
+[; ;./i2c.h: 25: unsigned char I2C_Read_Byte(void);
+[v _I2C_Read_Byte `(uc ~T0 @X0 0 ef ]
+"22
+[; ;./i2c.h: 22: void I2C_ACK(void);
+[v _I2C_ACK `(v ~T0 @X0 0 ef ]
+"23
+[; ;./i2c.h: 23: void I2C_NACK(void);
+[v _I2C_NACK `(v ~T0 @X0 0 ef ]
+[v F164 `(v ~T0 @X0 1 tf1`ul ]
+"20 C:\Program Files\Microchip\xc8\v2.50\pic\include\builtins.h
+[v __delay `JF164 ~T0 @X0 0 e ]
+[p i __delay ]
+"30 ./FDC1004.h
+[; ;./FDC1004.h: 30: typedef struct {
+[s S101 `s 1 `uc 1 ]
+[n S101 . value capdac ]
+"48
+[; ;./FDC1004.h: 48:         uint8_t FDC1004_GetRawCapacitance(FDC1004 *fdc, uint8_t channel, fdc1004_measurement_t *value);
+[v _FDC1004_GetRawCapacitance `(uc ~T0 @X0 0 ef3`*S102`uc`*S101 ]
+"54 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 54: __asm("INDF equ 00h");
+[; <" INDF equ 00h ;# ">
+"61
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 61: __asm("TMR0 equ 01h");
+[; <" TMR0 equ 01h ;# ">
+"68
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 68: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"75
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 75: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"161
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 161: __asm("FSR equ 04h");
+[; <" FSR equ 04h ;# ">
+"168
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 168: __asm("PORTA equ 05h");
+[; <" PORTA equ 05h ;# ">
+"218
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 218: __asm("PORTB equ 06h");
+[; <" PORTB equ 06h ;# ">
+"280
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 280: __asm("PORTC equ 07h");
+[; <" PORTC equ 07h ;# ">
+"342
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 342: __asm("PORTD equ 08h");
+[; <" PORTD equ 08h ;# ">
+"404
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 404: __asm("PORTE equ 09h");
+[; <" PORTE equ 09h ;# ">
+"436
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 436: __asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+"456
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 456: __asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+"534
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 534: __asm("PIR1 equ 0Ch");
+[; <" PIR1 equ 0Ch ;# ">
+"596
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 596: __asm("PIR2 equ 0Dh");
+[; <" PIR2 equ 0Dh ;# ">
+"636
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 636: __asm("TMR1 equ 0Eh");
+[; <" TMR1 equ 0Eh ;# ">
+"643
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 643: __asm("TMR1L equ 0Eh");
+[; <" TMR1L equ 0Eh ;# ">
+"650
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 650: __asm("TMR1H equ 0Fh");
+[; <" TMR1H equ 0Fh ;# ">
+"657
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 657: __asm("T1CON equ 010h");
+[; <" T1CON equ 010h ;# ">
+"732
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 732: __asm("TMR2 equ 011h");
+[; <" TMR2 equ 011h ;# ">
+"739
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 739: __asm("T2CON equ 012h");
+[; <" T2CON equ 012h ;# ">
+"810
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 810: __asm("SSPBUF equ 013h");
+[; <" SSPBUF equ 013h ;# ">
+"817
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 817: __asm("SSPCON equ 014h");
+[; <" SSPCON equ 014h ;# ">
+"887
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 887: __asm("CCPR1 equ 015h");
+[; <" CCPR1 equ 015h ;# ">
+"894
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 894: __asm("CCPR1L equ 015h");
+[; <" CCPR1L equ 015h ;# ">
+"901
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 901: __asm("CCPR1H equ 016h");
+[; <" CCPR1H equ 016h ;# ">
+"908
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 908: __asm("CCP1CON equ 017h");
+[; <" CCP1CON equ 017h ;# ">
+"966
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 966: __asm("RCSTA equ 018h");
+[; <" RCSTA equ 018h ;# ">
+"1061
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1061: __asm("TXREG equ 019h");
+[; <" TXREG equ 019h ;# ">
+"1068
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1068: __asm("RCREG equ 01Ah");
+[; <" RCREG equ 01Ah ;# ">
+"1075
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1075: __asm("CCPR2 equ 01Bh");
+[; <" CCPR2 equ 01Bh ;# ">
+"1082
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1082: __asm("CCPR2L equ 01Bh");
+[; <" CCPR2L equ 01Bh ;# ">
+"1089
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1089: __asm("CCPR2H equ 01Ch");
+[; <" CCPR2H equ 01Ch ;# ">
+"1096
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1096: __asm("CCP2CON equ 01Dh");
+[; <" CCP2CON equ 01Dh ;# ">
+"1154
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1154: __asm("ADRESH equ 01Eh");
+[; <" ADRESH equ 01Eh ;# ">
+"1161
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1161: __asm("ADCON0 equ 01Fh");
+[; <" ADCON0 equ 01Fh ;# ">
+"1257
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1257: __asm("OPTION_REG equ 081h");
+[; <" OPTION_REG equ 081h ;# ">
+"1327
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1327: __asm("TRISA equ 085h");
+[; <" TRISA equ 085h ;# ">
+"1377
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1377: __asm("TRISB equ 086h");
+[; <" TRISB equ 086h ;# ">
+"1439
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1439: __asm("TRISC equ 087h");
+[; <" TRISC equ 087h ;# ">
+"1501
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1501: __asm("TRISD equ 088h");
+[; <" TRISD equ 088h ;# ">
+"1563
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1563: __asm("TRISE equ 089h");
+[; <" TRISE equ 089h ;# ">
+"1620
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1620: __asm("PIE1 equ 08Ch");
+[; <" PIE1 equ 08Ch ;# ">
+"1682
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1682: __asm("PIE2 equ 08Dh");
+[; <" PIE2 equ 08Dh ;# ">
+"1722
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1722: __asm("PCON equ 08Eh");
+[; <" PCON equ 08Eh ;# ">
+"1756
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1756: __asm("SSPCON2 equ 091h");
+[; <" SSPCON2 equ 091h ;# ">
+"1818
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1818: __asm("PR2 equ 092h");
+[; <" PR2 equ 092h ;# ">
+"1825
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1825: __asm("SSPADD equ 093h");
+[; <" SSPADD equ 093h ;# ">
+"1832
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 1832: __asm("SSPSTAT equ 094h");
+[; <" SSPSTAT equ 094h ;# ">
+"2001
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 2001: __asm("TXSTA equ 098h");
+[; <" TXSTA equ 098h ;# ">
+"2082
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 2082: __asm("SPBRG equ 099h");
+[; <" SPBRG equ 099h ;# ">
+"2089
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 2089: __asm("CMCON equ 09Ch");
+[; <" CMCON equ 09Ch ;# ">
+"2159
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 2159: __asm("CVRCON equ 09Dh");
+[; <" CVRCON equ 09Dh ;# ">
+"2224
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 2224: __asm("ADRESL equ 09Eh");
+[; <" ADRESL equ 09Eh ;# ">
+"2231
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 2231: __asm("ADCON1 equ 09Fh");
+[; <" ADCON1 equ 09Fh ;# ">
+"2290
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 2290: __asm("EEDATA equ 010Ch");
+[; <" EEDATA equ 010Ch ;# ">
+"2297
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 2297: __asm("EEADR equ 010Dh");
+[; <" EEADR equ 010Dh ;# ">
+"2304
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 2304: __asm("EEDATH equ 010Eh");
+[; <" EEDATH equ 010Eh ;# ">
+"2311
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 2311: __asm("EEADRH equ 010Fh");
+[; <" EEADRH equ 010Fh ;# ">
+"2318
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 2318: __asm("EECON1 equ 018Ch");
+[; <" EECON1 equ 018Ch ;# ">
+"2363
+[; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h: 2363: __asm("EECON2 equ 018Dh");
+[; <" EECON2 equ 018Dh ;# ">
+"7 FDC1004.c
+[; ;FDC1004.c: 7: static uint8_t MEAS_CONFIG[] = {0x08, 0x09, 0x0A, 0x0B};
+[v _MEAS_CONFIG `uc ~T0 @X0 -> 4 `i s ]
+[i _MEAS_CONFIG
+:U ..
+-> -> 8 `i `uc
+-> -> 9 `i `uc
+-> -> 10 `i `uc
+-> -> 11 `i `uc
+..
+]
+"8
+[; ;FDC1004.c: 8: static uint8_t MEAS_MSB[] = {0x00, 0x02, 0x04, 0x06};
+[v _MEAS_MSB `uc ~T0 @X0 -> 4 `i s ]
+[i _MEAS_MSB
+:U ..
+-> -> 0 `i `uc
+-> -> 2 `i `uc
+-> -> 4 `i `uc
+-> -> 6 `i `uc
+..
+]
+"9
+[; ;FDC1004.c: 9: static uint8_t MEAS_LSB[] = {0x01, 0x03, 0x05, 0x07};
+[v _MEAS_LSB `uc ~T0 @X0 -> 4 `i s ]
+[i _MEAS_LSB
+:U ..
+-> -> 1 `i `uc
+-> -> 3 `i `uc
+-> -> 5 `i `uc
+-> -> 7 `i `uc
+..
+]
+"11
+[; ;FDC1004.c: 11: void FDC1004_Init(FDC1004 *fdc, uint8_t rate) {
+[v _FDC1004_Init `(v ~T0 @X0 1 ef2`*S102`uc ]
+{
+[e :U _FDC1004_Init ]
+[v _fdc `*S102 ~T0 @X0 1 r1 ]
+[v _rate `uc ~T0 @X0 1 r2 ]
+[f ]
+"12
+[; ;FDC1004.c: 12:     fdc->address = 0x50;
+[e = . *U _fdc 0 -> -> 80 `i `uc ]
+"13
+[; ;FDC1004.c: 13:     fdc->rate = rate;
+[e = . *U _fdc 1 _rate ]
+"14
+[; ;FDC1004.c: 14:     for (int i = 0; i < 4; i++) {
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 4 `i 104  ]
+[e $U 105  ]
+[e :U 104 ]
+{
+"15
+[; ;FDC1004.c: 15:         fdc->last_capdac[i] = 0;
+[e = *U + &U . *U _fdc 2 * -> -> _i `ui `ux -> -> # *U &U . *U _fdc 2 `ui `ux -> -> 0 `i `uc ]
+"16
+[; ;FDC1004.c: 16:         }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 4 `i 104  ]
+[e :U 105 ]
+}
+"17
+[; ;FDC1004.c: 17:     }
+[e :UE 103 ]
+}
+"19
+[; ;FDC1004.c: 19: void FDC1004_Write16(FDC1004 *fdc, uint8_t reg, uint16_t data) {
+[v _FDC1004_Write16 `(v ~T0 @X0 1 ef3`*S102`uc`us ]
+{
+[e :U _FDC1004_Write16 ]
+[v _fdc `*S102 ~T0 @X0 1 r1 ]
+[v _reg `uc ~T0 @X0 1 r2 ]
+[v _data `us ~T0 @X0 1 r3 ]
+[f ]
+"20
+[; ;FDC1004.c: 20:     I2C_Master_Start();
+[e ( _I2C_Master_Start ..  ]
+"21
+[; ;FDC1004.c: 21:     I2C_Master_Write((fdc->address << 1));
+[e ( _I2C_Master_Write (1 -> << -> . *U _fdc 0 `i -> 1 `i `uc ]
+"22
+[; ;FDC1004.c: 22:     I2C_Master_Write(reg);
+[e ( _I2C_Master_Write (1 _reg ]
+"23
+[; ;FDC1004.c: 23:     I2C_Master_Write((data >> 8));
+[e ( _I2C_Master_Write (1 -> >> -> _data `ui -> 8 `i `uc ]
+"24
+[; ;FDC1004.c: 24:     I2C_Master_Write(data & 0xFF);
+[e ( _I2C_Master_Write (1 -> & -> _data `ui -> -> 255 `i `ui `uc ]
+"25
+[; ;FDC1004.c: 25:     I2C_Master_Stop();
+[e ( _I2C_Master_Stop ..  ]
+"26
+[; ;FDC1004.c: 26:     }
+[e :UE 107 ]
+}
+"28
+[; ;FDC1004.c: 28: uint16_t FDC1004_Read16(FDC1004 *fdc, uint8_t reg) {
+[v _FDC1004_Read16 `(us ~T0 @X0 1 ef2`*S102`uc ]
+{
+[e :U _FDC1004_Read16 ]
+[v _fdc `*S102 ~T0 @X0 1 r1 ]
+[v _reg `uc ~T0 @X0 1 r2 ]
+[f ]
+"29
+[; ;FDC1004.c: 29:     uint16_t value = 0;
+[v _value `us ~T0 @X0 1 a ]
+[e = _value -> -> 0 `i `us ]
+"30
+[; ;FDC1004.c: 30:     I2C_Master_Start();
+[e ( _I2C_Master_Start ..  ]
+"31
+[; ;FDC1004.c: 31:     I2C_Master_Write((fdc->address << 1));
+[e ( _I2C_Master_Write (1 -> << -> . *U _fdc 0 `i -> 1 `i `uc ]
+"32
+[; ;FDC1004.c: 32:     I2C_Master_Write(reg);
+[e ( _I2C_Master_Write (1 _reg ]
+"33
+[; ;FDC1004.c: 33:     I2C_Master_Stop();
+[e ( _I2C_Master_Stop ..  ]
+"35
+[; ;FDC1004.c: 35:     I2C_Master_Start();
+[e ( _I2C_Master_Start ..  ]
+"36
+[; ;FDC1004.c: 36:     I2C_Master_Write((fdc->address << 1) | 1);
+[e ( _I2C_Master_Write (1 -> | << -> . *U _fdc 0 `i -> 1 `i -> 1 `i `uc ]
+"37
+[; ;FDC1004.c: 37:     value = I2C_Read_Byte();
+[e = _value -> ( _I2C_Read_Byte ..  `us ]
+"38
+[; ;FDC1004.c: 38:     I2C_ACK();
+[e ( _I2C_ACK ..  ]
+"39
+[; ;FDC1004.c: 39:     value = (value << 8) | I2C_Read_Byte();
+[e = _value -> | << -> _value `ui -> 8 `i -> ( _I2C_Read_Byte ..  `ui `us ]
+"40
+[; ;FDC1004.c: 40:     I2C_NACK();
+[e ( _I2C_NACK ..  ]
+"41
+[; ;FDC1004.c: 41:     I2C_Master_Stop();
+[e ( _I2C_Master_Stop ..  ]
+"42
+[; ;FDC1004.c: 42:     return value;
+[e ) _value ]
+[e $UE 108  ]
+"43
+[; ;FDC1004.c: 43:     }
+[e :UE 108 ]
+}
+"45
+[; ;FDC1004.c: 45: uint8_t FDC1004_ConfigureMeasurement(FDC1004 *fdc, uint8_t measurement, uint8_t channel, uint8_t capdac) {
+[v _FDC1004_ConfigureMeasurement `(uc ~T0 @X0 1 ef4`*S102`uc`uc`uc ]
+{
+[e :U _FDC1004_ConfigureMeasurement ]
+[v _fdc `*S102 ~T0 @X0 1 r1 ]
+[v _measurement `uc ~T0 @X0 1 r2 ]
+[v _channel `uc ~T0 @X0 1 r3 ]
+[v _capdac `uc ~T0 @X0 1 r4 ]
+[f ]
+"46
+[; ;FDC1004.c: 46:     if (!(measurement >= 0 && measurement <= (0x03)) || !(channel >= 0 && channel <= (0x03)) || capdac > (0x1F)) {
+[e $ ! || || ! && >= -> _measurement `i -> 0 `i <= -> _measurement `i -> 3 `i ! && >= -> _channel `i -> 0 `i <= -> _channel `i -> 3 `i > -> _capdac `i -> 31 `i 110  ]
+{
+"47
+[; ;FDC1004.c: 47:         return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 109  ]
+"48
+[; ;FDC1004.c: 48:         }
+}
+[e :U 110 ]
+"49
+[; ;FDC1004.c: 49:     uint16_t config = ((uint16_t)channel << 13) | (0x04 << 10) | (capdac << 5);
+[v _config `us ~T0 @X0 1 a ]
+[e = _config -> | | << -> -> _channel `us `ui -> 13 `i -> << -> 4 `i -> 10 `i `ui -> << -> _capdac `i -> 5 `i `ui `us ]
+"50
+[; ;FDC1004.c: 50:     FDC1004_Write16(fdc, MEAS_CONFIG[measurement], config);
+[e ( _FDC1004_Write16 (3 , , _fdc *U + &U _MEAS_CONFIG * -> _measurement `ux -> -> # *U &U _MEAS_CONFIG `ui `ux _config ]
+"51
+[; ;FDC1004.c: 51:     return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 109  ]
+"52
+[; ;FDC1004.c: 52:     }
+[e :UE 109 ]
+}
+"54
+[; ;FDC1004.c: 54: uint8_t FDC1004_TriggerMeasurement(FDC1004 *fdc, uint8_t measurement, uint8_t rate) {
+[v _FDC1004_TriggerMeasurement `(uc ~T0 @X0 1 ef3`*S102`uc`uc ]
+{
+[e :U _FDC1004_TriggerMeasurement ]
+[v _fdc `*S102 ~T0 @X0 1 r1 ]
+[v _measurement `uc ~T0 @X0 1 r2 ]
+[v _rate `uc ~T0 @X0 1 r3 ]
+[f ]
+"55
+[; ;FDC1004.c: 55:     if (!(measurement >= 0 && measurement <= (0x03)) || !(rate == (0x01) || rate == (0x02) || rate == (0x03))) {
+[e $ ! || ! && >= -> _measurement `i -> 0 `i <= -> _measurement `i -> 3 `i ! || || == -> _rate `i -> 1 `i == -> _rate `i -> 2 `i == -> _rate `i -> 3 `i 112  ]
+{
+"56
+[; ;FDC1004.c: 56:         return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 111  ]
+"57
+[; ;FDC1004.c: 57:         }
+}
+[e :U 112 ]
+"58
+[; ;FDC1004.c: 58:     uint16_t trigger = (rate << 10) | (1 << (7 - measurement));
+[v _trigger `us ~T0 @X0 1 a ]
+[e = _trigger -> | << -> _rate `i -> 10 `i << -> 1 `i - -> 7 `i -> _measurement `i `us ]
+"59
+[; ;FDC1004.c: 59:     FDC1004_Write16(fdc, (0x0C), trigger);
+[e ( _FDC1004_Write16 (3 , , _fdc -> -> 12 `i `uc _trigger ]
+"60
+[; ;FDC1004.c: 60:     return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 111  ]
+"61
+[; ;FDC1004.c: 61:     }
+[e :UE 111 ]
+}
+"63
+[; ;FDC1004.c: 63: uint8_t FDC1004_ReadMeasurement(FDC1004 *fdc, uint8_t measurement, uint16_t *value) {
+[v _FDC1004_ReadMeasurement `(uc ~T0 @X0 1 ef3`*S102`uc`*us ]
+{
+[e :U _FDC1004_ReadMeasurement ]
+[v _fdc `*S102 ~T0 @X0 1 r1 ]
+[v _measurement `uc ~T0 @X0 1 r2 ]
+[v _value `*us ~T0 @X0 1 r3 ]
+[f ]
+"64
+[; ;FDC1004.c: 64:     if (!(measurement >= 0 && measurement <= (0x03))) {
+[e $ ! ! && >= -> _measurement `i -> 0 `i <= -> _measurement `i -> 3 `i 114  ]
+{
+"65
+[; ;FDC1004.c: 65:         return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 113  ]
+"66
+[; ;FDC1004.c: 66:         }
+}
+[e :U 114 ]
+"67
+[; ;FDC1004.c: 67:     uint16_t fdc_register = FDC1004_Read16(fdc, (0x0C));
+[v _fdc_register `us ~T0 @X0 1 a ]
+[e = _fdc_register ( _FDC1004_Read16 (2 , _fdc -> -> 12 `i `uc ]
+"68
+[; ;FDC1004.c: 68:     if (!(fdc_register & (1 << (3 - measurement)))) {
+[e $ ! ! != & -> _fdc_register `ui -> << -> 1 `i - -> 3 `i -> _measurement `i `ui -> -> 0 `i `ui 115  ]
+{
+"69
+[; ;FDC1004.c: 69:         return 2;
+[e ) -> -> 2 `i `uc ]
+[e $UE 113  ]
+"70
+[; ;FDC1004.c: 70:         }
+}
+[e :U 115 ]
+"71
+[; ;FDC1004.c: 71:     value[0] = FDC1004_Read16(fdc, MEAS_MSB[measurement]);
+[e = *U + _value * -> -> 0 `i `x -> -> # *U _value `i `x ( _FDC1004_Read16 (2 , _fdc *U + &U _MEAS_MSB * -> _measurement `ux -> -> # *U &U _MEAS_MSB `ui `ux ]
+"72
+[; ;FDC1004.c: 72:     value[1] = FDC1004_Read16(fdc, MEAS_LSB[measurement]);
+[e = *U + _value * -> -> 1 `i `x -> -> # *U _value `i `x ( _FDC1004_Read16 (2 , _fdc *U + &U _MEAS_LSB * -> _measurement `ux -> -> # *U &U _MEAS_LSB `ui `ux ]
+"73
+[; ;FDC1004.c: 73:     return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 113  ]
+"74
+[; ;FDC1004.c: 74:     }
+[e :UE 113 ]
+}
+"76
+[; ;FDC1004.c: 76: uint8_t FDC1004_MeasureChannel(FDC1004 *fdc, uint8_t channel, uint8_t capdac, uint16_t *value) {
+[v _FDC1004_MeasureChannel `(uc ~T0 @X0 1 ef4`*S102`uc`uc`*us ]
+{
+[e :U _FDC1004_MeasureChannel ]
+[v _fdc `*S102 ~T0 @X0 1 r1 ]
+[v _channel `uc ~T0 @X0 1 r2 ]
+[v _capdac `uc ~T0 @X0 1 r3 ]
+[v _value `*us ~T0 @X0 1 r4 ]
+[f ]
+"77
+[; ;FDC1004.c: 77:     uint8_t measurement = channel;
+[v _measurement `uc ~T0 @X0 1 a ]
+[e = _measurement _channel ]
+"78
+[; ;FDC1004.c: 78:     if (FDC1004_ConfigureMeasurement(fdc, measurement, channel, capdac)) return 1;
+[e $ ! != -> ( _FDC1004_ConfigureMeasurement (4 , , , _fdc _measurement _channel _capdac `i -> 0 `i 117  ]
+[e ) -> -> 1 `i `uc ]
+[e $UE 116  ]
+[e :U 117 ]
+"79
+[; ;FDC1004.c: 79:     if (FDC1004_TriggerMeasurement(fdc, measurement, fdc->rate)) return 1;
+[e $ ! != -> ( _FDC1004_TriggerMeasurement (3 , , _fdc _measurement . *U _fdc 1 `i -> 0 `i 118  ]
+[e ) -> -> 1 `i `uc ]
+[e $UE 116  ]
+[e :U 118 ]
+"80
+[; ;FDC1004.c: 80:     _delay((unsigned long)((10)*(16000000/4000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 16000000 `l `d .4000.0 `ul ]
+"81
+[; ;FDC1004.c: 81:     return FDC1004_ReadMeasurement(fdc, measurement, value);
+[e ) ( _FDC1004_ReadMeasurement (3 , , _fdc _measurement _value ]
+[e $UE 116  ]
+"82
+[; ;FDC1004.c: 82:     }
+[e :UE 116 ]
+}
+"84
+[; ;FDC1004.c: 84: int32_t FDC1004_GetCapacitance(FDC1004 *fdc, uint8_t channel) {
+[v _FDC1004_GetCapacitance `(l ~T0 @X0 1 ef2`*S102`uc ]
+{
+[e :U _FDC1004_GetCapacitance ]
+[v _fdc `*S102 ~T0 @X0 1 r1 ]
+[v _channel `uc ~T0 @X0 1 r2 ]
+[f ]
+"85
+[; ;FDC1004.c: 85:     fdc1004_measurement_t result;
+[v _result `S101 ~T0 @X0 1 a ]
+"86
+[; ;FDC1004.c: 86:     if (FDC1004_GetRawCapacitance(fdc, channel, &result)) return (-1-0x7fffffff);
+[e $ ! != -> ( _FDC1004_GetRawCapacitance (3 , , _fdc _channel &U _result `i -> 0 `i 120  ]
+[e ) - -> -U -> 1 `i `l -> 2147483647 `l ]
+[e $UE 119  ]
+[e :U 120 ]
+"87
+[; ;FDC1004.c: 87:     int32_t capacitance = (int32_t)result.value * (488) / 1000;
+[v _capacitance `l ~T0 @X0 1 a ]
+[e = _capacitance / * -> . _result 0 `l -> -> 488 `i `l -> -> 1000 `i `l ]
+"88
+[; ;FDC1004.c: 88:     capacitance += (int32_t)result.capdac * (3125);
+[e =+ _capacitance * -> . _result 1 `l -> -> 3125 `i `l ]
+"89
+[; ;FDC1004.c: 89:     return capacitance;
+[e ) _capacitance ]
+[e $UE 119  ]
+"90
+[; ;FDC1004.c: 90:     }
+[e :UE 119 ]
+}
+"92
+[; ;FDC1004.c: 92: uint8_t FDC1004_GetRawCapacitance(FDC1004 *fdc, uint8_t channel, fdc1004_measurement_t *result) {
+[v _FDC1004_GetRawCapacitance `(uc ~T0 @X0 1 ef3`*S102`uc`*S101 ]
+{
+[e :U _FDC1004_GetRawCapacitance ]
+[v _fdc `*S102 ~T0 @X0 1 r1 ]
+[v _channel `uc ~T0 @X0 1 r2 ]
+[v _result `*S101 ~T0 @X0 1 r3 ]
+[f ]
+"93
+[; ;FDC1004.c: 93:     if (!(channel >= 0 && channel <= (0x03))) return 1;
+[e $ ! ! && >= -> _channel `i -> 0 `i <= -> _channel `i -> 3 `i 122  ]
+[e ) -> -> 1 `i `uc ]
+[e $UE 121  ]
+[e :U 122 ]
+"94
+[; ;FDC1004.c: 94:     uint16_t raw_value[2];
+[v _raw_value `us ~T0 @X0 -> 2 `i a ]
+"95
+[; ;FDC1004.c: 95:     result->capdac = fdc->last_capdac[channel];
+[e = . *U _result 1 *U + &U . *U _fdc 2 * -> _channel `ux -> -> # *U &U . *U _fdc 2 `ui `ux ]
+"96
+[; ;FDC1004.c: 96:     result->value = 0x7FFF;
+[e = . *U _result 0 -> -> 32767 `i `s ]
+"98
+[; ;FDC1004.c: 98:     while (result->value > 0x7E00 || result->value < 0x8100) {
+[e $U 123  ]
+[e :U 124 ]
+{
+"99
+[; ;FDC1004.c: 99:         if (FDC1004_MeasureChannel(fdc, channel, result->capdac, raw_value)) return 1;
+[e $ ! != -> ( _FDC1004_MeasureChannel (4 , , , _fdc _channel . *U _result 1 &U _raw_value `i -> 0 `i 126  ]
+[e ) -> -> 1 `i `uc ]
+[e $UE 121  ]
+[e :U 126 ]
+"100
+[; ;FDC1004.c: 100:         result->value = (int16_t)raw_value[0];
+[e = . *U _result 0 -> *U + &U _raw_value * -> -> -> 0 `i `ui `ux -> -> # *U &U _raw_value `ui `ux `s ]
+"101
+[; ;FDC1004.c: 101:         if (result->value > ((int16_t) 0x4000) && result->capdac < (0x1F)) {
+[e $ ! && > -> . *U _result 0 `i -> -> -> 16384 `i `s `i < -> . *U _result 1 `i -> 31 `i 127  ]
+{
+"102
+[; ;FDC1004.c: 102:             result->capdac++;
+[e ++ . *U _result 1 -> -> 1 `i `uc ]
+"103
+[; ;FDC1004.c: 103:             } else if (result->value < (-1 * ((int16_t) 0x4000)) && result->capdac > 0) {
+}
+[e $U 128  ]
+[e :U 127 ]
+[e $ ! && < -> . *U _result 0 `i * -U -> 1 `i -> -> -> 16384 `i `s `i > -> . *U _result 1 `i -> 0 `i 129  ]
+{
+"104
+[; ;FDC1004.c: 104:                 result->capdac--;
+[e -- . *U _result 1 -> -> 1 `i `uc ]
+"105
+[; ;FDC1004.c: 105:                 } else {
+}
+[e $U 130  ]
+[e :U 129 ]
+{
+"106
+[; ;FDC1004.c: 106:                 fdc->last_capdac[channel] = result->capdac;
+[e = *U + &U . *U _fdc 2 * -> _channel `ux -> -> # *U &U . *U _fdc 2 `ui `ux . *U _result 1 ]
+"107
+[; ;FDC1004.c: 107:                 return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 121  ]
+"108
+[; ;FDC1004.c: 108:                 }
+}
+[e :U 130 ]
+[e :U 128 ]
+"109
+[; ;FDC1004.c: 109:         }
+}
+[e :U 123 ]
+"98
+[; ;FDC1004.c: 98:     while (result->value > 0x7E00 || result->value < 0x8100) {
+[e $ || > -> . *U _result 0 `i -> 32256 `i < -> . *U _result 0 `ui -> 33024 `ui 124  ]
+[e :U 125 ]
+"110
+[; ;FDC1004.c: 110:     fdc->last_capdac[channel] = result->capdac;
+[e = *U + &U . *U _fdc 2 * -> _channel `ux -> -> # *U &U . *U _fdc 2 `ui `ux . *U _result 1 ]
+"111
+[; ;FDC1004.c: 111:     return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 121  ]
+"112
+[; ;FDC1004.c: 112:     }
+[e :UE 121 ]
+}
