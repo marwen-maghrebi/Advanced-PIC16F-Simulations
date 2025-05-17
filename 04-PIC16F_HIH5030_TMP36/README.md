@@ -5,6 +5,7 @@ This embedded project demonstrates environmental sensing using a **PIC16F877A mi
 ---
 
 ## Hardware Requirements  
+![PIC16F877A I2C Sensor  Circuit](circuit.png)  
 
 - **PIC16F877A Microcontroller**  
 - **TMP36 Analog Temperature Sensor**  
