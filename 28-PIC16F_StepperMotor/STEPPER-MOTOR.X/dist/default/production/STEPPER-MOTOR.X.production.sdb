@@ -1,0 +1,107 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"22 C:\Users\pc1\Desktop\STEPPER-MOTOR.X\main.c
+[v _UART_TX_Init UART_TX_Init `(v  1 e 1 0 ]
+"42
+[v _UART_TX_Empty UART_TX_Empty `(uc  1 e 1 0 ]
+"48
+[v _UART_Write UART_Write `(v  1 e 1 0 ]
+"57
+[v _UART_Write_Text UART_Write_Text `(v  1 e 1 0 ]
+"64
+[v _UART_Read UART_Read `(uc  1 e 1 0 ]
+"90
+[v _main main `(v  1 e 1 0 ]
+"340 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+[s S36 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 PSPIF 1 0 :1:7 
+]
+"549
+[u S45 . 1 `S36 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES45  1 e 1 @12 ]
+"1059
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"1066
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+"1499
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"2080
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"2420
+[v _BRGH BRGH `VEb  1 e 0 @1218 ]
+"2519
+[v _CREN CREN `VEb  1 e 0 @196 ]
+"2747
+[v _RCIF RCIF `VEb  1 e 0 @101 ]
+"2816
+[v _SPEN SPEN `VEb  1 e 0 @199 ]
+"2846
+[v _SYNC SYNC `VEb  1 e 0 @1220 ]
+"2981
+[v _TRISC6 TRISC6 `VEb  1 e 0 @1086 ]
+"2984
+[v _TRISC7 TRISC7 `VEb  1 e 0 @1087 ]
+"3020
+[v _TRMT TRMT `VEb  1 e 0 @1217 ]
+"3035
+[v _TXEN TXEN `VEb  1 e 0 @1221 ]
+"19 C:\Users\pc1\Desktop\STEPPER-MOTOR.X\main.c
+[v _turn turn `DC[8]uc  1 e 8 0 ]
+"90
+[v _main main `(v  1 e 1 0 ]
+{
+"105
+[v main@new_command new_command `uc  1 a 1 9 ]
+"91
+[v main@i i `uc  1 a 1 10 ]
+"97
+[v main@command command `uc  1 a 1 8 ]
+"133
+} 0
+"57
+[v _UART_Write_Text UART_Write_Text `(v  1 e 1 0 ]
+{
+[v UART_Write_Text@text text `*.24DCuc  1 p 1 1 ]
+"62
+} 0
+"48
+[v _UART_Write UART_Write `(v  1 e 1 0 ]
+{
+[v UART_Write@data data `uc  1 p 1 wreg ]
+[v UART_Write@data data `uc  1 p 1 wreg ]
+[v UART_Write@data data `uc  1 p 1 0 ]
+"55
+} 0
+"42
+[v _UART_TX_Empty UART_TX_Empty `(uc  1 e 1 0 ]
+{
+"46
+} 0
+"22
+[v _UART_TX_Init UART_TX_Init `(v  1 e 1 0 ]
+{
+"40
+} 0
+"64
+[v _UART_Read UART_Read `(uc  1 e 1 0 ]
+{
+"71
+} 0
