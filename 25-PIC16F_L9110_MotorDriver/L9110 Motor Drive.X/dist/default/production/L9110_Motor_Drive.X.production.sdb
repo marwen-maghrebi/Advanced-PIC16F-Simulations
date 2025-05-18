@@ -1,0 +1,154 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"24 C:\Users\pc1\Desktop\L9110 Motor Drive.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"69
+[v _Motor_Init Motor_Init `(v  1 e 1 0 ]
+"78
+[v _Motor_Control Motor_Control `(v  1 e 1 0 ]
+"117
+[v _Motor_Forward Motor_Forward `(v  1 e 1 0 ]
+"123
+[v _Motor_Backward Motor_Backward `(v  1 e 1 0 ]
+"129
+[v _Motor_Right Motor_Right `(v  1 e 1 0 ]
+"135
+[v _Motor_Left Motor_Left `(v  1 e 1 0 ]
+"141
+[v _Motor_Stop Motor_Stop `(v  1 e 1 0 ]
+"4 C:\Users\pc1\Desktop\L9110 Motor Drive.X\uart.c
+[v _UART_TX_Init UART_TX_Init `(v  1 e 1 0 ]
+"26
+[v _UART_TX_Empty UART_TX_Empty `(uc  1 e 1 0 ]
+"30
+[v _UART_Write UART_Write `(v  1 e 1 0 ]
+"35
+[v _UART_Write_Text UART_Write_Text `(v  1 e 1 0 ]
+"216 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"1059
+[v _TXREG TXREG `VEuc  1 e 1 @25 ]
+"1066
+[v _RCREG RCREG `VEuc  1 e 1 @26 ]
+[s S67 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"1392
+[u S76 . 1 `S67 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES76  1 e 1 @134 ]
+"2080
+[v _SPBRG SPBRG `VEuc  1 e 1 @153 ]
+"2420
+[v _BRGH BRGH `VEb  1 e 0 @1218 ]
+"2519
+[v _CREN CREN `VEb  1 e 0 @196 ]
+"2747
+[v _RCIF RCIF `VEb  1 e 0 @101 ]
+"2816
+[v _SPEN SPEN `VEb  1 e 0 @199 ]
+"2846
+[v _SYNC SYNC `VEb  1 e 0 @1220 ]
+"2981
+[v _TRISC6 TRISC6 `VEb  1 e 0 @1086 ]
+"2984
+[v _TRISC7 TRISC7 `VEb  1 e 0 @1087 ]
+"3020
+[v _TRMT TRMT `VEb  1 e 0 @1217 ]
+"3035
+[v _TXEN TXEN `VEb  1 e 0 @1221 ]
+"24 C:\Users\pc1\Desktop\L9110 Motor Drive.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"33
+[v main@input input `uc  1 a 1 13 ]
+"66
+} 0
+"35 C:\Users\pc1\Desktop\L9110 Motor Drive.X\uart.c
+[v _UART_Write_Text UART_Write_Text `(v  1 e 1 0 ]
+{
+[v UART_Write_Text@text text `*.24DCuc  1 p 1 1 ]
+"39
+} 0
+"30
+[v _UART_Write UART_Write `(v  1 e 1 0 ]
+{
+[v UART_Write@data data `uc  1 p 1 wreg ]
+[v UART_Write@data data `uc  1 p 1 wreg ]
+[v UART_Write@data data `uc  1 p 1 0 ]
+"33
+} 0
+"26
+[v _UART_TX_Empty UART_TX_Empty `(uc  1 e 1 0 ]
+{
+"28
+} 0
+"4
+[v _UART_TX_Init UART_TX_Init `(v  1 e 1 0 ]
+{
+"24
+} 0
+"141 C:\Users\pc1\Desktop\L9110 Motor Drive.X\main.c
+[v _Motor_Stop Motor_Stop `(v  1 e 1 0 ]
+{
+"144
+} 0
+"129
+[v _Motor_Right Motor_Right `(v  1 e 1 0 ]
+{
+[v Motor_Right@speed speed `i  1 p 2 11 ]
+"132
+} 0
+"135
+[v _Motor_Left Motor_Left `(v  1 e 1 0 ]
+{
+[v Motor_Left@speed speed `i  1 p 2 11 ]
+"138
+} 0
+"69
+[v _Motor_Init Motor_Init `(v  1 e 1 0 ]
+{
+"75
+} 0
+"117
+[v _Motor_Forward Motor_Forward `(v  1 e 1 0 ]
+{
+[v Motor_Forward@speed speed `i  1 p 2 11 ]
+"120
+} 0
+"123
+[v _Motor_Backward Motor_Backward `(v  1 e 1 0 ]
+{
+[v Motor_Backward@speed speed `i  1 p 2 11 ]
+"126
+} 0
+"78
+[v _Motor_Control Motor_Control `(v  1 e 1 0 ]
+{
+"110
+[v Motor_Control@i i `i  1 a 2 7 ]
+"79
+[v Motor_Control@in2 in2 `uc  1 a 1 10 ]
+[v Motor_Control@in1 in1 `uc  1 a 1 9 ]
+"78
+[v Motor_Control@motor motor `i  1 p 2 0 ]
+[v Motor_Control@cmd cmd `i  1 p 2 2 ]
+[v Motor_Control@speed speed `i  1 p 2 4 ]
+"114
+} 0
