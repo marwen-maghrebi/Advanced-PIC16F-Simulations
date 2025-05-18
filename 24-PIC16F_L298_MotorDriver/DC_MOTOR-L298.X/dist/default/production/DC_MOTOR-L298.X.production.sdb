@@ -1,0 +1,97 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"37 C:\Users\pc1\Desktop\DC_MOTOR-L298.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"69
+[v _setupPWM setupPWM `(v  1 e 1 0 ]
+"79
+[v _setPWMDutyCycle setPWMDutyCycle `(v  1 e 1 0 ]
+"85
+[v _runMotorA runMotorA `(v  1 e 1 0 ]
+"97
+[v _runMotorB runMotorB `(v  1 e 1 0 ]
+"109
+[v _stopMotors stopMotors `(v  1 e 1 0 ]
+"119
+[v _delay_ms delay_ms `(v  1 e 1 0 ]
+"278 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC16Fxxx_DFP/1.6.156/xc8\pic\include\proc\pic16f877a.h
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+"340
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"737
+[v _T2CON T2CON `VEuc  1 e 1 @18 ]
+"892
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @21 ]
+"906
+[v _CCP1CON CCP1CON `VEuc  1 e 1 @23 ]
+"1080
+[v _CCPR2L CCPR2L `VEuc  1 e 1 @27 ]
+"1094
+[v _CCP2CON CCP2CON `VEuc  1 e 1 @29 ]
+"1437
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"1499
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"1816
+[v _PR2 PR2 `VEuc  1 e 1 @146 ]
+"2753
+[v _RD0 RD0 `VEb  1 e 0 @64 ]
+"2756
+[v _RD1 RD1 `VEb  1 e 0 @65 ]
+"2759
+[v _RD2 RD2 `VEb  1 e 0 @66 ]
+"2762
+[v _RD3 RD3 `VEb  1 e 0 @67 ]
+"37 C:\Users\pc1\Desktop\DC_MOTOR-L298.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"66
+} 0
+"109
+[v _stopMotors stopMotors `(v  1 e 1 0 ]
+{
+"116
+} 0
+"69
+[v _setupPWM setupPWM `(v  1 e 1 0 ]
+{
+"76
+} 0
+"97
+[v _runMotorB runMotorB `(v  1 e 1 0 ]
+{
+[v runMotorB@direction direction `i  1 p 2 4 ]
+[v runMotorB@speed speed `i  1 p 2 6 ]
+"106
+} 0
+"85
+[v _runMotorA runMotorA `(v  1 e 1 0 ]
+{
+[v runMotorA@direction direction `i  1 p 2 4 ]
+[v runMotorA@speed speed `i  1 p 2 6 ]
+"94
+} 0
+"79
+[v _setPWMDutyCycle setPWMDutyCycle `(v  1 e 1 0 ]
+{
+[v setPWMDutyCycle@speedA speedA `i  1 p 2 0 ]
+[v setPWMDutyCycle@speedB speedB `i  1 p 2 2 ]
+"82
+} 0
+"119
+[v _delay_ms delay_ms `(v  1 e 1 0 ]
+{
+[v delay_ms@ms ms `ui  1 p 2 0 ]
+"123
+} 0
