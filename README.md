@@ -12,51 +12,52 @@ Professional-grade PIC16F microcontroller projects featuring hardware simulation
 - [Proteus 8.15+](https://www.labcenter.com)
 - [XC8 Compiler v2.40+](https://www.microchip.com/en-us/tools-resources/develop/mplab-xc-compilers)
 
-## Project Catalog
+# STM32 Projects Repository
 
-### Display Interfaces
-- **00-PIC16F_LCD-8BIT** - 8-bit parallel LCD interface
-- **01-PIC16F_I2C_LCD** - I2C LCD controller (PCF8574)
-- **02-PIC16F_I2C-JHD-LCD** - JHD I2C LCD implementation
+## 🖥️ Display Interfaces
+| Project ID | Project Name                     | Description                          |
+|------------|----------------------------------|--------------------------------------|
+| 01         | STM32_SSD1306_OLED               | I2C/SPI OLED driver                 |
+| 02         | KS0801_GLCD                      | KS0108 graphical LCD                |
+| 03         | STM32_4Digit_Display             | 7-segment controller                |
+| 14         | STM32_74HC595_LedBar             | Shift register LED control          |
+| 15         | UART_7SEG_74HC595                | Serial 7-segment display            |
 
-### Environmental Sensors
-- **03-PIC16F_HYT_SHT21** - Humidity/Temperature sensors (HYT/SHT21)
-- **04-PIC16F_HIH5030_TMP36** - Humidity (HIH5030) + Temperature (TMP36)
-- **05-PIC16F_LM20_LM35** - Precision temperature sensors
-- **06-PIC16F_DS18B20** - 1-Wire digital temperature sensor
-- **14-PIC16F_DHT11** - Digital humidity/temperature sensor
-- **15-PIC16F_BMP180** - Barometric pressure sensor
+## 🌡️ Sensors
+| Project ID | Project Name                     | Description                          |
+|------------|----------------------------------|--------------------------------------|
+| 05         | STM32_DHT11                      | Digital temp/humidity               |
+| 06         | STM32_DHT22                      | High-accuracy climate               |
+| 07         | STM32_MPX4250AP_PressureGauge    | Pressure sensor                     |
+| 08         | STM32_DS18B20                    | 1-Wire temperature                  |
+| 10         | STM32_TMP36                      | Analog temperature                  |
+| 11         | STM32_Thermistor                 | NTC/PTC measurement                 |
+| 12         | STM32_HC-SR04_Ultrasonic         | Distance sensor                     |
+| 23         | STM32_APDS-9002                  | Ambient light sensor                |
 
-### Temperature Sensors
-- **07-PIC16F_DS1620** - Digital thermometer
-- **08-PIC16F_MCP9800** - I2C precision temp sensor
-- **09-PIC16F_LM75AD** - Digital temperature sensor
-- **10-PIC16F_TCN75A** - I2C temperature sensor
-- **11-PIC16F_LM335_AD592** - Analog temperature sensors
-- **12-PIC16F_TC1047_MCP9700** - Low-voltage temp sensors
+## 🔌 Data Conversion
+| Project ID | Project Name                     | Description                          |
+|------------|----------------------------------|--------------------------------------|
+| 13         | STM32_ADC128S                    | 12-bit ADC                          |
+| 16         | STM32_MCP3208                    | SPI ADC                             |
+| 21         | STM32_MCP4921                    | 12-bit DAC                          |
+| 22         | STM32_AD5621                     | 16-bit DAC                          |
 
-### Specialized Sensors
-- **13-PIC16F_TH02** - Digital humidity/temp sensor
-- **16-PIC16F_TC72** - SPI temperature sensor
-- **17-PIC16F_INA219AID** - Current/power monitor
-- **18-PIC16F_MCP3421** - 18-bit ADC
-- **19-PIC16F_PressureGauge** - Analog pressure measurement
-- **20-PIC16F_MPL3115A2** - Altimeter/barometer
-- **21-PIC16F_SRF04-Ultrasonic** - Distance measurement
-- **22-PIC16F_FDC1004** - Capacitive sensing
+## 🚗 Motor Control
+| Project ID | Project Name                     | Description                          |
+|------------|----------------------------------|--------------------------------------|
+| 17         | STM32_DC_MOTOR                   | PWM speed control                   |
+| 18         | STM32_L298_MotorDriver           | H-bridge driver                     |
+| 19         | STM32_ServoMotor                 | Servo control                       |
+| 20         | STM32_StepperMotor               | Stepper driver                      |
 
-### Timing & Motor Control
-- **23-PIC16F_DS3232_RTC-Clock** - Precision RTC module
-- **24-PIC16F_L298_MotorDriver** - Dual H-bridge motor control
-- **25-PIC16F_L9110_MotorDriver** - Compact motor driver
-- **26-PIC16F_ServoMotor** - PWM servo control
-- **27-PIC16F_PCA9685_SevoMotorDriver** - 16-channel servo driver
-- **28-PIC16F_StepperMotor** - Stepper motor controller
+## ⏱️ Specialized Interfaces
+| Project ID | Project Name                     | Description                          |
+|------------|----------------------------------|--------------------------------------|
+| 04         | STM32_RTC_clock                  | Real-time clock                     |
+| 09         | STM32_LoadCell_HX711             | Load cell amplifier                 |
+| 24         | STM32_Thermocouple_AD8495        | Thermocouple amp                    |
+| 25         | STM32_Thermocouple_MAX31855      | Thermocouple interface              |
+| 26         | STM32_Thermocouple_MAX31856      | Precision thermocouple              |
+| 27         | STM32_Thermocouple_MAX31865      | RTD thermocouple                    |
 
-## Project Structure
-Each project contains:
-- Complete MPLAB X project
-- Proteus simulation files (.pdsprj)
-- Well-documented source code
-- Schematic diagrams
-- Detailed README with pin configurations
